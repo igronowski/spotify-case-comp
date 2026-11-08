@@ -140,14 +140,17 @@ h1, h2, h3 { margin: 0; }
 
 /* seat chart */
 .seat-panel { background: var(--bg); border-radius: 10px; padding: 12px; }
-.seats { display: block; width: 100%; height: auto; max-height: 380px; }
+.seat-scroll { max-height: 460px; overflow: auto; }
+.seats { display: block; max-width: 100%; height: auto; margin: 0 auto; }
 .seats circle { fill: #b3b3b3; cursor: pointer; transition: fill .1s; }
 .seats circle:hover { fill: #fff; }
 .seats circle.sel { fill: var(--green); }
 .seats circle.taken { fill: #333; cursor: not-allowed; }
-.seats .row-label { fill: var(--muted); font-size: 9px; text-anchor: middle; dominant-baseline: central; }
-.seats .stage-bar { fill: #2a2a2a; }
-.seats .stage-bar-label { fill: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: .2em; text-anchor: middle; dominant-baseline: central; }
+.seats .sec-outline { fill: #1c1c1c; stroke: #3a3a3a; }
+.seats .stage-arrow { fill: #e8e8e8; stroke: #e8e8e8; stroke-linecap: round; }
+.seats .stage-arrow path { stroke: none; }
+.seats .row-label { fill: var(--muted); font-size: .8em; text-anchor: middle; dominant-baseline: central; }
+.seats .stage-bar-label { fill: #e8e8e8; font-size: 1.8em; font-weight: 700; letter-spacing: .2em; text-anchor: middle; dominant-baseline: central; }
 .legend i.avail { background: #b3b3b3; border-radius: 50%; }
 .legend i.sel { background: var(--green); border-radius: 50%; }
 .seat-panel .legend i.out { border-radius: 50%; background: #333; }

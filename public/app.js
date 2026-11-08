@@ -273,7 +273,7 @@ function openCheckout(artist, concert) {
           <div><b>${esc(section.name)}</b><small>${avail(section)}</small></div>
           <span class="price">${money(section.price)}<small>per ticket</small></span>
         </div>
-        ${seated ? seatChart(state.seatData[section.id], state.seats) : `
+        ${seated ? seatChart(state.seatData[section.id], state.seats, section, concert.map.stage) : `
           <div class="qty-row">
             <span>Tickets</span>
             <div class="stepper">
@@ -354,28 +354,80 @@ function openCheckout(artist, concert) {
   draw().catch((e) => openSheet(`<div class="error">${esc(e.message)}</div>`));
 }
 
-// Seat chart for one section: one circle per seat, rows labeled on both sides, stage at the top.
-function seatChart({ rows, perRow, taken }, selected) {
-  const gap = 15, pad = 30, top = 34;
-  const takenSet = new Set(taken);
-  const w = pad * 2 + perRow * gap, h = top + rows.length * gap + 4;
-  const circles = rows.map((row, r) => {
-    const y = top + r * gap + gap / 2;
-    let out = `<text class="row-label" x="${pad - 10}" y="${y}">${esc(row)}</text><text class="row-label" x="${w - pad + 10}" y="${y}">${esc(row)}</text>`;
-    for (let n = 1; n <= perRow; n++) {
-      const id = `${row}-${n}`;
-      const cls = takenSet.has(id) ? 'taken' : selected.includes(id) ? 'sel' : '';
-      out += `<circle class="${cls}" data-seat="${id}" cx="${pad + (n - 1) * gap + gap / 2}" cy="${y}" r="5.5"><title>Row ${esc(row)}, Seat ${n}${cls === 'taken' ? ' (unavailable)' : ''}</title></circle>`;
+// Seat chart for one section, drawn in the section's real shape and orientation
+// (as it sits on the venue map), with an arrow pointing toward the stage.
+const ept = (cx, cy, rx, ry, deg) => [cx + rx * Math.sin(deg * Math.PI / 180), cy - ry * Math.cos(deg * Math.PI / 180)];
+function seatLayout(geo, rowCount, perRow) {
+  const pos = []; // pos[r][n] = [x, y]
+  const labels = []; // [[x, y] start, [x, y] end] per row
+  if (geo.type === 'rect') {
+    const px = geo.w / perRow, py = geo.h / rowCount;
+    for (let r = 0; r < rowCount; r++) {
+      const y = geo.y + (r + 0.5) * py;
+      pos.push(Array.from({ length: perRow }, (_, n) => [geo.x + (n + 0.5) * px, y]));
+      labels.push([[geo.x - px * 1.3, y], [geo.x + geo.w + px * 1.3, y]]);
     }
+  } else {
+    const { cx, cy, inner, outer, a0, a1 } = geo, da = (a1 - a0) / perRow;
+    for (let r = 0; r < rowCount; r++) {
+      const t = (r + 0.5) / rowCount; // row 1 is the inner edge, closest to the stage/floor
+      const rx = inner[0] + (outer[0] - inner[0]) * t, ry = inner[1] + (outer[1] - inner[1]) * t;
+      pos.push(Array.from({ length: perRow }, (_, n) => ept(cx, cy, rx, ry, a0 + (n + 0.5) * da)));
+      labels.push([ept(cx, cy, rx, ry, a0 - da * 1.1), ept(cx, cy, rx, ry, a1 + da * 1.1)]);
+    }
+  }
+  // Tightest spacing between neighbouring seats in a row (along) and between rows (across).
+  const d = (p, q) => Math.hypot(p[0] - q[0], p[1] - q[1]);
+  let along = Infinity, across = Infinity;
+  pos.forEach((row, r) => row.forEach((p, n) => {
+    if (n) along = Math.min(along, d(p, row[n - 1]));
+    if (r) across = Math.min(across, d(p, pos[r - 1][n]));
+  }));
+  if (!Number.isFinite(along)) along = across;
+  if (!Number.isFinite(across)) across = along;
+  if (!Number.isFinite(along)) along = across = 4;
+  return { pos, labels, along, across };
+}
+function seatChart({ rows, perRow, taken }, selected, section, stage) {
+  const takenSet = new Set(taken);
+  const { pos, labels, along, across } = seatLayout(section.shape.geo, rows.length, perRow);
+  const rad = Math.min(along * 0.42, across * 0.38);
+  const pitch = Math.min(across, along * 2.5), fs = pitch * 0.75; // sizes labels and the stage arrow
+  const pts = [...pos.flat(), ...labels.flat()];
+  let x0 = Math.min(...pts.map((p) => p[0])), x1 = Math.max(...pts.map((p) => p[0]));
+  let y0 = Math.min(...pts.map((p) => p[1])), y1 = Math.max(...pts.map((p) => p[1]));
+  // Stage arrow just outside the seats, on the side facing the stage.
+  const mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
+  const ux0 = stage.lx - mx, uy0 = stage.ly - my, len = Math.hypot(ux0, uy0) || 1, ux = ux0 / len, uy = uy0 / len;
+  const hw = (x1 - x0) / 2 + pitch * 2.2, hh = (y1 - y0) / 2 + pitch * 2.2;
+  const t = Math.min(ux ? hw / Math.abs(ux) : Infinity, uy ? hh / Math.abs(uy) : Infinity);
+  const ax = mx + ux * t, ay = my + uy * t, ang = Math.atan2(uy, ux) * 180 / Math.PI;
+  const tx = ax + ux * pitch * 3.4, ty = ay + uy * pitch * 3.4;
+  const m = pitch * 1.5, tw = fs * 8.5;
+  x0 = Math.min(x0, ax, tx - tw / 2) - m; x1 = Math.max(x1, ax, tx + tw / 2) + m;
+  y0 = Math.min(y0, ay, ty - fs * 1.4) - m; y1 = Math.max(y1, ay, ty + fs * 1.4) + m;
+  const r1 = (n) => Math.round(n * 100) / 100;
+  // Fixed on-screen seat size (~12px) no matter how narrow the section is; the panel scrolls if needed.
+  const scale = 12 / (rad * 2);
+
+  const seats = rows.map((row, r) => {
+    const [[sx, sy], [ex, ey]] = labels[r];
+    let out = `<text class="row-label" x="${r1(sx)}" y="${r1(sy)}">${esc(row)}</text><text class="row-label" x="${r1(ex)}" y="${r1(ey)}">${esc(row)}</text>`;
+    pos[r].forEach(([x, y], i) => {
+      const id = `${row}-${i + 1}`;
+      const cls = takenSet.has(id) ? 'taken' : selected.includes(id) ? 'sel' : '';
+      out += `<circle class="${cls}" data-seat="${id}" cx="${r1(x)}" cy="${r1(y)}" r="${r1(rad)}"><title>Row ${esc(row)}, Seat ${i + 1}${cls === 'taken' ? ' (unavailable)' : ''}</title></circle>`;
+    });
     return out;
   }).join('');
   return `
     <div class="seat-panel">
-      <svg class="seats" viewBox="0 0 ${w} ${h}" aria-label="Seat chart">
-        <rect class="stage-bar" x="${pad}" y="4" width="${perRow * gap}" height="16" rx="3"/>
-        <text class="stage-bar-label" x="${w / 2}" y="12">STAGE</text>
-        ${circles}
-      </svg>
+      <div class="seat-scroll"><svg class="seats" viewBox="${r1(x0)} ${r1(y0)} ${r1(x1 - x0)} ${r1(y1 - y0)}" aria-label="Seat chart for ${esc(section.name)}" style="font-size:${r1(fs)}px;width:${Math.round((x1 - x0) * scale)}px">
+        <path class="sec-outline" d="${section.shape.d}" style="stroke-width:${r1(pitch * 0.12)}"/>
+        <g class="stage-arrow" transform="translate(${r1(ax)} ${r1(ay)}) rotate(${r1(ang)})"><line x1="${r1(-pitch * 2)}" y1="0" x2="${r1(pitch * 0.4)}" y2="0" style="stroke-width:${r1(pitch * 0.35)}"/><path d="M${r1(pitch * 1.6)} 0L${r1(pitch * 0.2)} ${r1(-pitch * 0.9)}L${r1(pitch * 0.2)} ${r1(pitch * 0.9)}Z"/></g>
+        <text class="stage-bar-label" x="${r1(tx)}" y="${r1(ty)}">STAGE</text>
+        ${seats}
+      </svg></div>
       <div class="legend">
         <span><i class="avail"></i>Available</span>
         <span><i class="sel"></i>Selected</span>

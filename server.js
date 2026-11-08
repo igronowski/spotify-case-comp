@@ -118,9 +118,23 @@ function ringSector(cx, cy, inner, outer, a0, a1) {
   const d = `M${f1(x0)} ${f1(y0)}A${outer[0]} ${outer[1]} 0 0 1 ${f1(x1)} ${f1(y1)}L${f1(x2)} ${f1(y2)}A${inner[0]} ${inner[1]} 0 0 0 ${f1(x3)} ${f1(y3)}Z`;
   const mid = (a0 + a1) / 2;
   const [lx, ly] = pt(cx, cy, (inner[0] + outer[0]) / 2, (inner[1] + outer[1]) / 2, mid);
-  return { d, lx: f1(lx), ly: f1(ly) };
+  return { d, lx: f1(lx), ly: f1(ly), geo: { type: 'arc', cx, cy, inner, outer, a0, a1 } };
 }
-const rectPath = (x, y, w, h) => ({ d: `M${x} ${y}h${w}v${h}h${-w}Z`, lx: x + w / 2, ly: y + h / 2 });
+const rectPath = (x, y, w, h) => ({ d: `M${x} ${y}h${w}v${h}h${-w}Z`, lx: x + w / 2, ly: y + h / 2, geo: { type: 'rect', x, y, w, h } });
+// Row length vs. depth of a section shape, so seat rows fit its real proportions.
+function shapeDims(geo) {
+  if (geo.type === 'rect') return { along: geo.w, depth: geo.h };
+  const { cx, cy, inner, outer, a0, a1 } = geo;
+  const mid = [(inner[0] + outer[0]) / 2, (inner[1] + outer[1]) / 2];
+  let along = 0;
+  for (let i = 0; i < 12; i++) {
+    const [x0, y0] = pt(cx, cy, mid[0], mid[1], a0 + ((a1 - a0) * i) / 12);
+    const [x1, y1] = pt(cx, cy, mid[0], mid[1], a0 + ((a1 - a0) * (i + 1)) / 12);
+    along += Math.hypot(x1 - x0, y1 - y0);
+  }
+  const m = (a0 + a1) / 2, [ix, iy] = pt(cx, cy, inner[0], inner[1], m), [ox, oy] = pt(cx, cy, outer[0], outer[1], m);
+  return { along, depth: Math.hypot(ox - ix, oy - iy) };
+}
 const label = (start, i) => String(start + i);
 
 // Returns [{ id, name, short, tier, base, share, shape }] plus the stage shape.
@@ -201,10 +215,16 @@ function getConcerts(artist) {
       const section = { id: sid, name, short, shape, price: Math.max(25, Math.round((base * demand * market) / 5) * 5) };
       if (shape && !standing) {
         // Reserved seating: lay the section out as rows x seats and mark some seats as already sold.
+        // Rows follow the section's real shape: seats per row ~ row length / depth.
+        const { along, depth } = shapeDims(shape.geo);
         const rows = rowFrom
           ? Array.from({ length: rowTo - rowFrom + 1 }, (_, r) => String(rowFrom + r))
-          : Array.from({ length: Math.ceil(capacity / Math.max(8, Math.min(30, Math.round(Math.sqrt(capacity * 1.6))))) }, (_, r) => String(r + 1));
-        const perRow = Math.max(8, Math.round(capacity / rows.length));
+          : Array.from({ length: Math.ceil(capacity / Math.max(6, Math.round(Math.sqrt((capacity * along) / depth)))) }, (_, r) => String(r + 1));
+        // Fixed-row sections (amphitheater bands) get as many seats per row as fit the row's length,
+        // so seats are spaced evenly instead of crammed into the short front arcs.
+        const perRow = rowFrom
+          ? Math.max(8, Math.round((rows.length * along) / depth))
+          : Math.max(8, Math.round(capacity / rows.length));
         const taken = new Set();
         rows.forEach((row, r) => {
           const p = Math.min(0.95, soldShare * (1.15 - (0.5 * r) / rows.length)); // front rows sell first
@@ -295,7 +315,7 @@ function shuffle(arr, rand) {
   return a;
 }
 function send(res, status, body) {
-  res.writeHead(status, { 'Content-Type': 'application/json' });
+  res.writeHead(status, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' });
   res.end(JSON.stringify(body));
 }
 function readJson(req) {
@@ -444,7 +464,7 @@ async function handle(req, res) {
       res.writeHead(404);
       return res.end('Not found');
     }
-    res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream' });
+    res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-cache' });
     res.end(buf);
   });
 }
