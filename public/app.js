@@ -156,8 +156,8 @@ async function renderArtist(id, tab) {
     ${concerts.length ? `
       <div class="on-tour">
         <div>
-          <h3>🎤 ${esc(artist.name)} is on tour</h3>
-          <p>${upcoming} upcoming show${upcoming === 1 ? '' : 's'} · Tickets available on Spotify</p>
+          <h3>${esc(artist.name)} is on tour</h3>
+          <p>${upcoming} upcoming show${upcoming === 1 ? '' : 's'}</p>
         </div>
         <a class="btn" href="#/artist/${esc(id)}/concerts">See concerts</a>
       </div>` : ''}`;
@@ -165,18 +165,7 @@ async function renderArtist(id, tab) {
 
 function renderConcerts($body, artist, concerts) {
   $body.innerHTML = `
-    <div class="concert-head">
-      <div>
-        <h2>On tour</h2>
-        <p>Sold directly by ${esc(artist.name)} through Spotify</p>
-      </div>
-    </div>
-    <div class="promise">
-      <span><b>No</b> service fees</span>
-      <span><b>Face value</b> pricing</span>
-      <span><b>${status.maxPerFan}</b> ticket limit per fan</span>
-      <span><b>Refunds</b> return seats to general sale</span>
-    </div>
+    <h2>On tour</h2>
     <ul class="shows">
       ${concerts.map((c) => {
         const left = c.sections.reduce((n, s) => n + s.remaining, 0);
@@ -252,89 +241,155 @@ $sheet.addEventListener('click', (e) => { if (e.target.closest('[data-close]')) 
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSheet(); });
 
 function openCheckout(artist, concert) {
-  const firstOpen = concert.sections.find((s) => !s.soldOut);
-  const state = { sectionId: firstOpen.id, qty: 1, error: '', busy: false };
+  const state = { sectionId: null, qty: 1, seats: [], seatData: {}, error: '', busy: false };
   const buyer = store.get('buyer') || { name: '', email: '' };
+  const avail = (s) => (s.soldOut ? 'Sold out' : s.remaining < 50 ? `${s.remaining} left` : `${fmtNum(s.remaining)} available`);
 
   const draw = async () => {
-    const section = concert.sections.find((s) => s.id === state.sectionId);
-    const maxQty = Math.min(status.maxPerFan, section.remaining);
-    state.qty = Math.min(state.qty, maxQty);
-    const q = await api(`/api/quote?concertId=${concert.id}&sectionId=${section.id}&quantity=${state.qty}`);
+    const section = concert.sections.find((s) => s.id === state.sectionId) || null;
+    const seated = Boolean(section?.seated);
+    if (seated && !state.seatData[section.id]) {
+      state.seatData[section.id] = await api(`/api/seats?concertId=${concert.id}&sectionId=${section.id}`);
+    }
+    const maxQty = section ? Math.min(status.maxPerFan, section.remaining) : 0;
+    if (!seated) state.qty = Math.max(1, Math.min(state.qty, maxQty));
+    const qty = seated ? state.seats.length : section ? state.qty : 0;
+    const q = qty ? await api(`/api/quote?concertId=${concert.id}&sectionId=${section.id}&quantity=${qty}`) : { subtotal: 0, processing: 0, total: 0 };
 
     openSheet(`
-      <h2 id="sheet-title">${esc(artist.name)} · ${esc(concert.city)}</h2>
-      <p class="sub">${esc(concert.venue)} · ${fmtDate(concert.date, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })}</p>
+      <h2 id="sheet-title">${esc(artist.name)}</h2>
+      <p class="sub">${esc(concert.venue)}, ${esc(concert.city)} · ${fmtDate(concert.date, { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}</p>
       ${state.error ? `<div class="error">${esc(state.error)}</div>` : ''}
 
-      <div class="label">Choose a section</div>
       ${seatMap(concert, state.sectionId)}
-      <div class="picked">
-        <div><b>${esc(section.name)}</b><small>${section.remaining < 50 ? `Only ${section.remaining} left` : `${fmtNum(section.remaining)} available`}</small></div>
-        <span class="price">${money(section.price)}</span>
-      </div>
       ${concert.sections.filter((s) => !s.shape).map((s) => `
         <button class="section-opt ${s.id === state.sectionId ? 'selected' : ''}" data-section="${s.id}" ${s.soldOut ? 'disabled' : ''}>
-          <span>${esc(s.name)}<small>${s.soldOut ? 'Sold out' : s.remaining < 50 ? `Only ${s.remaining} left` : `${fmtNum(s.remaining)} available`}</small></span>
+          <span>${esc(s.name)}<small>${avail(s)}</small></span>
           <span class="price">${money(s.price)}</span>
         </button>`).join('')}
 
-      <div class="label">Tickets</div>
-      <div class="stepper">
-        <button data-qty="-1" ${state.qty <= 1 ? 'disabled' : ''} aria-label="Fewer">−</button>
-        <span>${state.qty}</span>
-        <button data-qty="1" ${state.qty >= maxQty ? 'disabled' : ''} aria-label="More">+</button>
-      </div><span class="hint">Max ${status.maxPerFan} per fan</span>
+      ${!section ? `<p class="hint pick-hint">Select a section to see seats and prices.</p>` : `
+        <div class="sec-head">
+          <div><b>${esc(section.name)}</b><small>${avail(section)}</small></div>
+          <span class="price">${money(section.price)}<small>per ticket</small></span>
+        </div>
+        ${seated ? seatChart(state.seatData[section.id], state.seats) : `
+          <div class="qty-row">
+            <span>Tickets</span>
+            <div class="stepper">
+              <button data-qty="-1" ${state.qty <= 1 ? 'disabled' : ''} aria-label="Fewer">−</button>
+              <span>${state.qty}</span>
+              <button data-qty="1" ${state.qty >= maxQty ? 'disabled' : ''} aria-label="More">+</button>
+            </div>
+          </div>`}
+        <p class="hint">Limit ${status.maxPerFan} tickets per person.</p>
 
-      <div class="label">Your details</div>
-      <div class="fields">
-        <input id="buyer-name" placeholder="Full name (on ticket)" value="${esc(buyer.name)}" />
-        <input id="buyer-email" type="email" placeholder="Email" value="${esc(buyer.email)}" />
-      </div>
+        <div class="label">Your details</div>
+        <div class="fields">
+          <input id="buyer-name" placeholder="Full name" value="${esc(buyer.name)}" />
+          <input id="buyer-email" type="email" placeholder="Email" value="${esc(buyer.email)}" />
+        </div>
 
-      <div class="label">Payment</div>
-      <div class="wallet"><span class="cc">VISA</span> Spotify Wallet •••• 4242 <span class="hint">(simulated)</span></div>
+        <div class="label">Payment</div>
+        <div class="wallet"><span class="cc">VISA</span> Visa •••• 4242</div>
 
-      <div class="summary">
-        <div class="row"><span>${state.qty} × ${esc(section.name)}</span><span>${money(q.subtotal)}</span></div>
-        <div class="row zero"><span>Service / facility / order fees</span><b>$0.00</b></div>
-        <div class="row"><span>Card processing</span><span>${money(q.processing)}</span></div>
-        <div class="row total"><span>Total</span><span>${money(q.total)}</span></div>
-      </div>
-      <button class="btn block" id="buy" ${state.busy ? 'disabled' : ''}>${state.busy ? 'Processing…' : `Buy ${state.qty} ticket${state.qty > 1 ? 's' : ''} · ${money(q.total)}`}</button>
+        <div class="summary">
+          <div class="row"><span>${qty} × ${esc(section.name)}${seated && qty ? `<small>${esc(describeSeats(state.seats))}</small>` : ''}</span><span>${money(q.subtotal)}</span></div>
+          <div class="row"><span>Processing fee</span><span>${money(q.processing)}</span></div>
+          <div class="row total"><span>Total</span><span>${money(q.total)}</span></div>
+        </div>
+        <button class="btn block" id="buy" ${state.busy || !qty ? 'disabled' : ''}>${state.busy ? 'Processing…' : !qty ? 'Select seats' : `Buy ${qty} ticket${qty > 1 ? 's' : ''}`}</button>`}
     `);
 
     const syncBuyer = () => {
-      buyer.name = document.getElementById('buyer-name').value;
-      buyer.email = document.getElementById('buyer-email').value;
+      const n = document.getElementById('buyer-name'), e = document.getElementById('buyer-email');
+      if (n) buyer.name = n.value;
+      if (e) buyer.email = e.value;
     };
-    const pick = (b) => { if (b.getAttribute('aria-disabled') === 'true') return; syncBuyer(); state.sectionId = b.dataset.section; state.error = ''; draw(); };
+    const pick = (b) => {
+      if (b.getAttribute('aria-disabled') === 'true' || b.disabled) return;
+      syncBuyer();
+      if (state.sectionId !== b.dataset.section) { state.sectionId = b.dataset.section; state.seats = []; state.qty = 1; }
+      state.error = '';
+      draw();
+    };
     $sheetBody.querySelectorAll('[data-section]').forEach((b) => {
       b.onclick = () => pick(b);
       b.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(b); } };
     });
     $sheetBody.querySelectorAll('[data-qty]').forEach((b) => b.onclick = () => { syncBuyer(); state.qty += Number(b.dataset.qty); draw(); });
-    document.getElementById('buy').onclick = async () => {
+    $sheetBody.querySelector('.seats')?.addEventListener('click', (e) => {
+      const seat = e.target.closest('[data-seat]');
+      if (!seat || seat.classList.contains('taken')) return;
+      syncBuyer();
+      const id = seat.dataset.seat;
+      if (state.seats.includes(id)) state.seats = state.seats.filter((x) => x !== id);
+      else if (state.seats.length < maxQty) state.seats = [...state.seats, id];
+      else { state.error = `You can select up to ${maxQty} seats.`; return draw(); }
+      state.error = '';
+      draw();
+    });
+    const $buy = document.getElementById('buy');
+    if ($buy) $buy.onclick = async () => {
       syncBuyer();
       state.busy = true; state.error = '';
       await draw();
       try {
         const order = await api('/api/checkout', {
           method: 'POST',
-          body: { concertId: concert.id, sectionId: state.sectionId, quantity: state.qty, buyer },
+          body: { concertId: concert.id, sectionId: section.id, quantity: qty, seats: seated ? state.seats : undefined, buyer },
         });
         store.set('buyer', { name: buyer.name.trim(), email: buyer.email.trim() });
-        section.remaining -= state.qty;
+        section.remaining -= qty;
         section.soldOut = section.remaining === 0;
         concert.soldOut = concert.sections.every((s) => s.soldOut);
         showConfirmation(order);
       } catch (e) {
         state.busy = false; state.error = e.message;
+        if (seated) { delete state.seatData[section.id]; state.seats = []; } // refresh seat availability
         draw();
       }
     };
   };
   draw().catch((e) => openSheet(`<div class="error">${esc(e.message)}</div>`));
+}
+
+// Seat chart for one section: one circle per seat, rows labeled on both sides, stage at the top.
+function seatChart({ rows, perRow, taken }, selected) {
+  const gap = 15, pad = 30, top = 34;
+  const takenSet = new Set(taken);
+  const w = pad * 2 + perRow * gap, h = top + rows.length * gap + 4;
+  const circles = rows.map((row, r) => {
+    const y = top + r * gap + gap / 2;
+    let out = `<text class="row-label" x="${pad - 10}" y="${y}">${esc(row)}</text><text class="row-label" x="${w - pad + 10}" y="${y}">${esc(row)}</text>`;
+    for (let n = 1; n <= perRow; n++) {
+      const id = `${row}-${n}`;
+      const cls = takenSet.has(id) ? 'taken' : selected.includes(id) ? 'sel' : '';
+      out += `<circle class="${cls}" data-seat="${id}" cx="${pad + (n - 1) * gap + gap / 2}" cy="${y}" r="5.5"><title>Row ${esc(row)}, Seat ${n}${cls === 'taken' ? ' (unavailable)' : ''}</title></circle>`;
+    }
+    return out;
+  }).join('');
+  return `
+    <div class="seat-panel">
+      <svg class="seats" viewBox="0 0 ${w} ${h}" aria-label="Seat chart">
+        <rect class="stage-bar" x="${pad}" y="4" width="${perRow * gap}" height="16" rx="3"/>
+        <text class="stage-bar-label" x="${w / 2}" y="12">STAGE</text>
+        ${circles}
+      </svg>
+      <div class="legend">
+        <span><i class="avail"></i>Available</span>
+        <span><i class="sel"></i>Selected</span>
+        <span><i class="out"></i>Unavailable</span>
+      </div>
+    </div>`;
+}
+function describeSeats(ids) {
+  const byRow = new Map();
+  [...ids].sort((a, b) => a.localeCompare(b, 'en', { numeric: true })).forEach((id) => {
+    const [row, n] = id.split('-');
+    byRow.set(row, [...(byRow.get(row) || []), n]);
+  });
+  return [...byRow].map(([row, ns]) => `Row ${row}, Seat${ns.length > 1 ? 's' : ''} ${ns.join(', ')}`).join(' · ');
 }
 
 function ticketHtml(order, t) {
@@ -343,7 +398,7 @@ function ticketHtml(order, t) {
       <div class="info">
         <h3>${esc(order.concert.artistName)}</h3>
         <p>${esc(order.concert.venue)} · ${esc(order.concert.city)}</p>
-        <p>${fmtDate(order.concert.date, { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })} · ${esc(t.section)}</p>
+        <p>${fmtDate(order.concert.date, { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })} · ${esc(t.section)}${t.row ? ` · Row ${esc(t.row)} · Seat ${esc(t.seat)}` : ''}</p>
         <p>${esc(order.name)}</p>
         <p class="code">${esc(t.id)} · ${esc(t.code)}</p>
       </div>
@@ -411,8 +466,5 @@ async function renderTickets() {
 // ---------- boot ----------
 (async () => {
   try { status = await api('/api/status'); } catch {}
-  const pill = document.getElementById('mode-pill');
-  pill.textContent = status.live ? 'Live Spotify search' : 'Real Spotify data';
-  pill.classList.add('live');
   route();
 })();

@@ -43,7 +43,8 @@ Spotify has no public tour or ticketing API, so these parts are simulated on the
 
 - **Tour dates.** Generated the same way every time for each artist. Prices scale with artist popularity.
 - **Seating maps.** Each venue has an interactive map: arenas use an end-stage layout with a floor pit, floor sections and numbered lower and upper bowls (following each venue's numbering style), and Red Rocks uses tiered row sections. Each section has its own price based on distance to the stage, viewing angle and artist popularity. These layouts are illustrative, not official venue charts.
-- **Inventory.** Kept in memory per section, and the check and the decrement happen as one step, so a section can't oversell.
+- **Seat selection.** Reserved sections are split into rows and individual seats. Fans pick exact seats (up to 4), taken seats are unavailable, and tickets show section, row and seat. The floor pit and VIP package are general admission.
+- **Inventory.** Kept in memory per seat (or per section for general admission). The availability check and the claim happen as one step, so a seat can't be sold twice.
 - **Checkout.** Payment is simulated ("Spotify Wallet"). The only fee is card processing (2.9% + $0.30).
 - **Purchase limits.** Each fan can buy at most 4 tickets per show. Tickets are tied to the buyer's name and carry an HMAC-signed code, which stands in for a rotating QR code.
 - **Refunds.** Refunds are issued at face value, and the seats go back on sale to other fans.

@@ -135,7 +135,7 @@ function seatingPlan(venue) {
       const rowFrom = Math.round((b * rows) / bands) + 1, rowTo = Math.round(((b + 1) * rows) / bands);
       for (const [k, side, a0, a1] of fan) {
         sections.push({
-          id: `rows${rowFrom}${k}`, name: `Rows ${rowFrom}-${rowTo} ${side}`, short: `${rowFrom}-${rowTo}`,
+          id: `rows${rowFrom}${k}`, name: `Rows ${rowFrom}-${rowTo} ${side}`, short: `${rowFrom}-${rowTo}`, rowFrom, rowTo,
           base: 120 * (1.3 - b * 0.13) * (k === 'C' ? 1.1 : 1),
           share: (0.98 / bands / 3) * (1 + b * 0.08) / 1.2,
           shape: ringSector(cx, cy, [r0, r0], [r1, r1], a0, a1),
@@ -149,7 +149,7 @@ function seatingPlan(venue) {
   const [lLabel, lStart, lCount] = venue.lower;
   const [uLabel, uStart, uCount] = venue.upper;
   const sections = [
-    { id: 'pit', name: 'Floor Pit (standing)', short: 'PIT', base: 140, share: 0.08, shape: rectPath(cx - 62, cy - 84, 124, 32) },
+    { id: 'pit', name: 'Floor Pit (standing)', short: 'PIT', standing: true, base: 140, share: 0.08, shape: rectPath(cx - 62, cy - 84, 124, 32) },
     { id: 'floorA', name: 'Floor A', short: 'A', base: 115, share: 0.057, shape: rectPath(cx - 62, cy - 46, 39, 86) },
     { id: 'floorB', name: 'Floor B', short: 'B', base: 125, share: 0.057, shape: rectPath(cx - 19.5, cy - 46, 39, 86) },
     { id: 'floorC', name: 'Floor C', short: 'C', base: 115, share: 0.057, shape: rectPath(cx + 23, cy - 46, 39, 86) },
@@ -193,16 +193,31 @@ function getConcerts(artist) {
     date.setHours(20, 0, 0, 0);
     date.setDate(date.getDate() + day);
     const id = `${artist.id}-c${i}`;
-    const heat = Math.min(0.97, 0.25 + rand() * 0.5) * (artist.popularity / 85); // how quickly this show is selling
-    const mk = ({ id: sid, name, short, base, share, shape }) => {
-      const capacity = Math.max(20, Math.round(v.cap * share));
+    const heat = Math.min(0.9, 0.15 + rand() * 0.4) * (artist.popularity / 90); // how quickly this show is selling
+    const market = 0.9 + rand() * 0.25; // prices vary a little from city to city
+    const mk = ({ id: sid, name, short, base, share, shape, standing, rowFrom, rowTo }) => {
+      let capacity = Math.max(20, Math.round(v.cap * share));
       const soldShare = Math.min(1, Math.max(0, heat * (0.6 + rand() * 0.8)));
-      return {
-        id: sid, name, short, shape,
-        price: Math.max(25, Math.round((base * demand) / 5) * 5),
-        capacity,
-        remaining: Math.max(0, Math.round(capacity * (1 - soldShare))),
-      };
+      const section = { id: sid, name, short, shape, price: Math.max(25, Math.round((base * demand * market) / 5) * 5) };
+      if (shape && !standing) {
+        // Reserved seating: lay the section out as rows x seats and mark some seats as already sold.
+        const rows = rowFrom
+          ? Array.from({ length: rowTo - rowFrom + 1 }, (_, r) => String(rowFrom + r))
+          : Array.from({ length: Math.ceil(capacity / Math.max(8, Math.min(30, Math.round(Math.sqrt(capacity * 1.6))))) }, (_, r) => String(r + 1));
+        const perRow = Math.max(8, Math.round(capacity / rows.length));
+        const taken = new Set();
+        rows.forEach((row, r) => {
+          const p = Math.min(0.95, soldShare * (1.15 - (0.5 * r) / rows.length)); // front rows sell first
+          for (let n = 1; n <= perRow; n++) if (rand() < p) taken.add(`${row}-${n}`);
+        });
+        capacity = rows.length * perRow;
+        section.seating = { rows, perRow, taken };
+        section.remaining = capacity - taken.size;
+      } else {
+        section.remaining = Math.max(0, Math.round(capacity * (1 - soldShare)));
+      }
+      section.capacity = capacity;
+      return section;
     };
     const plan = seatingPlan(v);
     const concert = {
@@ -238,7 +253,7 @@ async function findConcert(concertId) {
 function publicConcert(c) {
   return {
     ...c,
-    sections: c.sections.map((s) => ({ ...s, soldOut: s.remaining === 0 })),
+    sections: c.sections.map(({ seating, ...s }) => ({ ...s, seated: Boolean(seating), soldOut: s.remaining === 0 })),
     soldOut: c.sections.every((s) => s.remaining === 0),
   };
 }
@@ -252,6 +267,8 @@ function fees(subtotal) {
     // What a typical third-party ticketing site would add (service + facility + order fees)
   };
 }
+
+const seatLabel = (id) => { const [row, n] = id.split('-'); return `Row ${row} Seat ${n}`; };
 
 function signTicket(ticketId, orderId) {
   return crypto.createHmac('sha256', TICKET_SECRET).update(`${ticketId}:${orderId}`).digest('hex').slice(0, 24);
@@ -334,10 +351,11 @@ async function handle(req, res) {
   }
 
   if (p === '/api/checkout' && req.method === 'POST') {
-    const { concertId, sectionId, quantity, buyer } = await readJson(req);
+    const { concertId, sectionId, quantity, seats, buyer } = await readJson(req);
     const concert = await findConcert(concertId);
     const section = concert?.sections.find((s) => s.id === sectionId);
-    const qty = Number(quantity);
+    const seatIds = section?.seating ? [...new Set(Array.isArray(seats) ? seats.map(String) : [])] : null;
+    const qty = seatIds ? seatIds.length : Number(quantity);
     const email = String(buyer?.email || '').trim().toLowerCase();
     const name = String(buyer?.name || '').trim();
 
@@ -351,22 +369,41 @@ async function handle(req, res) {
     if (already + qty > MAX_PER_FAN) {
       return send(res, 409, { error: `Limit is ${MAX_PER_FAN} tickets per fan for this show. You already have ${already}.` });
     }
-    if (section.remaining < qty) return send(res, 409, { error: `Only ${section.remaining} left in ${section.name}` });
+    if (seatIds) {
+      const { rows, perRow, taken } = section.seating;
+      const valid = (id) => { const [row, n] = id.split('-'); return rows.includes(row) && Number(n) >= 1 && Number(n) <= perRow; };
+      if (!seatIds.every(valid)) return send(res, 400, { error: 'Invalid seat selection' });
+      const gone = seatIds.filter((id) => taken.has(id));
+      if (gone.length) return send(res, 409, { error: `Sorry, ${gone.map(seatLabel).join(', ')} ${gone.length > 1 ? 'were' : 'was'} just taken. Please pick again.`, taken: gone });
+      seatIds.forEach((id) => taken.add(id)); // single-threaded Node: check+claim is atomic
+    } else if (section.remaining < qty) {
+      return send(res, 409, { error: `Only ${section.remaining} left in ${section.name}` });
+    }
 
-    section.remaining -= qty; // single-threaded Node: check+decrement is atomic
+    section.remaining -= qty;
     const orderId = 'SPT-' + crypto.randomBytes(4).toString('hex').toUpperCase();
+    const sortedSeats = seatIds && seatIds.sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
     const tickets = Array.from({ length: qty }, (_, i) => {
       const ticketId = `${orderId}-${i + 1}`;
-      return { id: ticketId, section: section.name, code: signTicket(ticketId, orderId) };
+      const [row, seat] = sortedSeats ? sortedSeats[i].split('-') : [];
+      return { id: ticketId, section: section.name, row: row || null, seat: seat || null, code: signTicket(ticketId, orderId) };
     });
     const order = {
       id: orderId, status: 'confirmed', createdAt: new Date().toISOString(),
-      concertId, sectionId, email, name, unitPrice: section.price,
+      concertId, sectionId, seats: sortedSeats || null, email, name, unitPrice: section.price,
       concert: { artistName: concert.artistName, venue: concert.venue, city: concert.city, date: concert.date, tour: concert.tour },
       tickets, ...fees(section.price * qty),
     };
     orders.set(orderId, order);
     return send(res, 201, order);
+  }
+
+  if (p === '/api/seats') {
+    const concert = await findConcert(url.searchParams.get('concertId'));
+    const section = concert?.sections.find((s) => s.id === url.searchParams.get('sectionId'));
+    if (!section?.seating) return send(res, 404, { error: 'Not found' });
+    const { rows, perRow, taken } = section.seating;
+    return send(res, 200, { rows, perRow, taken: [...taken] });
   }
 
   if (p === '/api/quote') {
@@ -390,7 +427,10 @@ async function handle(req, res) {
     if (order.status !== 'confirmed') return send(res, 409, { error: 'Order already refunded' });
     order.status = 'refunded';
     const section = (await findConcert(order.concertId))?.sections.find((s) => s.id === order.sectionId);
-    if (section) section.remaining += order.tickets.length;
+    if (section) {
+      section.remaining += order.tickets.length;
+      order.seats?.forEach((id) => section.seating?.taken.delete(id));
+    }
     return send(res, 200, order);
   }
 
