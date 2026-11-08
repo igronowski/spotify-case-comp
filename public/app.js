@@ -273,7 +273,7 @@ function openCheckout(artist, concert) {
           <div><b>${esc(section.name)}</b><small>${avail(section)}</small></div>
           <span class="price">${money(section.price)}<small>per ticket</small></span>
         </div>
-        ${seated ? seatChart(state.seatData[section.id], state.seats, section, concert.map.stage) : `
+        ${seated ? seatChart(state.seatData[section.id], state.seats, section) : `
           <div class="qty-row">
             <span>Tickets</span>
             <div class="stepper">
@@ -355,7 +355,7 @@ function openCheckout(artist, concert) {
 }
 
 // Seat chart for one section, drawn in the section's real shape and orientation
-// (as it sits on the venue map), with an arrow pointing toward the stage.
+// (as it sits on the venue map).
 const ept = (cx, cy, rx, ry, deg) => [cx + rx * Math.sin(deg * Math.PI / 180), cy - ry * Math.cos(deg * Math.PI / 180)];
 function seatLayout(geo, rowCount, perRow) {
   const pos = []; // pos[r][n] = [x, y]
@@ -388,24 +388,16 @@ function seatLayout(geo, rowCount, perRow) {
   if (!Number.isFinite(along)) along = across = 4;
   return { pos, labels, along, across };
 }
-function seatChart({ rows, perRow, taken }, selected, section, stage) {
+function seatChart({ rows, perRow, taken }, selected, section) {
   const takenSet = new Set(taken);
   const { pos, labels, along, across } = seatLayout(section.shape.geo, rows.length, perRow);
   const rad = Math.min(along * 0.42, across * 0.38);
-  const pitch = Math.min(across, along * 2.5), fs = pitch * 0.75; // sizes labels and the stage arrow
+  const pitch = Math.min(across, along * 2.5), fs = pitch * 0.75; // sizes row labels
   const pts = [...pos.flat(), ...labels.flat()];
   let x0 = Math.min(...pts.map((p) => p[0])), x1 = Math.max(...pts.map((p) => p[0]));
   let y0 = Math.min(...pts.map((p) => p[1])), y1 = Math.max(...pts.map((p) => p[1]));
-  // Stage arrow just outside the seats, on the side facing the stage.
-  const mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
-  const ux0 = stage.lx - mx, uy0 = stage.ly - my, len = Math.hypot(ux0, uy0) || 1, ux = ux0 / len, uy = uy0 / len;
-  const hw = (x1 - x0) / 2 + pitch * 2.2, hh = (y1 - y0) / 2 + pitch * 2.2;
-  const t = Math.min(ux ? hw / Math.abs(ux) : Infinity, uy ? hh / Math.abs(uy) : Infinity);
-  const ax = mx + ux * t, ay = my + uy * t, ang = Math.atan2(uy, ux) * 180 / Math.PI;
-  const tx = ax + ux * pitch * 3.4, ty = ay + uy * pitch * 3.4;
-  const m = pitch * 1.5, tw = fs * 8.5;
-  x0 = Math.min(x0, ax, tx - tw / 2) - m; x1 = Math.max(x1, ax, tx + tw / 2) + m;
-  y0 = Math.min(y0, ay, ty - fs * 1.4) - m; y1 = Math.max(y1, ay, ty + fs * 1.4) + m;
+  const m = pitch * 1.5;
+  x0 -= m; x1 += m; y0 -= m; y1 += m;
   const r1 = (n) => Math.round(n * 100) / 100;
   // Fixed on-screen seat size (~12px) no matter how narrow the section is; the panel scrolls if needed.
   const scale = 12 / (rad * 2);
@@ -424,8 +416,6 @@ function seatChart({ rows, perRow, taken }, selected, section, stage) {
     <div class="seat-panel">
       <div class="seat-scroll"><svg class="seats" viewBox="${r1(x0)} ${r1(y0)} ${r1(x1 - x0)} ${r1(y1 - y0)}" aria-label="Seat chart for ${esc(section.name)}" style="font-size:${r1(fs)}px;width:${Math.round((x1 - x0) * scale)}px">
         <path class="sec-outline" d="${section.shape.d}" style="stroke-width:${r1(pitch * 0.12)}"/>
-        <g class="stage-arrow" transform="translate(${r1(ax)} ${r1(ay)}) rotate(${r1(ang)})"><line x1="${r1(-pitch * 2)}" y1="0" x2="${r1(pitch * 0.4)}" y2="0" style="stroke-width:${r1(pitch * 0.35)}"/><path d="M${r1(pitch * 1.6)} 0L${r1(pitch * 0.2)} ${r1(-pitch * 0.9)}L${r1(pitch * 0.2)} ${r1(pitch * 0.9)}Z"/></g>
-        <text class="stage-bar-label" x="${r1(tx)}" y="${r1(ty)}">STAGE</text>
         ${seats}
       </svg></div>
       <div class="legend">
