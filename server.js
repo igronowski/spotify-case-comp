@@ -90,14 +90,90 @@ function catalogArtist(id) {
 }
 
 // ---------- concerts (simulated: Spotify has no public tour or ticketing API) ----------
+// Seating layouts are illustrative (modeled on a typical end-stage concert setup),
+// not official venue charts. Section names follow each venue's numbering style.
 const VENUES = [
-  ['Madison Square Garden', 'New York, NY', 19500], ['Kia Forum', 'Los Angeles, CA', 17500],
-  ['United Center', 'Chicago, IL', 20000], ['Red Rocks Amphitheatre', 'Morrison, CO', 9500],
-  ['Chase Center', 'San Francisco, CA', 18000], ['Moody Center', 'Austin, TX', 15000],
-  ['TD Garden', 'Boston, MA', 19000], ['Climate Pledge Arena', 'Seattle, WA', 17100],
-  ['State Farm Arena', 'Atlanta, GA', 16500], ['Scotiabank Arena', 'Toronto, ON', 19800],
-  ['The O2', 'London, UK', 20000], ['Accor Arena', 'Paris, FR', 20300],
+  { name: 'Madison Square Garden', city: 'New York, NY', cap: 19500, layout: 'arena', lower: ['Section', 101, 22], upper: ['Section', 201, 26] },
+  { name: 'Kia Forum', city: 'Los Angeles, CA', cap: 17500, layout: 'arena', lower: ['Section', 101, 20], upper: ['Section', 201, 24] },
+  { name: 'United Center', city: 'Chicago, IL', cap: 20000, layout: 'arena', lower: ['Section', 101, 22], upper: ['Section', 301, 28] },
+  { name: 'Red Rocks Amphitheatre', city: 'Morrison, CO', cap: 9500, layout: 'amphitheater' },
+  { name: 'Chase Center', city: 'San Francisco, CA', cap: 18000, layout: 'arena', lower: ['Section', 101, 20], upper: ['Section', 201, 24] },
+  { name: 'Moody Center', city: 'Austin, TX', cap: 15000, layout: 'arena', lower: ['Section', 101, 18], upper: ['Section', 201, 22] },
+  { name: 'TD Garden', city: 'Boston, MA', cap: 19000, layout: 'arena', lower: ['Loge', 1, 22], upper: ['Balcony', 301, 26] },
+  { name: 'Climate Pledge Arena', city: 'Seattle, WA', cap: 17100, layout: 'arena', lower: ['Section', 101, 20], upper: ['Section', 201, 24] },
+  { name: 'State Farm Arena', city: 'Atlanta, GA', cap: 16500, layout: 'arena', lower: ['Section', 101, 20], upper: ['Section', 201, 22] },
+  { name: 'Scotiabank Arena', city: 'Toronto, ON', cap: 19800, layout: 'arena', lower: ['Section', 101, 22], upper: ['Section', 301, 28] },
+  { name: 'The O2', city: 'London, UK', cap: 20000, layout: 'arena', lower: ['Block', 101, 18], upper: ['Block', 401, 22] },
+  { name: 'Accor Arena', city: 'Paris, FR', cap: 20300, layout: 'arena', lower: ['Bloc', 101, 20], upper: ['Bloc', 201, 22] },
 ];
+
+// ---------- seating map geometry (SVG paths, stage at the top) ----------
+const MAP_W = 560, MAP_H = 480;
+const f1 = (n) => Math.round(n * 10) / 10;
+// Point on an ellipse; angle in degrees, 0 = top (stage), increasing clockwise.
+const pt = (cx, cy, rx, ry, deg) => [cx + rx * Math.sin(deg * Math.PI / 180), cy - ry * Math.cos(deg * Math.PI / 180)];
+function ringSector(cx, cy, inner, outer, a0, a1) {
+  const [x0, y0] = pt(cx, cy, outer[0], outer[1], a0), [x1, y1] = pt(cx, cy, outer[0], outer[1], a1);
+  const [x2, y2] = pt(cx, cy, inner[0], inner[1], a1), [x3, y3] = pt(cx, cy, inner[0], inner[1], a0);
+  const d = `M${f1(x0)} ${f1(y0)}A${outer[0]} ${outer[1]} 0 0 1 ${f1(x1)} ${f1(y1)}L${f1(x2)} ${f1(y2)}A${inner[0]} ${inner[1]} 0 0 0 ${f1(x3)} ${f1(y3)}Z`;
+  const mid = (a0 + a1) / 2;
+  const [lx, ly] = pt(cx, cy, (inner[0] + outer[0]) / 2, (inner[1] + outer[1]) / 2, mid);
+  return { d, lx: f1(lx), ly: f1(ly) };
+}
+const rectPath = (x, y, w, h) => ({ d: `M${x} ${y}h${w}v${h}h${-w}Z`, lx: x + w / 2, ly: y + h / 2 });
+const label = (start, i) => String(start + i);
+
+// Returns [{ id, name, short, tier, base, share, shape }] plus the stage shape.
+function seatingPlan(venue) {
+  const cx = MAP_W / 2;
+  if (venue.layout === 'amphitheater') {
+    const cy = 50, bands = 6, rows = 70;
+    const sections = [];
+    const fan = [['R', 'Right', 132, 160], ['C', 'Center', 162, 198], ['L', 'Left', 200, 228]];
+    for (let b = 0; b < bands; b++) {
+      const r0 = 58 + b * 52, r1 = r0 + 48;
+      const rowFrom = Math.round((b * rows) / bands) + 1, rowTo = Math.round(((b + 1) * rows) / bands);
+      for (const [k, side, a0, a1] of fan) {
+        sections.push({
+          id: `rows${rowFrom}${k}`, name: `Rows ${rowFrom}-${rowTo} ${side}`, short: `${rowFrom}-${rowTo}`,
+          base: 120 * (1.3 - b * 0.13) * (k === 'C' ? 1.1 : 1),
+          share: (0.98 / bands / 3) * (1 + b * 0.08) / 1.2,
+          shape: ringSector(cx, cy, [r0, r0], [r1, r1], a0, a1),
+        });
+      }
+    }
+    return { sections, stage: { d: `M${cx - 60} 10h120v34h-120Z`, lx: cx, ly: 27 }, viewBox: `0 0 ${MAP_W} 430` };
+  }
+
+  const cy = 245;
+  const [lLabel, lStart, lCount] = venue.lower;
+  const [uLabel, uStart, uCount] = venue.upper;
+  const sections = [
+    { id: 'pit', name: 'Floor Pit (standing)', short: 'PIT', base: 140, share: 0.08, shape: rectPath(cx - 62, cy - 84, 124, 32) },
+    { id: 'floorA', name: 'Floor A', short: 'A', base: 115, share: 0.057, shape: rectPath(cx - 62, cy - 46, 39, 86) },
+    { id: 'floorB', name: 'Floor B', short: 'B', base: 125, share: 0.057, shape: rectPath(cx - 19.5, cy - 46, 39, 86) },
+    { id: 'floorC', name: 'Floor C', short: 'C', base: 115, share: 0.057, shape: rectPath(cx + 23, cy - 46, 39, 86) },
+  ];
+  const ring = (lbl, start, count, inner, outer, gap, base, totalShare, prefix) => {
+    const from = gap, to = 360 - gap, step = (to - from) / count;
+    for (let i = 0; i < count; i++) {
+      const a0 = from + i * step + 0.6, a1 = from + (i + 1) * step - 0.6;
+      const mid = (a0 + a1) / 2;
+      const nearStage = 1 - Math.abs(mid - 180) / 180;      // 0 = far end, ~1 = beside the stage
+      const sideView = Math.abs(Math.sin(mid * Math.PI / 180)); // 1 = side-on, 0 = straight on
+      const n = label(start, i);
+      sections.push({
+        id: `${prefix}${n}`, name: `${lbl} ${n}`, short: n,
+        base: base * (0.8 + 0.45 * nearStage * (0.6 + 0.4 * sideView)),
+        share: totalShare / count,
+        shape: ringSector(cx, cy, inner, outer, a0, a1),
+      });
+    }
+  };
+  ring(lLabel, lStart, lCount, [152, 122], [200, 165], 38, 95, 0.35, 'L');
+  ring(uLabel, uStart, uCount, [206, 171], [266, 226], 32, 52, 0.38, 'U');
+  return { sections, stage: { d: `M${cx - 48} ${cy - 124}h96v32h-96Z`, lx: cx, ly: cy - 108 }, viewBox: `0 0 ${MAP_W} ${MAP_H}` };
+}
 
 const concertsByArtist = new Map(); // artistId -> concert[]
 const concertsById = new Map();     // concertId -> concert (holds live inventory)
@@ -111,32 +187,33 @@ function getConcerts(artist) {
   const venues = shuffle(VENUES, rand).slice(0, count);
   let day = 14 + Math.floor(rand() * 20);
 
-  const list = venues.map(([venue, city, cap], i) => {
+  const list = venues.map((v, i) => {
     day += 2 + Math.floor(rand() * 9);
     const date = new Date();
     date.setHours(20, 0, 0, 0);
     date.setDate(date.getDate() + day);
     const id = `${artist.id}-c${i}`;
-    const mk = (sid, name, base, share) => {
-      const capacity = Math.round(cap * share);
-      const soldShare = Math.min(0.97, rand() * 0.9 * (artist.popularity / 80));
+    const heat = Math.min(0.97, 0.25 + rand() * 0.5) * (artist.popularity / 85); // how quickly this show is selling
+    const mk = ({ id: sid, name, short, base, share, shape }) => {
+      const capacity = Math.max(20, Math.round(v.cap * share));
+      const soldShare = Math.min(1, Math.max(0, heat * (0.6 + rand() * 0.8)));
       return {
-        id: sid, name,
-        price: Math.round(base * demand),
+        id: sid, name, short, shape,
+        price: Math.max(25, Math.round((base * demand) / 5) * 5),
         capacity,
         remaining: Math.max(0, Math.round(capacity * (1 - soldShare))),
       };
     };
+    const plan = seatingPlan(v);
     const concert = {
       id, artistId: artist.id, artistName: artist.name,
-      venue, city, date: date.toISOString(),
+      venue: v.name, city: v.city, date: date.toISOString(),
       tour: `${artist.name}: Live ${new Date().getFullYear() + 1}`,
       topFanPresale: i < 2, // hypothetical: early access for top listeners
+      map: { viewBox: plan.viewBox, stage: plan.stage, layout: v.layout },
       sections: [
-        mk('ga', 'General Admission Floor', 75, 0.25),
-        mk('lower', 'Lower Bowl Reserved', 95, 0.35),
-        mk('upper', 'Upper Bowl Reserved', 49, 0.38),
-        mk('vip', 'VIP Soundcheck Package', 295, 0.02),
+        ...plan.sections.map(mk),
+        mk({ id: 'vip', name: 'VIP Soundcheck Package', short: 'VIP', base: 295, share: 0.01, shape: null }),
       ],
     };
     concertsById.set(id, concert);
@@ -144,6 +221,18 @@ function getConcerts(artist) {
   });
   concertsByArtist.set(artist.id, list);
   return list;
+}
+
+// Concerts are generated on demand; rebuild an artist's tour if the server restarted
+// (for example after a free host wakes from sleep) and a page still has the old concert ID.
+async function findConcert(concertId) {
+  if (concertsById.has(concertId)) return concertsById.get(concertId);
+  const artistId = String(concertId || '').replace(/-c\d+$/, '');
+  try {
+    const artist = artistId && (await loadArtist(artistId));
+    if (artist) getConcerts(artist);
+  } catch {}
+  return concertsById.get(concertId) || null;
 }
 
 function publicConcert(c) {
@@ -246,7 +335,7 @@ async function handle(req, res) {
 
   if (p === '/api/checkout' && req.method === 'POST') {
     const { concertId, sectionId, quantity, buyer } = await readJson(req);
-    const concert = concertsById.get(concertId);
+    const concert = await findConcert(concertId);
     const section = concert?.sections.find((s) => s.id === sectionId);
     const qty = Number(quantity);
     const email = String(buyer?.email || '').trim().toLowerCase();
@@ -281,7 +370,7 @@ async function handle(req, res) {
   }
 
   if (p === '/api/quote') {
-    const concert = concertsById.get(url.searchParams.get('concertId'));
+    const concert = await findConcert(url.searchParams.get('concertId'));
     const section = concert?.sections.find((s) => s.id === url.searchParams.get('sectionId'));
     if (!section) return send(res, 404, { error: 'Not found' });
     const qty = Math.max(1, Math.min(MAX_PER_FAN, Number(url.searchParams.get('quantity')) || 1));
@@ -300,7 +389,7 @@ async function handle(req, res) {
     if (!order || order.email !== String(email || '').trim().toLowerCase()) return send(res, 404, { error: 'Order not found' });
     if (order.status !== 'confirmed') return send(res, 409, { error: 'Order already refunded' });
     order.status = 'refunded';
-    const section = concertsById.get(order.concertId)?.sections.find((s) => s.id === order.sectionId);
+    const section = (await findConcert(order.concertId))?.sections.find((s) => s.id === order.sectionId);
     if (section) section.remaining += order.tickets.length;
     return send(res, 200, order);
   }

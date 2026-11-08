@@ -42,6 +42,7 @@ Auth uses the Client Credentials flow on the server, so the secret never reaches
 Spotify has no public tour or ticketing API, so these parts are simulated on the server:
 
 - **Tour dates.** Generated the same way every time for each artist. Prices scale with artist popularity.
+- **Seating maps.** Each venue has an interactive map: arenas use an end-stage layout with a floor pit, floor sections and numbered lower and upper bowls (following each venue's numbering style), and Red Rocks uses tiered row sections. Each section has its own price based on distance to the stage, viewing angle and artist popularity. These layouts are illustrative, not official venue charts.
 - **Inventory.** Kept in memory per section, and the check and the decrement happen as one step, so a section can't oversell.
 - **Checkout.** Payment is simulated ("Spotify Wallet"). The only fee is card processing (2.9% + $0.30).
 - **Purchase limits.** Each fan can buy at most 4 tickets per show. Tickets are tied to the buyer's name and carry an HMAC-signed code, which stands in for a rotating QR code.

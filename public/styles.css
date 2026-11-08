@@ -105,7 +105,7 @@ h1, h2, h3 { margin: 0; }
 .sheet[hidden] { display: none; }
 .sheet { position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; }
 .sheet-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.7); }
-.sheet-panel { position: relative; width: min(560px, 94vw); max-height: 92vh; overflow: auto; background: var(--panel); border-radius: 12px; padding: 28px; box-shadow: 0 20px 60px rgba(0,0,0,.6); }
+.sheet-panel { position: relative; width: min(620px, 94vw); max-height: 92vh; overflow: auto; background: var(--panel); border-radius: 12px; padding: 28px; box-shadow: 0 20px 60px rgba(0,0,0,.6); }
 .icon-btn { background: none; border: 0; color: var(--muted); font-size: 18px; }
 .close { position: absolute; top: 16px; right: 16px; }
 .sheet h2 { font-size: 22px; padding-right: 24px; }
@@ -118,6 +118,28 @@ h1, h2, h3 { margin: 0; }
 .section-opt:disabled { opacity: .45; cursor: not-allowed; }
 .section-opt small { display: block; color: var(--muted); margin-top: 2px; }
 .section-opt .price { font-weight: 800; font-size: 17px; }
+
+/* seating map */
+.seatmap { background: var(--bg); border-radius: 10px; padding: 12px; }
+.seatmap svg { display: block; width: 100%; height: auto; }
+.seatmap .stage { fill: #e8e8e8; }
+.seatmap .stage-label { fill: #000; font-size: 13px; font-weight: 800; letter-spacing: .15em; text-anchor: middle; dominant-baseline: central; }
+.seatmap .sec { cursor: pointer; outline: none; }
+.seatmap .sec path { stroke: var(--bg); stroke-width: 1.5; transition: opacity .15s; }
+.seatmap .sec text { fill: #0b0b0b; font-size: 10px; font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.seatmap .sec:hover path, .seatmap .sec:focus-visible path { opacity: .8; }
+.seatmap .sec.sel path { stroke: #fff; stroke-width: 3; }
+.seatmap .sec.out { cursor: not-allowed; }
+.seatmap .sec.out path { fill: #3a3a3a; }
+.seatmap .sec.out text { fill: #777; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: 12px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.legend i.out { background: #3a3a3a; }
+.map-note { margin: 8px 0 0; font-size: 11px; color: var(--muted); }
+.picked { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: var(--raise); border: 2px solid var(--green); border-radius: 8px; padding: 12px 14px; margin: 10px 0 8px; }
+.picked small { display: block; color: var(--muted); margin-top: 2px; }
+.picked .price { font-weight: 800; font-size: 17px; }
 .stepper { display: inline-flex; align-items: center; gap: 14px; background: var(--raise); border-radius: 99px; padding: 4px; }
 .stepper button { width: 34px; height: 34px; border-radius: 50%; border: 0; background: #3a3a3a; color: var(--text); font-size: 18px; }
 .stepper button:disabled { opacity: .3; cursor: not-allowed; }

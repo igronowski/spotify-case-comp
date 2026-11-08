@@ -7,6 +7,7 @@ let status = { live: false, maxPerFan: 4 };
 // ---------- utils ----------
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const money = (n) => '$' + Number(n).toFixed(2);
+const dollars = (n) => '$' + Math.round(n).toLocaleString('en-US');
 const fmtNum = (n) => (n == null ? '' : n.toLocaleString('en-US'));
 const fmtDur = (ms) => `${Math.floor(ms / 60000)}:${String(Math.floor((ms % 60000) / 1000)).padStart(2, '0')}`;
 const fmtDate = (iso, opts) => new Date(iso).toLocaleDateString('en-US', opts);
@@ -205,8 +206,46 @@ function renderConcerts($body, artist, concerts) {
 
 // ---------- checkout ----------
 function openSheet(html) {
+  const panel = $sheet.querySelector('.sheet-panel');
+  const keep = $sheet.hidden ? 0 : panel.scrollTop;
   $sheetBody.innerHTML = html;
   $sheet.hidden = false;
+  panel.scrollTop = keep;
+}
+
+// Interactive seating map: sections colored by price tier, sold-out sections grayed out.
+const TIER_COLORS = ['#2b5b84', '#2e8fa3', '#3fb59a', '#9fd36f', '#f2d45c'];
+function priceTiers(sections) {
+  const prices = [...new Set(sections.map((s) => s.price))].sort((a, b) => a - b);
+  const n = Math.min(TIER_COLORS.length, prices.length);
+  const bounds = Array.from({ length: n }, (_, i) => prices[Math.floor((i * prices.length) / n)]);
+  const tierOf = (p) => bounds.reduce((t, b, i) => (p >= b ? i : t), 0);
+  const ranges = bounds.map((b, i) => [b, i + 1 < n ? prices[prices.indexOf(bounds[i + 1]) - 1] : prices.at(-1)]);
+  return { tierOf, ranges, colors: TIER_COLORS.slice(TIER_COLORS.length - n) };
+}
+function seatMap(concert, selectedId) {
+  const mapped = concert.sections.filter((s) => s.shape);
+  const { tierOf, ranges, colors } = priceTiers(mapped);
+  return `
+    <div class="seatmap">
+      <svg viewBox="${concert.map.viewBox}" role="group" aria-label="Seating map for ${esc(concert.venue)}">
+        <path class="stage" d="${concert.map.stage.d}"/>
+        <text class="stage-label" x="${concert.map.stage.lx}" y="${concert.map.stage.ly}">STAGE</text>
+        ${mapped.map((s) => `
+          <g class="sec ${s.soldOut ? 'out' : ''} ${s.id === selectedId ? 'sel' : ''}" data-section="${esc(s.id)}"
+             role="button" tabindex="${s.soldOut ? -1 : 0}" aria-disabled="${s.soldOut}"
+             aria-label="${esc(s.name)}, ${s.soldOut ? 'sold out' : money(s.price)}">
+            <title>${esc(s.name)} · ${s.soldOut ? 'Sold out' : `${money(s.price)} · ${fmtNum(s.remaining)} left`}</title>
+            <path d="${s.shape.d}" style="${s.soldOut ? '' : `fill:${colors[tierOf(s.price)]}`}"/>
+            <text x="${s.shape.lx}" y="${s.shape.ly}">${esc(s.short)}</text>
+          </g>`).join('')}
+      </svg>
+      <div class="legend">
+        ${ranges.map(([lo, hi], i) => `<span><i style="background:${colors[i]}"></i>${lo === hi ? dollars(lo) : `${dollars(lo)}-${dollars(hi)}`}</span>`).join('')}
+        <span><i class="out"></i>Sold out</span>
+      </div>
+      <p class="map-note">Illustrative layout. Not an official venue chart.</p>
+    </div>`;
 }
 function closeSheet() { $sheet.hidden = true; }
 $sheet.addEventListener('click', (e) => { if (e.target.closest('[data-close]')) closeSheet(); });
@@ -229,13 +268,16 @@ function openCheckout(artist, concert) {
       ${state.error ? `<div class="error">${esc(state.error)}</div>` : ''}
 
       <div class="label">Choose a section</div>
-      <div class="sections">
-        ${concert.sections.map((s) => `
-          <button class="section-opt ${s.id === state.sectionId ? 'selected' : ''}" data-section="${s.id}" ${s.soldOut ? 'disabled' : ''}>
-            <span>${esc(s.name)}<small>${s.soldOut ? 'Sold out' : s.remaining < 50 ? `Only ${s.remaining} left` : `${fmtNum(s.remaining)} available`}</small></span>
-            <span class="price">${money(s.price)}</span>
-          </button>`).join('')}
+      ${seatMap(concert, state.sectionId)}
+      <div class="picked">
+        <div><b>${esc(section.name)}</b><small>${section.remaining < 50 ? `Only ${section.remaining} left` : `${fmtNum(section.remaining)} available`}</small></div>
+        <span class="price">${money(section.price)}</span>
       </div>
+      ${concert.sections.filter((s) => !s.shape).map((s) => `
+        <button class="section-opt ${s.id === state.sectionId ? 'selected' : ''}" data-section="${s.id}" ${s.soldOut ? 'disabled' : ''}>
+          <span>${esc(s.name)}<small>${s.soldOut ? 'Sold out' : s.remaining < 50 ? `Only ${s.remaining} left` : `${fmtNum(s.remaining)} available`}</small></span>
+          <span class="price">${money(s.price)}</span>
+        </button>`).join('')}
 
       <div class="label">Tickets</div>
       <div class="stepper">
@@ -266,7 +308,11 @@ function openCheckout(artist, concert) {
       buyer.name = document.getElementById('buyer-name').value;
       buyer.email = document.getElementById('buyer-email').value;
     };
-    $sheetBody.querySelectorAll('[data-section]').forEach((b) => b.onclick = () => { syncBuyer(); state.sectionId = b.dataset.section; state.error = ''; draw(); });
+    const pick = (b) => { if (b.getAttribute('aria-disabled') === 'true') return; syncBuyer(); state.sectionId = b.dataset.section; state.error = ''; draw(); };
+    $sheetBody.querySelectorAll('[data-section]').forEach((b) => {
+      b.onclick = () => pick(b);
+      b.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(b); } };
+    });
     $sheetBody.querySelectorAll('[data-qty]').forEach((b) => b.onclick = () => { syncBuyer(); state.qty += Number(b.dataset.qty); draw(); });
     document.getElementById('buy').onclick = async () => {
       syncBuyer();
