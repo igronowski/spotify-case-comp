@@ -1,0 +1,3768 @@
+{
+  "chartDate": "2026/11/06",
+  "fetchedAt": "2026-11-08T06:27:23.286Z",
+  "artists": [
+    {
+      "id": "1McMsnEElThX1knmY4oliG",
+      "name": "Olivia Rodrigo",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebb14eb4dcfd2f3858bed06e44",
+      "usRank": 1,
+      "monthlyListeners": 74586993,
+      "popularity": 97,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG",
+      "topTracks": [
+        {
+          "id": "55pBIZO1cqoldeqpp5WR7H",
+          "name": "the cure",
+          "artists": "Olivia Rodrigo",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025cf234eeb7a2edf44bf64a46",
+          "durationMs": 297090,
+          "plays": 594171433,
+          "url": "https://open.spotify.com/track/55pBIZO1cqoldeqpp5WR7H"
+        },
+        {
+          "id": "49j6SvuvWfbEKZKzsHCdLJ",
+          "name": "stupid song",
+          "artists": "Olivia Rodrigo",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026949b83f85d782b21ce70583",
+          "durationMs": 209680,
+          "plays": 475464838,
+          "url": "https://open.spotify.com/track/49j6SvuvWfbEKZKzsHCdLJ"
+        },
+        {
+          "id": "3fRCAPMMZ8l8P9YKI6OCzD",
+          "name": "drop dead",
+          "artists": "Olivia Rodrigo",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026949b83f85d782b21ce70583",
+          "durationMs": 224998,
+          "plays": 609424833,
+          "url": "https://open.spotify.com/track/3fRCAPMMZ8l8P9YKI6OCzD"
+        },
+        {
+          "id": "26m4l5G7Uw92v6vmmtlwhi",
+          "name": "expectations (feat. Chappell Roan)",
+          "artists": "Olivia Rodrigo, Chappell Roan",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02609b15ffbc826411e19226da",
+          "durationMs": 223935,
+          "plays": 210713854,
+          "url": "https://open.spotify.com/track/26m4l5G7Uw92v6vmmtlwhi"
+        },
+        {
+          "id": "4kX7xkopoXZCfE1D6fNwl2",
+          "name": "honeybee",
+          "artists": "Olivia Rodrigo",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026949b83f85d782b21ce70583",
+          "durationMs": 223013,
+          "plays": 293843998,
+          "url": "https://open.spotify.com/track/4kX7xkopoXZCfE1D6fNwl2"
+        }
+      ]
+    },
+    {
+      "id": "6BRxQ8cD3eqnrVj6WKDok8",
+      "name": "Ella Langley",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc4670378a4188c3174ef2ca9",
+      "usRank": 2,
+      "monthlyListeners": 31311168,
+      "popularity": 90,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/6BRxQ8cD3eqnrVj6WKDok8",
+      "topTracks": [
+        {
+          "id": "7scFxt9VhL4FJwuPSfRlfN",
+          "name": "Choosin' Texas",
+          "artists": "Ella Langley",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028606848da949bbaddf447d87",
+          "durationMs": 231746,
+          "plays": 824696090,
+          "url": "https://open.spotify.com/track/7scFxt9VhL4FJwuPSfRlfN"
+        },
+        {
+          "id": "13HD3tYTiz8oSRxWzXEq7g",
+          "name": "Be Her",
+          "artists": "Ella Langley",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028606848da949bbaddf447d87",
+          "durationMs": 217240,
+          "plays": 313846145,
+          "url": "https://open.spotify.com/track/13HD3tYTiz8oSRxWzXEq7g"
+        },
+        {
+          "id": "2A22iI0x4EYAVXNpKPhNEM",
+          "name": "weren't for the wind",
+          "artists": "Ella Langley",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02edf9ec71330d53881ee0c2d9",
+          "durationMs": 193666,
+          "plays": 526963338,
+          "url": "https://open.spotify.com/track/2A22iI0x4EYAVXNpKPhNEM"
+        },
+        {
+          "id": "61rwYQu9An4QWrcCUyFUyq",
+          "name": "I Can't Love You Anymore",
+          "artists": "Ella Langley, Morgan Wallen",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020c20b697b7cc3bfe3eb954bc",
+          "durationMs": 228836,
+          "plays": 162125690,
+          "url": "https://open.spotify.com/track/61rwYQu9An4QWrcCUyFUyq"
+        },
+        {
+          "id": "2PyJAiQjp1OPkow2FJZKHR",
+          "name": "you look like you love me (feat. Riley Green)",
+          "artists": "Ella Langley, Riley Green",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02cf0d0343d350f57d265484e0",
+          "durationMs": 224280,
+          "plays": 468122991,
+          "url": "https://open.spotify.com/track/2PyJAiQjp1OPkow2FJZKHR"
+        }
+      ]
+    },
+    {
+      "id": "3TVXtAsR1Inumwj472S9r4",
+      "name": "Drake",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
+      "usRank": 3,
+      "monthlyListeners": 93787792,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4",
+      "topTracks": [
+        {
+          "id": "1zi7xx7UVEFkmKfv06H8x0",
+          "name": "One Dance",
+          "artists": "Drake, Wizkid, Kyla",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029416ed64daf84936d89e671c",
+          "durationMs": 173986,
+          "plays": 4555148473,
+          "url": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0"
+        },
+        {
+          "id": "514joG57v4yKTsfQmz7stz",
+          "name": "Janice STFU",
+          "artists": "Drake",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02fe9d3ab9adb1d3b59835b81c",
+          "durationMs": 237344,
+          "plays": 401622671,
+          "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
+        },
+        {
+          "id": "5mCPDVBb16L4XQwDdbRUpz",
+          "name": "Passionfruit",
+          "artists": "Drake",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024f0fd9dad63977146e685700",
+          "durationMs": 298940,
+          "plays": 2437452351,
+          "url": "https://open.spotify.com/track/5mCPDVBb16L4XQwDdbRUpz"
+        },
+        {
+          "id": "6DCZcSspjsKoFjzjrWoCdn",
+          "name": "God's Plan",
+          "artists": "Drake",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f907de96b9a4fbc04accc0d5",
+          "durationMs": 198973,
+          "plays": 3225115198,
+          "url": "https://open.spotify.com/track/6DCZcSspjsKoFjzjrWoCdn"
+        },
+        {
+          "id": "6LxSe8YmdPxy095Ux6znaQ",
+          "name": "Headlines",
+          "artists": "Drake",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c7ea04a9b455e3f68ef82550",
+          "durationMs": 235986,
+          "plays": 1311360362,
+          "url": "https://open.spotify.com/track/6LxSe8YmdPxy095Ux6znaQ"
+        }
+      ]
+    },
+    {
+      "id": "4oUHIQIBe0LHzYfvXNW4QM",
+      "name": "Morgan Wallen",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb98a9ee5f9cac5e3efa057f30",
+      "usRank": 4,
+      "monthlyListeners": 31592619,
+      "popularity": 90,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM",
+      "topTracks": [
+        {
+          "id": "3xwMjQriBVW0OGEvNKo9c0",
+          "name": "Been By Now",
+          "artists": "Morgan Wallen",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02349f6c0133abbfca063891c1",
+          "durationMs": 213805,
+          "plays": 98422048,
+          "url": "https://open.spotify.com/track/3xwMjQriBVW0OGEvNKo9c0"
+        },
+        {
+          "id": "5IZXB5IKAD2qlvTPJYDCFB",
+          "name": "I Had Some Help (Feat. Morgan Wallen)",
+          "artists": "Post Malone, Morgan Wallen",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0288208159b1b3c69eefdeb2e0",
+          "durationMs": 178205,
+          "plays": 1632730312,
+          "url": "https://open.spotify.com/track/5IZXB5IKAD2qlvTPJYDCFB"
+        },
+        {
+          "id": "61rwYQu9An4QWrcCUyFUyq",
+          "name": "I Can't Love You Anymore",
+          "artists": "Ella Langley, Morgan Wallen",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020c20b697b7cc3bfe3eb954bc",
+          "durationMs": 228836,
+          "plays": 162125690,
+          "url": "https://open.spotify.com/track/61rwYQu9An4QWrcCUyFUyq"
+        },
+        {
+          "id": "5qGziX9216V8hKJjGg8RtH",
+          "name": "Last Thing You Need (from GTAVI: The Album)",
+          "artists": "Morgan Wallen, Grand Theft Auto VI",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02322b8ded39dc108536090089",
+          "durationMs": 196000,
+          "plays": 38237557,
+          "url": "https://open.spotify.com/track/5qGziX9216V8hKJjGg8RtH"
+        },
+        {
+          "id": "4gfrYDtaRmp6HPvN80V2ob",
+          "name": "I Got Better",
+          "artists": "Morgan Wallen",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0235ea219ce47813b5e2dc3745",
+          "durationMs": 204963,
+          "plays": 479907395,
+          "url": "https://open.spotify.com/track/4gfrYDtaRmp6HPvN80V2ob"
+        }
+      ]
+    },
+    {
+      "id": "2RQXRUsr4IW1f3mKyKsy4B",
+      "name": "Noah Kahan",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb5b141d30d14fb78458dac5ce",
+      "usRank": 5,
+      "monthlyListeners": 34205367,
+      "popularity": 91,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/2RQXRUsr4IW1f3mKyKsy4B",
+      "topTracks": [
+        {
+          "id": "77fL8ATR0dpUDLI0XLmDBV",
+          "name": "Orbiter",
+          "artists": "Noah Kahan",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c39789e2dbdad5af5736e07a",
+          "durationMs": 286967,
+          "plays": 235444322,
+          "url": "https://open.spotify.com/track/77fL8ATR0dpUDLI0XLmDBV"
+        },
+        {
+          "id": "6pk6E0SZxILzfaAGFngxEs",
+          "name": "Willing and Able",
+          "artists": "Noah Kahan",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d879855b819250d3d00a1a38",
+          "durationMs": 297262,
+          "plays": 194184783,
+          "url": "https://open.spotify.com/track/6pk6E0SZxILzfaAGFngxEs"
+        },
+        {
+          "id": "0mflMxspEfB0VbI1kyLiAv",
+          "name": "Stick Season",
+          "artists": "Noah Kahan",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026ee35072df1af802cca09918",
+          "durationMs": 182346,
+          "plays": 1965298301,
+          "url": "https://open.spotify.com/track/0mflMxspEfB0VbI1kyLiAv"
+        },
+        {
+          "id": "5KTcGJKm4HgLhLt8Tc7EQ5",
+          "name": "Draw You Out - From The Hunger Games: Sunrise on the Reaping - The Album",
+          "artists": "Noah Kahan, The Hunger Games",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ff163890a7e96a400bc40b8a",
+          "durationMs": 255984,
+          "plays": 34586330,
+          "url": "https://open.spotify.com/track/5KTcGJKm4HgLhLt8Tc7EQ5"
+        },
+        {
+          "id": "4O2rRsoSPb5aN7N3tG6Y3v",
+          "name": "Northern Attitude",
+          "artists": "Noah Kahan",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026ee35072df1af802cca09918",
+          "durationMs": 267256,
+          "plays": 763352333,
+          "url": "https://open.spotify.com/track/4O2rRsoSPb5aN7N3tG6Y3v"
+        }
+      ]
+    },
+    {
+      "id": "57vWImR43h4CaDao012Ofp",
+      "name": "Steve Lacy",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb7e3150cffbfda40c6eaf28dd",
+      "usRank": 6,
+      "monthlyListeners": 36760641,
+      "popularity": 91,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp",
+      "topTracks": [
+        {
+          "id": "22NHkFYbgxB2Zirj29Gbp8",
+          "name": "oh yeah?",
+          "artists": "Steve Lacy",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024ea9ba86cd9506a004bab042",
+          "durationMs": 170584,
+          "plays": 188436175,
+          "url": "https://open.spotify.com/track/22NHkFYbgxB2Zirj29Gbp8"
+        },
+        {
+          "id": "4k6Uh1HXdhtusDW5y8Gbvy",
+          "name": "Bad Habit",
+          "artists": "Steve Lacy",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026938311000a0e494a26986e5",
+          "durationMs": 232114,
+          "plays": 1888004197,
+          "url": "https://open.spotify.com/track/4k6Uh1HXdhtusDW5y8Gbvy"
+        },
+        {
+          "id": "3EaJDYHA0KnX88JvDhL9oa",
+          "name": "Dark Red",
+          "artists": "Steve Lacy",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e023d2dfa42f771cd458b194979",
+          "durationMs": 173104,
+          "plays": 2170011145,
+          "url": "https://open.spotify.com/track/3EaJDYHA0KnX88JvDhL9oa"
+        },
+        {
+          "id": "3lIHa4fUwNKOCSS5k3Za0i",
+          "name": "nothing",
+          "artists": "Steve Lacy",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024ea9ba86cd9506a004bab042",
+          "durationMs": 149663,
+          "plays": 71196834,
+          "url": "https://open.spotify.com/track/3lIHa4fUwNKOCSS5k3Za0i"
+        },
+        {
+          "id": "1OWBh1eVxUdA1Z6UA8r4nh",
+          "name": "the feeling",
+          "artists": "Steve Lacy",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024ea9ba86cd9506a004bab042",
+          "durationMs": 275936,
+          "plays": 105793249,
+          "url": "https://open.spotify.com/track/1OWBh1eVxUdA1Z6UA8r4nh"
+        }
+      ]
+    },
+    {
+      "id": "2qanRMyA5bNuTvz1dK45OP",
+      "name": "ADÉLA",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb2005cc18964c60e22c4759b5",
+      "usRank": 7,
+      "monthlyListeners": 45787493,
+      "popularity": 93,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/2qanRMyA5bNuTvz1dK45OP",
+      "topTracks": [
+        {
+          "id": "70cHKK8bHAfJrOGVnfRG9J",
+          "name": "Nicole Kidman",
+          "artists": "ADÉLA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ac9d5d5263e9f03802d6864c",
+          "durationMs": 181270,
+          "plays": 255618738,
+          "url": "https://open.spotify.com/track/70cHKK8bHAfJrOGVnfRG9J"
+        },
+        {
+          "id": "6U9VpmP3dEinuezxCJ2Zg9",
+          "name": "Ain't In LA",
+          "artists": "ADÉLA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ac9d5d5263e9f03802d6864c",
+          "durationMs": 184927,
+          "plays": 307244062,
+          "url": "https://open.spotify.com/track/6U9VpmP3dEinuezxCJ2Zg9"
+        },
+        {
+          "id": "3eXYltBvZSCOs6fM1La6ho",
+          "name": "KGB",
+          "artists": "ADÉLA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ac9d5d5263e9f03802d6864c",
+          "durationMs": 158483,
+          "plays": 61855942,
+          "url": "https://open.spotify.com/track/3eXYltBvZSCOs6fM1La6ho"
+        },
+        {
+          "id": "1UymCJrYWtsFFg70YUvh6K",
+          "name": "Superscar",
+          "artists": "ADÉLA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027defa29b13dc40d5a95bc9a0",
+          "durationMs": 194053,
+          "plays": 105053766,
+          "url": "https://open.spotify.com/track/1UymCJrYWtsFFg70YUvh6K"
+        },
+        {
+          "id": "0PE0oNY68UvONzSEWZtRK4",
+          "name": "Red Bottoms",
+          "artists": "ADÉLA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ac9d5d5263e9f03802d6864c",
+          "durationMs": 186941,
+          "plays": 43935882,
+          "url": "https://open.spotify.com/track/0PE0oNY68UvONzSEWZtRK4"
+        }
+      ]
+    },
+    {
+      "id": "00x1fYSGhdqScXBRpSj3DW",
+      "name": "Olivia Dean",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb5c7577ad44daeb7ce4b941a1",
+      "usRank": 8,
+      "monthlyListeners": 51645488,
+      "popularity": 94,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/00x1fYSGhdqScXBRpSj3DW",
+      "topTracks": [
+        {
+          "id": "1qbmS6ep2hbBRaEZFpn7BX",
+          "name": "Man I Need",
+          "artists": "Olivia Dean",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02e3d69e17dde129037a1f09e2",
+          "durationMs": 184000,
+          "plays": 1544188260,
+          "url": "https://open.spotify.com/track/1qbmS6ep2hbBRaEZFpn7BX"
+        },
+        {
+          "id": "6sGIMrtIzQjdzNndVxe397",
+          "name": "So Easy (To Fall In Love)",
+          "artists": "Olivia Dean",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029a336bfb6d40bbd90a507417",
+          "durationMs": 169000,
+          "plays": 1154491250,
+          "url": "https://open.spotify.com/track/6sGIMrtIzQjdzNndVxe397"
+        },
+        {
+          "id": "0MUXBhPUDF8or0kfQ0EHwV",
+          "name": "Rein Me In (with Olivia Dean)",
+          "artists": "Sam Fender, Olivia Dean",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0270722c52a53ef4a56f0c2eb0",
+          "durationMs": 339893,
+          "plays": 553239120,
+          "url": "https://open.spotify.com/track/0MUXBhPUDF8or0kfQ0EHwV"
+        },
+        {
+          "id": "312z6PZ8wwREck8613PkJk",
+          "name": "A Couple Minutes",
+          "artists": "Olivia Dean",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029a336bfb6d40bbd90a507417",
+          "durationMs": 212000,
+          "plays": 441786819,
+          "url": "https://open.spotify.com/track/312z6PZ8wwREck8613PkJk"
+        },
+        {
+          "id": "7gKxCvTDWwV9wBhdeBbr3l",
+          "name": "Nice To Each Other",
+          "artists": "Olivia Dean",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a9e75099d7065c71cc7ede72",
+          "durationMs": 209000,
+          "plays": 620864275,
+          "url": "https://open.spotify.com/track/7gKxCvTDWwV9wBhdeBbr3l"
+        }
+      ]
+    },
+    {
+      "id": "45dkTj5sMRSjrmBSBeiHym",
+      "name": "Tate McRae",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebeefdef74a162b2913094ad9c",
+      "usRank": 9,
+      "monthlyListeners": 54854496,
+      "popularity": 95,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/45dkTj5sMRSjrmBSBeiHym",
+      "topTracks": [
+        {
+          "id": "2sFepQNyl1WjpROruP8bJ0",
+          "name": "Housewife",
+          "artists": "Tate McRae",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f2d3185e46b03c243f60ce53",
+          "durationMs": 208810,
+          "plays": 143087732,
+          "url": "https://open.spotify.com/track/2sFepQNyl1WjpROruP8bJ0"
+        },
+        {
+          "id": "5UJbgR4XF4y1DvbkxEqe8S",
+          "name": "Sports car",
+          "artists": "Tate McRae",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026c691022744f42565f6b546e",
+          "durationMs": 165045,
+          "plays": 993444317,
+          "url": "https://open.spotify.com/track/5UJbgR4XF4y1DvbkxEqe8S"
+        },
+        {
+          "id": "2yWlGEgEfPot0lv3OAjuG3",
+          "name": "Just Keep Watching (From F1® The Movie)",
+          "artists": "Tate McRae, F1 The Album",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a23d1b3449fb415346735a08",
+          "durationMs": 142550,
+          "plays": 802358426,
+          "url": "https://open.spotify.com/track/2yWlGEgEfPot0lv3OAjuG3"
+        },
+        {
+          "id": "3rUGC1vUpkDG9CZFHMur1t",
+          "name": "greedy",
+          "artists": "Tate McRae",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025f677b5d3b81f08badd0775b",
+          "durationMs": 131872,
+          "plays": 2392843677,
+          "url": "https://open.spotify.com/track/3rUGC1vUpkDG9CZFHMur1t"
+        },
+        {
+          "id": "4l0RmWt52FxpVxMNni6i63",
+          "name": "you broke me first",
+          "artists": "Tate McRae",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027e2764c2192137c81a9e2cab",
+          "durationMs": 170234,
+          "plays": 2103228202,
+          "url": "https://open.spotify.com/track/4l0RmWt52FxpVxMNni6i63"
+        }
+      ]
+    },
+    {
+      "id": "5INjqkS1o8h1imAzPqGZBb",
+      "name": "Tame Impala",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
+      "usRank": 10,
+      "monthlyListeners": 64709148,
+      "popularity": 96,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb",
+      "topTracks": [
+        {
+          "id": "7bxaFZ1O3cHkgLKMsdC3xR",
+          "name": "Loser",
+          "artists": "Tame Impala",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02208500450dcd0fd294d7bd3b",
+          "durationMs": 223069,
+          "plays": 384641292,
+          "url": "https://open.spotify.com/track/7bxaFZ1O3cHkgLKMsdC3xR"
+        },
+        {
+          "id": "5yvVYFDUpbnjcnRBgjwTzM",
+          "name": "Dracula (with JENNIE)",
+          "artists": "Tame Impala, JENNIE",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c7c031ce9d06b131f8563676",
+          "durationMs": 209720,
+          "plays": 589769914,
+          "url": "https://open.spotify.com/track/5yvVYFDUpbnjcnRBgjwTzM"
+        },
+        {
+          "id": "1NXbNEAcPvY5G1xvfN57aA",
+          "name": "Dracula",
+          "artists": "Tame Impala",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02208500450dcd0fd294d7bd3b",
+          "durationMs": 205308,
+          "plays": 653092347,
+          "url": "https://open.spotify.com/track/1NXbNEAcPvY5G1xvfN57aA"
+        },
+        {
+          "id": "6K4t31amVTZDgR3sKmwUJJ",
+          "name": "The Less I Know The Better",
+          "artists": "Tame Impala",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029e1cfc756886ac782e363d79",
+          "durationMs": 216320,
+          "plays": 2672887244,
+          "url": "https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ"
+        },
+        {
+          "id": "4HCOHRCSQelz2GPX8iTamO",
+          "name": "Flower In A Hurricane (feat. Tame Impala, SZA, King Gizzard & the Lizard Wizard) [From GTAVI: Original Score]",
+          "artists": "Justice, Tame Impala, SZA, Grand Theft Auto VI, King Gizzard & The Lizard Wizard",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024c4af9f49f2c276dca687ced",
+          "durationMs": 224877,
+          "plays": 29979684,
+          "url": "https://open.spotify.com/track/4HCOHRCSQelz2GPX8iTamO"
+        }
+      ]
+    },
+    {
+      "id": "4G9NDjRyZFDlJKMRL8hx3S",
+      "name": "sombr",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb78edaa6468cae153565c2c97",
+      "usRank": 11,
+      "monthlyListeners": 55302299,
+      "popularity": 95,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/4G9NDjRyZFDlJKMRL8hx3S",
+      "topTracks": [
+        {
+          "id": "7qjZnBKE73H4Oxkopwulqe",
+          "name": "back to friends",
+          "artists": "sombr",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024229702de91cb3d3a4383302",
+          "durationMs": 199032,
+          "plays": 2363293538,
+          "url": "https://open.spotify.com/track/7qjZnBKE73H4Oxkopwulqe"
+        },
+        {
+          "id": "7tICCrK3CcyRFKza7yrR0z",
+          "name": "Homewrecker",
+          "artists": "sombr",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029a8d41dca4c7d0ef23d76dd7",
+          "durationMs": 209066,
+          "plays": 495012685,
+          "url": "https://open.spotify.com/track/7tICCrK3CcyRFKza7yrR0z"
+        },
+        {
+          "id": "05od2qm2MTSKCHxy1GBp5W",
+          "name": "12 to 12",
+          "artists": "sombr",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024229702de91cb3d3a4383302",
+          "durationMs": 242903,
+          "plays": 873159223,
+          "url": "https://open.spotify.com/track/05od2qm2MTSKCHxy1GBp5W"
+        },
+        {
+          "id": "79RJg6MqIJlBuedcMqB9F0",
+          "name": "My Body Isn't Ready",
+          "artists": "sombr",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0255615e9242bd96706c68a743",
+          "durationMs": 217380,
+          "plays": 160008836,
+          "url": "https://open.spotify.com/track/79RJg6MqIJlBuedcMqB9F0"
+        },
+        {
+          "id": "0TFTAtCYhp2tQ9KcJIZb55",
+          "name": "undressed",
+          "artists": "sombr",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024229702de91cb3d3a4383302",
+          "durationMs": 182088,
+          "plays": 1114036512,
+          "url": "https://open.spotify.com/track/0TFTAtCYhp2tQ9KcJIZb55"
+        }
+      ]
+    },
+    {
+      "id": "40ZNYROS4zLfyyBSs2PGe2",
+      "name": "Zach Bryan",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6492861f8e00ecfb8cabea3f",
+      "usRank": 12,
+      "monthlyListeners": 30543789,
+      "popularity": 90,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/40ZNYROS4zLfyyBSs2PGe2",
+      "topTracks": [
+        {
+          "id": "4EVSMqqVEehvyyOBmjNTlA",
+          "name": "Lies (feat. Lana Del Rey)",
+          "artists": "Zach Bryan, Lana Del Rey",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026c6962d2073c0378348cac37",
+          "durationMs": 220588,
+          "plays": 40060346,
+          "url": "https://open.spotify.com/track/4EVSMqqVEehvyyOBmjNTlA"
+        },
+        {
+          "id": "4KULAymBBJcPRpk1yO4dOG",
+          "name": "I Remember Everything (feat. Kacey Musgraves)",
+          "artists": "Zach Bryan, Kacey Musgraves",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e023bd1de7368f5f1efd1d787b3",
+          "durationMs": 227195,
+          "plays": 1556909819,
+          "url": "https://open.spotify.com/track/4KULAymBBJcPRpk1yO4dOG"
+        },
+        {
+          "id": "3WMj8moIAXJhHsyLaqIIHI",
+          "name": "Something in the Orange",
+          "artists": "Zach Bryan",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e772398dc2edb9fc416b9cd1",
+          "durationMs": 228013,
+          "plays": 1695847924,
+          "url": "https://open.spotify.com/track/3WMj8moIAXJhHsyLaqIIHI"
+        },
+        {
+          "id": "4ZJ4vzLQekI0WntDbanNC7",
+          "name": "Pink Skies",
+          "artists": "Zach Bryan",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0236fbdbea696df93933bafdb8",
+          "durationMs": 194920,
+          "plays": 868292905,
+          "url": "https://open.spotify.com/track/4ZJ4vzLQekI0WntDbanNC7"
+        },
+        {
+          "id": "1mzJsnHWXIthrJQKwe8Yci",
+          "name": "Lodi When",
+          "artists": "Zach Bryan",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ba70a696fe52aadc49d9d63b",
+          "durationMs": 236715,
+          "plays": 16939708,
+          "url": "https://open.spotify.com/track/1mzJsnHWXIthrJQKwe8Yci"
+        }
+      ]
+    },
+    {
+      "id": "3fMbdgg4jU18AjLCKBhRSm",
+      "name": "Michael Jackson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb997cc9a4aec335d46c9481fd",
+      "usRank": 13,
+      "monthlyListeners": 91753327,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm",
+      "topTracks": [
+        {
+          "id": "7J1uxwnxfQLu4APicE5Rnj",
+          "name": "Billie Jean",
+          "artists": "Michael Jackson",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0232a7d87248d1b75463483df5",
+          "durationMs": 293802,
+          "plays": 3361251361,
+          "url": "https://open.spotify.com/track/7J1uxwnxfQLu4APicE5Rnj"
+        },
+        {
+          "id": "3BovdzfaX4jb5KFQwoPfAw",
+          "name": "Beat It",
+          "artists": "Michael Jackson",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0232a7d87248d1b75463483df5",
+          "durationMs": 258296,
+          "plays": 2232330778,
+          "url": "https://open.spotify.com/track/3BovdzfaX4jb5KFQwoPfAw"
+        },
+        {
+          "id": "2LlQb7Uoj1kKyGhlkBf9aC",
+          "name": "Thriller",
+          "artists": "Michael Jackson",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0232a7d87248d1b75463483df5",
+          "durationMs": 358807,
+          "plays": 1122812357,
+          "url": "https://open.spotify.com/track/2LlQb7Uoj1kKyGhlkBf9aC"
+        },
+        {
+          "id": "5BKKy9fIJL5uM9fz1SnqyP",
+          "name": "Chicago",
+          "artists": "Michael Jackson",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0235f36cb686b0d5a12ab3a9f0",
+          "durationMs": 245565,
+          "plays": 975142633,
+          "url": "https://open.spotify.com/track/5BKKy9fIJL5uM9fz1SnqyP"
+        },
+        {
+          "id": "5T7ywazdGIydr6JCW6t02j",
+          "name": "Smooth Criminal - 2012 Remaster",
+          "artists": "Michael Jackson",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02eb2087dcd1eb61f833bdedff",
+          "durationMs": 257766,
+          "plays": 1361199331,
+          "url": "https://open.spotify.com/track/5T7ywazdGIydr6JCW6t02j"
+        }
+      ]
+    },
+    {
+      "id": "360IAlyVv4PCEVjgyMZrxK",
+      "name": "Miguel",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb35e36c368fdcd26aba296bd1",
+      "usRank": 14,
+      "monthlyListeners": 36710331,
+      "popularity": 91,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/360IAlyVv4PCEVjgyMZrxK",
+      "topTracks": [
+        {
+          "id": "0JXXNGljqupsJaZsgSbMZV",
+          "name": "Sure Thing",
+          "artists": "Miguel",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d5a8395b0d80b8c48a5d851c",
+          "durationMs": 195373,
+          "plays": 2335145040,
+          "url": "https://open.spotify.com/track/0JXXNGljqupsJaZsgSbMZV"
+        },
+        {
+          "id": "2ZCe5vjgNDAmoWe73C46nc",
+          "name": "damned",
+          "artists": "Miguel",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029ce9e97f45010627a3ea8390",
+          "durationMs": 206187,
+          "plays": 158607538,
+          "url": "https://open.spotify.com/track/2ZCe5vjgNDAmoWe73C46nc"
+        },
+        {
+          "id": "5VA4Ispp52EA1sOqzMz3Av",
+          "name": "All I Want Is You (feat. J. Cole)",
+          "artists": "Miguel, J. Cole",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d5a8395b0d80b8c48a5d851c",
+          "durationMs": 297506,
+          "plays": 444811385,
+          "url": "https://open.spotify.com/track/5VA4Ispp52EA1sOqzMz3Av"
+        },
+        {
+          "id": "1eUGmzzvahJjOSWgDHuRlv",
+          "name": "Girl With The Tattoo Enter.lewd",
+          "artists": "Miguel",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d5a8395b0d80b8c48a5d851c",
+          "durationMs": 102813,
+          "plays": 925836416,
+          "url": "https://open.spotify.com/track/1eUGmzzvahJjOSWgDHuRlv"
+        },
+        {
+          "id": "6Q8nmDj0JIu0uxhugcIpBw",
+          "name": "How Many Drinks?",
+          "artists": "Miguel",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02fc67af03f71d54b3519a6dd5",
+          "durationMs": 273066,
+          "plays": 286743790,
+          "url": "https://open.spotify.com/track/6Q8nmDj0JIu0uxhugcIpBw"
+        }
+      ]
+    },
+    {
+      "id": "5pKCCKE2ajJHZ9KAiaK11H",
+      "name": "Rihanna",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebcb565a8e684e3be458d329ac",
+      "usRank": 15,
+      "monthlyListeners": 117315212,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H",
+      "topTracks": [
+        {
+          "id": "1Jo0Zg7XlrA6z0mFTZVdkn",
+          "name": "Don't Stop The Music",
+          "artists": "Rihanna",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b9ff0a5f40d3406aed5e5e3b",
+          "durationMs": 267080,
+          "plays": 1957374864,
+          "url": "https://open.spotify.com/track/1Jo0Zg7XlrA6z0mFTZVdkn"
+        },
+        {
+          "id": "2ENexcMEMsYk0rVJigVD3i",
+          "name": "Only Girl (In The World)",
+          "artists": "Rihanna",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0231548865f7c729290b96c794",
+          "durationMs": 235493,
+          "plays": 2094091144,
+          "url": "https://open.spotify.com/track/2ENexcMEMsYk0rVJigVD3i"
+        },
+        {
+          "id": "6qn9YLKt13AGvpq9jfO8py",
+          "name": "We Found Love",
+          "artists": "Rihanna, Calvin Harris",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bef074de9ca825bddaeb9f46",
+          "durationMs": 215226,
+          "plays": 2738050363,
+          "url": "https://open.spotify.com/track/6qn9YLKt13AGvpq9jfO8py"
+        },
+        {
+          "id": "2yPoXCs7BSIUrucMdK5PzV",
+          "name": "Umbrella",
+          "artists": "Rihanna, JAŸ-Z",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b9ff0a5f40d3406aed5e5e3b",
+          "durationMs": 275986,
+          "plays": 2472769885,
+          "url": "https://open.spotify.com/track/2yPoXCs7BSIUrucMdK5PzV"
+        },
+        {
+          "id": "7ySUcLPVX7KudhnmNcgY2D",
+          "name": "S&M",
+          "artists": "Rihanna",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0231548865f7c729290b96c794",
+          "durationMs": 243600,
+          "plays": 1915177830,
+          "url": "https://open.spotify.com/track/7ySUcLPVX7KudhnmNcgY2D"
+        }
+      ]
+    },
+    {
+      "id": "6l3HvQ5sa6mXTsMTB19rO5",
+      "name": "J. Cole",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc401ea77e86ee984b1ba9fc2",
+      "usRank": 16,
+      "monthlyListeners": 38315614,
+      "popularity": 92,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5",
+      "topTracks": [
+        {
+          "id": "68Dni7IE4VyPkTOH9mRWHr",
+          "name": "No Role Modelz",
+          "artists": "J. Cole",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c6e0948bbb0681ff29cdbae8",
+          "durationMs": 292799,
+          "plays": 3092182425,
+          "url": "https://open.spotify.com/track/68Dni7IE4VyPkTOH9mRWHr"
+        },
+        {
+          "id": "2uwnP6tZVVmTovzX5ELooy",
+          "name": "Power Trip (feat. Miguel)",
+          "artists": "J. Cole, Miguel",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c1bb124f993488cf21b269fc",
+          "durationMs": 241160,
+          "plays": 1023032054,
+          "url": "https://open.spotify.com/track/2uwnP6tZVVmTovzX5ELooy"
+        },
+        {
+          "id": "2wAJTrFhCnQyNSD3oUgTZO",
+          "name": "Work Out",
+          "artists": "J. Cole",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0299da48a530f6ca2ef86da3cc",
+          "durationMs": 235320,
+          "plays": 1424574419,
+          "url": "https://open.spotify.com/track/2wAJTrFhCnQyNSD3oUgTZO"
+        },
+        {
+          "id": "4tqcoej1zPvwePZCzuAjJd",
+          "name": "Wet Dreamz",
+          "artists": "J. Cole",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c6e0948bbb0681ff29cdbae8",
+          "durationMs": 239266,
+          "plays": 1665154317,
+          "url": "https://open.spotify.com/track/4tqcoej1zPvwePZCzuAjJd"
+        },
+        {
+          "id": "2JvzF1RMd7lE3KmFlsyZD8",
+          "name": "MIDDLE CHILD",
+          "artists": "J. Cole",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027f37a4001ae7d8be430bd91b",
+          "durationMs": 213593,
+          "plays": 1580617185,
+          "url": "https://open.spotify.com/track/2JvzF1RMd7lE3KmFlsyZD8"
+        }
+      ]
+    },
+    {
+      "id": "246dkjvS1zLTtiykXe5h60",
+      "name": "Post Malone",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe17c0aa1714a03d62b5ce4e0",
+      "usRank": 17,
+      "monthlyListeners": 61603256,
+      "popularity": 96,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60",
+      "topTracks": [
+        {
+          "id": "0RiRZpuVRbi7oqRdSMwhQY",
+          "name": "Sunflower - Spider-Man: Into the Spider-Verse",
+          "artists": "Post Malone, Swae Lee",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029478c87599550dd73bfa7e02",
+          "durationMs": 157560,
+          "plays": 4548282985,
+          "url": "https://open.spotify.com/track/0RiRZpuVRbi7oqRdSMwhQY"
+        },
+        {
+          "id": "21jGcNKet2qwijlDFuPiPb",
+          "name": "Circles",
+          "artists": "Post Malone",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029478c87599550dd73bfa7e02",
+          "durationMs": 215280,
+          "plays": 3332395789,
+          "url": "https://open.spotify.com/track/21jGcNKet2qwijlDFuPiPb"
+        },
+        {
+          "id": "5IZXB5IKAD2qlvTPJYDCFB",
+          "name": "I Had Some Help (Feat. Morgan Wallen)",
+          "artists": "Post Malone, Morgan Wallen",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0288208159b1b3c69eefdeb2e0",
+          "durationMs": 178205,
+          "plays": 1632730312,
+          "url": "https://open.spotify.com/track/5IZXB5IKAD2qlvTPJYDCFB"
+        },
+        {
+          "id": "0e7ipj03S05BNilyu5bRzt",
+          "name": "rockstar (feat. 21 Savage)",
+          "artists": "Post Malone, 21 Savage",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b1c4b76e23414c9f20242268",
+          "durationMs": 218146,
+          "plays": 3482626735,
+          "url": "https://open.spotify.com/track/0e7ipj03S05BNilyu5bRzt"
+        },
+        {
+          "id": "6GrvlxquXWumwyNeZb1oZz",
+          "name": "Fortnight (feat. Post Malone)",
+          "artists": "Taylor Swift, Post Malone",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02aecb5c6308cf8ce94199aea8",
+          "durationMs": 228965,
+          "plays": 1268948782,
+          "url": "https://open.spotify.com/track/6GrvlxquXWumwyNeZb1oZz"
+        }
+      ]
+    },
+    {
+      "id": "0du5cEVh5yTK9QJze8zA0C",
+      "name": "Bruno Mars",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc7688aad1bf03986934d7e26",
+      "usRank": 18,
+      "monthlyListeners": 125480040,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C",
+      "topTracks": [
+        {
+          "id": "7so0lgd0zP2Sbgs2d7a1SZ",
+          "name": "Die With A Smile",
+          "artists": "Lady Gaga, Bruno Mars",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b0860cf0a98e09663c82290c",
+          "durationMs": 251667,
+          "plays": 4127812214,
+          "url": "https://open.spotify.com/track/7so0lgd0zP2Sbgs2d7a1SZ"
+        },
+        {
+          "id": "5y2ijHECwFYWqcAHKTZgzD",
+          "name": "Risk It All",
+          "artists": "Bruno Mars",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e023eb8dc748f7efb1470f74395",
+          "durationMs": 204068,
+          "plays": 719635698,
+          "url": "https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD"
+        },
+        {
+          "id": "3w3y8KPTfNeOKPiqUTakBh",
+          "name": "Locked out of Heaven",
+          "artists": "Bruno Mars",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02926f43e7cce571e62720fd46",
+          "durationMs": 233478,
+          "plays": 3596436549,
+          "url": "https://open.spotify.com/track/3w3y8KPTfNeOKPiqUTakBh"
+        },
+        {
+          "id": "7BqBn9nzAq8spo5e7cZ0dJ",
+          "name": "Just the Way You Are",
+          "artists": "Bruno Mars",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027039c1c841fc3dfa2ad8a0d8",
+          "durationMs": 220734,
+          "plays": 3557197414,
+          "url": "https://open.spotify.com/track/7BqBn9nzAq8spo5e7cZ0dJ"
+        },
+        {
+          "id": "0KKkJNfGyhkQ5aFogxQAPU",
+          "name": "That's What I Like",
+          "artists": "Bruno Mars",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02232711f7d66a1e19e89e28c5",
+          "durationMs": 206693,
+          "plays": 3466198015,
+          "url": "https://open.spotify.com/track/0KKkJNfGyhkQ5aFogxQAPU"
+        }
+      ]
+    },
+    {
+      "id": "6KImCVD70vtIoJWnq6nGn3",
+      "name": "Harry Styles",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe309f8c3056a59f20d0968ca",
+      "usRank": 19,
+      "monthlyListeners": 64207640,
+      "popularity": 96,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/6KImCVD70vtIoJWnq6nGn3",
+      "topTracks": [
+        {
+          "id": "5Ohxk2dO5COHF1krpoPigN",
+          "name": "Sign of the Times",
+          "artists": "Harry Styles",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023f8b8a9c71b2bd2f3019940b",
+          "durationMs": 340706,
+          "plays": 2540438818,
+          "url": "https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN"
+        },
+        {
+          "id": "4Dvkj6JhhA12EX05fT7y2e",
+          "name": "As It Was",
+          "artists": "Harry Styles",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0282ce362511fb3d9dda6578ee",
+          "durationMs": 167303,
+          "plays": 4705640904,
+          "url": "https://open.spotify.com/track/4Dvkj6JhhA12EX05fT7y2e"
+        },
+        {
+          "id": "0QPdjsMOUhwouq1NS3HwfQ",
+          "name": "Coming Up Roses",
+          "artists": "Harry Styles",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0274959140f550b11049c18a38",
+          "durationMs": 248866,
+          "plays": 198199524,
+          "url": "https://open.spotify.com/track/0QPdjsMOUhwouq1NS3HwfQ"
+        },
+        {
+          "id": "7gtG45ieyQzKtNKobfLd49",
+          "name": "American Girls",
+          "artists": "Harry Styles",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0274959140f550b11049c18a38",
+          "durationMs": 213440,
+          "plays": 348667872,
+          "url": "https://open.spotify.com/track/7gtG45ieyQzKtNKobfLd49"
+        },
+        {
+          "id": "6UelLqGlWMcVH1E5c4H7lY",
+          "name": "Watermelon Sugar",
+          "artists": "Harry Styles",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0225180571abce9472f61bd722",
+          "durationMs": 173991,
+          "plays": 3436692278,
+          "url": "https://open.spotify.com/track/6UelLqGlWMcVH1E5c4H7lY"
+        }
+      ]
+    },
+    {
+      "id": "790FomKkXshlbRYZFtlgla",
+      "name": "KAROL G",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb3869e286c9043f85e8e4bc06",
+      "usRank": 20,
+      "monthlyListeners": 69959796,
+      "popularity": 97,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/790FomKkXshlbRYZFtlgla",
+      "topTracks": [
+        {
+          "id": "3h5T5JypYU7huFiVYhv1dr",
+          "name": "BbY WOW",
+          "artists": "KAROL G, Judeline, rusowsky",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0221deb742375f88edfb2e7368",
+          "durationMs": 225834,
+          "plays": 444948584,
+          "url": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "id": "73scB4Q4fcOmnsBVZPmk32",
+          "name": "Si Antes Te Hubiera Conocido",
+          "artists": "KAROL G",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026c0294796e2ee5cf87a47b5f",
+          "durationMs": 195824,
+          "plays": 1990572146,
+          "url": "https://open.spotify.com/track/73scB4Q4fcOmnsBVZPmk32"
+        },
+        {
+          "id": "3ddJ8Vbc5tYPxq5zKRVke6",
+          "name": "Coleccionando Heridas",
+          "artists": "KAROL G, Marco Antonio Solís",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026c0294796e2ee5cf87a47b5f",
+          "durationMs": 204794,
+          "plays": 402522992,
+          "url": "https://open.spotify.com/track/3ddJ8Vbc5tYPxq5zKRVke6"
+        },
+        {
+          "id": "04d5HlcQX6zH5MMqffXOon",
+          "name": "MATADORA",
+          "artists": "KAROL G",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0221deb742375f88edfb2e7368",
+          "durationMs": 144286,
+          "plays": 94498846,
+          "url": "https://open.spotify.com/track/04d5HlcQX6zH5MMqffXOon"
+        },
+        {
+          "id": "6DoUDG1GJrJf6eGQLUBBnm",
+          "name": "Ahí",
+          "artists": "KAROL G, Drake",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0221deb742375f88edfb2e7368",
+          "durationMs": 176568,
+          "plays": 67806086,
+          "url": "https://open.spotify.com/track/6DoUDG1GJrJf6eGQLUBBnm"
+        }
+      ]
+    },
+    {
+      "id": "1H6X7yhnXZg73f9bssaj1Q",
+      "name": "Judeline",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebfdd8220f7ef970a38f319160",
+      "usRank": 21,
+      "monthlyListeners": 37582691,
+      "popularity": 91,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/1H6X7yhnXZg73f9bssaj1Q",
+      "topTracks": [
+        {
+          "id": "3h5T5JypYU7huFiVYhv1dr",
+          "name": "BbY WOW",
+          "artists": "KAROL G, Judeline, rusowsky",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0221deb742375f88edfb2e7368",
+          "durationMs": 225834,
+          "plays": 444948584,
+          "url": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "id": "3RskBcs0Iu92bHl4KmRryd",
+          "name": "La Falda",
+          "artists": "Judeline",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022519eb3d852c50b8a7891b92",
+          "durationMs": 155586,
+          "plays": 11246048,
+          "url": "https://open.spotify.com/track/3RskBcs0Iu92bHl4KmRryd"
+        },
+        {
+          "id": "5Uoni5ULnC7Aq69DsRR10G",
+          "name": "si preguntas por mi",
+          "artists": "Tainy, Kris Floyd, Judeline",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f885fb64a381318a1c9c14e4",
+          "durationMs": 215412,
+          "plays": 71446275,
+          "url": "https://open.spotify.com/track/5Uoni5ULnC7Aq69DsRR10G"
+        },
+        {
+          "id": "5Bng1Bwy7PFQys6qByKmdT",
+          "name": "Heavenly",
+          "artists": "Judeline, rusowsky",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b8166c576ca30564e1c2c132",
+          "durationMs": 145151,
+          "plays": 38276487,
+          "url": "https://open.spotify.com/track/5Bng1Bwy7PFQys6qByKmdT"
+        },
+        {
+          "id": "0EsMceg5ksKflUYXt2WMne",
+          "name": "TÚ ET MOI",
+          "artists": "Judeline, Mc Morena",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c1b4bdb1534c99aa60cfed05",
+          "durationMs": 154615,
+          "plays": 21229988,
+          "url": "https://open.spotify.com/track/0EsMceg5ksKflUYXt2WMne"
+        }
+      ]
+    },
+    {
+      "id": "1XEVu7gdRFfzEFqsPrancH",
+      "name": "rusowsky",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb2d66e1921d069934588aa080",
+      "usRank": 22,
+      "monthlyListeners": 39654293,
+      "popularity": 92,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/1XEVu7gdRFfzEFqsPrancH",
+      "topTracks": [
+        {
+          "id": "3h5T5JypYU7huFiVYhv1dr",
+          "name": "BbY WOW",
+          "artists": "KAROL G, Judeline, rusowsky",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0221deb742375f88edfb2e7368",
+          "durationMs": 225834,
+          "plays": 444948584,
+          "url": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "id": "7zoVtzzASRtacCvgQKLFaS",
+          "name": "neo roneo",
+          "artists": "rusowsky, LATIN MAFIA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c868f74d6a33bd27bcee592f",
+          "durationMs": 166704,
+          "plays": 142119344,
+          "url": "https://open.spotify.com/track/7zoVtzzASRtacCvgQKLFaS"
+        },
+        {
+          "id": "4uulymZhmebsjKedRaJ1gQ",
+          "name": "malibU",
+          "artists": "rusowsky",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02dc9c43138a621ee63a7bc863",
+          "durationMs": 215250,
+          "plays": 150864338,
+          "url": "https://open.spotify.com/track/4uulymZhmebsjKedRaJ1gQ"
+        },
+        {
+          "id": "0sVAsg0GP4JZHKn1Ohsiw0",
+          "name": "BBY ROMEO",
+          "artists": "rusowsky, Ralphie Choo",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02dc9c43138a621ee63a7bc863",
+          "durationMs": 198715,
+          "plays": 69520826,
+          "url": "https://open.spotify.com/track/0sVAsg0GP4JZHKn1Ohsiw0"
+        },
+        {
+          "id": "4YZhsgOBQtKvxZWjVuJD9H",
+          "name": "Johnny Glamour",
+          "artists": "rusowsky, Las Ketchup",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02dc9c43138a621ee63a7bc863",
+          "durationMs": 141109,
+          "plays": 57502310,
+          "url": "https://open.spotify.com/track/4YZhsgOBQtKvxZWjVuJD9H"
+        }
+      ]
+    },
+    {
+      "id": "06HL4z0CvFAxyc27GXpf02",
+      "name": "Taylor Swift",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb12184bdd29403de54cb9d9c7",
+      "usRank": 23,
+      "monthlyListeners": 98169810,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02",
+      "topTracks": [
+        {
+          "id": "11hcBLPtbMp4aQI6zGQLub",
+          "name": "Patient Zero",
+          "artists": "Taylor Swift",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02cf3de6b538d8b1ed73a4d5d1",
+          "durationMs": 225868,
+          "plays": 141972225,
+          "url": "https://open.spotify.com/track/11hcBLPtbMp4aQI6zGQLub"
+        },
+        {
+          "id": "53iuhJlwXhSER5J2IYYv1W",
+          "name": "The Fate of Ophelia",
+          "artists": "Taylor Swift",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d7812467811a7da6e6a44902",
+          "durationMs": 226073,
+          "plays": 1775443183,
+          "url": "https://open.spotify.com/track/53iuhJlwXhSER5J2IYYv1W"
+        },
+        {
+          "id": "1p80LdxRV74UKvL8gnD7ky",
+          "name": "Blank Space",
+          "artists": "Taylor Swift",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029abdf14e6058bd3903686148",
+          "durationMs": 231826,
+          "plays": 2663363927,
+          "url": "https://open.spotify.com/track/1p80LdxRV74UKvL8gnD7ky"
+        },
+        {
+          "id": "3yWuTOYDztXjZxdE2cIRUa",
+          "name": "Opalite",
+          "artists": "Taylor Swift",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d7812467811a7da6e6a44902",
+          "durationMs": 235355,
+          "plays": 929344010,
+          "url": "https://open.spotify.com/track/3yWuTOYDztXjZxdE2cIRUa"
+        },
+        {
+          "id": "1BxfuPKGuaTgP7aM0Bbdwr",
+          "name": "Cruel Summer",
+          "artists": "Taylor Swift",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e787cffec20aa2a396a61647",
+          "durationMs": 178426,
+          "plays": 3531529351,
+          "url": "https://open.spotify.com/track/1BxfuPKGuaTgP7aM0Bbdwr"
+        }
+      ]
+    },
+    {
+      "id": "0C0XlULifJtAgn6ZNCW2eu",
+      "name": "The Killers",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb207b21f3ed0ee96adce3166a",
+      "usRank": 24,
+      "monthlyListeners": 36471891,
+      "popularity": 91,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/0C0XlULifJtAgn6ZNCW2eu",
+      "topTracks": [
+        {
+          "id": "003vvx7Niy0yvhvHt4a68B",
+          "name": "Mr. Brightside",
+          "artists": "The Killers",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ccdddd46119a4ff53eaf1f5d",
+          "durationMs": 222973,
+          "plays": 3586887635,
+          "url": "https://open.spotify.com/track/003vvx7Niy0yvhvHt4a68B"
+        },
+        {
+          "id": "6PwjJ58I4t7Mae9xfZ9l9v",
+          "name": "Somebody Told Me",
+          "artists": "The Killers",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ccdddd46119a4ff53eaf1f5d",
+          "durationMs": 197200,
+          "plays": 1330213441,
+          "url": "https://open.spotify.com/track/6PwjJ58I4t7Mae9xfZ9l9v"
+        },
+        {
+          "id": "70wYA8oYHoMzhRRkARoMhU",
+          "name": "When You Were Young",
+          "artists": "The Killers",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024f87f14089217e3f70a5f39e",
+          "durationMs": 220426,
+          "plays": 910702850,
+          "url": "https://open.spotify.com/track/70wYA8oYHoMzhRRkARoMhU"
+        },
+        {
+          "id": "1sTsuZTdANkiFd7T34H3nb",
+          "name": "Human",
+          "artists": "The Killers",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a43cd43ef4f3b2d5413b17f9",
+          "durationMs": 245373,
+          "plays": 757318437,
+          "url": "https://open.spotify.com/track/1sTsuZTdANkiFd7T34H3nb"
+        },
+        {
+          "id": "5vollujufHY0jMZxx77VWr",
+          "name": "All These Things That I've Done",
+          "artists": "The Killers",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ccdddd46119a4ff53eaf1f5d",
+          "durationMs": 301866,
+          "plays": 518579486,
+          "url": "https://open.spotify.com/track/5vollujufHY0jMZxx77VWr"
+        }
+      ]
+    },
+    {
+      "id": "7eKkW1zo5uzW8kUntiiBvz",
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
+      "usRank": 25,
+      "monthlyListeners": 37327739,
+      "popularity": 91,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz",
+      "topTracks": [
+        {
+          "id": "0eAuGrXyGFYwur9ARUe7LJ",
+          "name": "Earrings",
+          "artists": "Malcolm Todd",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
+          "durationMs": 151500,
+          "plays": 835798328,
+          "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
+        },
+        {
+          "id": "59c2xv2kMzYM6HR9oY6BIa",
+          "name": "Sweet Boy",
+          "artists": "Malcolm Todd",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
+          "durationMs": 180000,
+          "plays": 420456943,
+          "url": "https://open.spotify.com/track/59c2xv2kMzYM6HR9oY6BIa"
+        },
+        {
+          "id": "77Jy02wGI2iU5HCcynsBmS",
+          "name": "Obsessica",
+          "artists": "Malcolm Todd",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a1cac678024bb37d83ab012c",
+          "durationMs": 219427,
+          "plays": 64301817,
+          "url": "https://open.spotify.com/track/77Jy02wGI2iU5HCcynsBmS"
+        },
+        {
+          "id": "5vPUv0xziXbV4lnWeVNXNq",
+          "name": "Roommates",
+          "artists": "Malcolm Todd",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
+          "durationMs": 214504,
+          "plays": 368313924,
+          "url": "https://open.spotify.com/track/5vPUv0xziXbV4lnWeVNXNq"
+        },
+        {
+          "id": "2XUx8PCXGpP1XhZJMGiUol",
+          "name": "Chest Pain (I Love)",
+          "artists": "Malcolm Todd",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0287607b2c8f5f52f1f057be0d",
+          "durationMs": 200826,
+          "plays": 420274024,
+          "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
+        }
+      ]
+    },
+    {
+      "id": "66CXWjxzNUsdJxJ2JdwvnR",
+      "name": "Ariana Grande",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68412f2d0177a9ebc265ff58",
+      "usRank": 26,
+      "monthlyListeners": 92927864,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR",
+      "topTracks": [
+        {
+          "id": "3iy2QuCtCzpWnR6tia39AB",
+          "name": "hate that i made you love me",
+          "artists": "Ariana Grande",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028baf677ee2d8dda6cc9fcbd7",
+          "durationMs": 197949,
+          "plays": 606484456,
+          "url": "https://open.spotify.com/track/3iy2QuCtCzpWnR6tia39AB"
+        },
+        {
+          "id": "63y6xWR4gXz7bnUGOk8iI6",
+          "name": "Into You",
+          "artists": "Ariana Grande",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02628d506d5bddb09099db242c",
+          "durationMs": 244453,
+          "plays": 2203077644,
+          "url": "https://open.spotify.com/track/63y6xWR4gXz7bnUGOk8iI6"
+        },
+        {
+          "id": "51ZQ1vr10ffzbwIjDCwqm4",
+          "name": "we can't be friends (wait for your love)",
+          "artists": "Ariana Grande",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028b58d20f1b77295730db15b4",
+          "durationMs": 228639,
+          "plays": 2188534339,
+          "url": "https://open.spotify.com/track/51ZQ1vr10ffzbwIjDCwqm4"
+        },
+        {
+          "id": "5J4ZkQpzMUFojo1CtAZYpn",
+          "name": "Love Me Harder",
+          "artists": "Ariana Grande, The Weeknd",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02deec12a28d1e336c5052e9aa",
+          "durationMs": 236133,
+          "plays": 1603770024,
+          "url": "https://open.spotify.com/track/5J4ZkQpzMUFojo1CtAZYpn"
+        },
+        {
+          "id": "70pVCVMGjmIWPbWXDwf11e",
+          "name": "petal",
+          "artists": "Ariana Grande",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028baf677ee2d8dda6cc9fcbd7",
+          "durationMs": 184248,
+          "plays": 173420480,
+          "url": "https://open.spotify.com/track/70pVCVMGjmIWPbWXDwf11e"
+        }
+      ]
+    },
+    {
+      "id": "7GlBOeep6PqTfFi59PTUUN",
+      "name": "Chappell Roan",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd258ecb0d66244e6300bcf64",
+      "usRank": 27,
+      "monthlyListeners": 42169808,
+      "popularity": 93,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/7GlBOeep6PqTfFi59PTUUN",
+      "topTracks": [
+        {
+          "id": "26m4l5G7Uw92v6vmmtlwhi",
+          "name": "expectations (feat. Chappell Roan)",
+          "artists": "Olivia Rodrigo, Chappell Roan",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02609b15ffbc826411e19226da",
+          "durationMs": 223935,
+          "plays": 67917077,
+          "url": "https://open.spotify.com/track/26m4l5G7Uw92v6vmmtlwhi"
+        },
+        {
+          "id": "0WbMK4wrZ1wFSty9F7FCgu",
+          "name": "Good Luck, Babe!",
+          "artists": "Chappell Roan",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0291b4bc7c88d91a42e0f3a8b7",
+          "durationMs": 218423,
+          "plays": 2323621612,
+          "url": "https://open.spotify.com/track/0WbMK4wrZ1wFSty9F7FCgu"
+        },
+        {
+          "id": "6393yGahSJ9slVdOwSxOVR",
+          "name": "Pink Pony Club",
+          "artists": "Chappell Roan",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a21d22ecf823e1c90aa22d1f",
+          "durationMs": 258034,
+          "plays": 1368796428,
+          "url": "https://open.spotify.com/track/6393yGahSJ9slVdOwSxOVR"
+        },
+        {
+          "id": "3WSOUb3U7tqURbBSgZTrZX",
+          "name": "Casual",
+          "artists": "Chappell Roan",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0296fa88fb1789be437d5cb4b6",
+          "durationMs": 232796,
+          "plays": 701991372,
+          "url": "https://open.spotify.com/track/3WSOUb3U7tqURbBSgZTrZX"
+        },
+        {
+          "id": "2SsY5k7UWFqgye3PUMG3Oq",
+          "name": "The Subway",
+          "artists": "Chappell Roan",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020b96f8824100aab118792442",
+          "durationMs": 252276,
+          "plays": 385124532,
+          "url": "https://open.spotify.com/track/2SsY5k7UWFqgye3PUMG3Oq"
+        }
+      ]
+    },
+    {
+      "id": "5K4W6rqBFWDnAN6FQUkS6x",
+      "name": "Kanye West",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
+      "usRank": 28,
+      "monthlyListeners": 70659876,
+      "popularity": 97,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x",
+      "topTracks": [
+        {
+          "id": "5TRPicyLGbAF2LGBFbHGvO",
+          "name": "Flashing Lights",
+          "artists": "Kanye West, Dwele",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0226f7f19c7f0381e56156c94a",
+          "durationMs": 237506,
+          "plays": 1966176775,
+          "url": "https://open.spotify.com/track/5TRPicyLGbAF2LGBFbHGvO"
+        },
+        {
+          "id": "4EWCNWgDS8707fNSZ1oaA5",
+          "name": "Heartless",
+          "artists": "Kanye West",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02346d77e155d854735410ed18",
+          "durationMs": 211000,
+          "plays": 2159153240,
+          "url": "https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5"
+        },
+        {
+          "id": "0j2T0R9dR9qdJYsB7ciXhf",
+          "name": "Stronger",
+          "artists": "Kanye West",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0226f7f19c7f0381e56156c94a",
+          "durationMs": 311866,
+          "plays": 1924608269,
+          "url": "https://open.spotify.com/track/0j2T0R9dR9qdJYsB7ciXhf"
+        },
+        {
+          "id": "0mEdbdeRFQwBhN4xfyIeUM",
+          "name": "Can't Tell Me Nothing",
+          "artists": "Kanye West",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0226f7f19c7f0381e56156c94a",
+          "durationMs": 271600,
+          "plays": 1123870965,
+          "url": "https://open.spotify.com/track/0mEdbdeRFQwBhN4xfyIeUM"
+        },
+        {
+          "id": "3DK6m7It6Pw857FcQftMds",
+          "name": "Runaway",
+          "artists": "Kanye West, Pusha T",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d9194aa18fa4c9362b47464f",
+          "durationMs": 547733,
+          "plays": 1298648194,
+          "url": "https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds"
+        }
+      ]
+    },
+    {
+      "id": "4Gso3d4CscCijv0lmajZWs",
+      "name": "Don Toliver",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc52b798deb89eb8414a51b7b",
+      "usRank": 29,
+      "monthlyListeners": 44721399,
+      "popularity": 93,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs",
+      "topTracks": [
+        {
+          "id": "0eaVIYo2zeOaGJeqZ5TwYz",
+          "name": "No Pole",
+          "artists": "Don Toliver",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02307323fa550564b0201b1d76",
+          "durationMs": 187613,
+          "plays": 1071889333,
+          "url": "https://open.spotify.com/track/0eaVIYo2zeOaGJeqZ5TwYz"
+        },
+        {
+          "id": "3B4cjvGlPvyBLNG3AzEgkZ",
+          "name": "E85",
+          "artists": "Don Toliver",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0225c28f3c9fbdbab1a88dd619",
+          "durationMs": 153181,
+          "plays": 396708513,
+          "url": "https://open.spotify.com/track/3B4cjvGlPvyBLNG3AzEgkZ"
+        },
+        {
+          "id": "4IAWZw00ZI9DLKDjesx86u",
+          "name": "Solar Eclipse (feat. Don Toliver)",
+          "artists": "Drake, Don Toliver",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022685b70af798b4f272c00d8a",
+          "durationMs": 218388,
+          "plays": 42042200,
+          "url": "https://open.spotify.com/track/4IAWZw00ZI9DLKDjesx86u"
+        },
+        {
+          "id": "50GVx8sCc1TDKHXumgYqEO",
+          "name": "Cold Shoulder (feat. Don Toliver & Yebba)",
+          "artists": "Drake, Don Toliver, Yebba",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022685b70af798b4f272c00d8a",
+          "durationMs": 234849,
+          "plays": 33332495,
+          "url": "https://open.spotify.com/track/50GVx8sCc1TDKHXumgYqEO"
+        },
+        {
+          "id": "4Z5KKoBGxpJo8YbDcGQXd5",
+          "name": "Secondhand (feat. Rema)",
+          "artists": "Don Toliver, Rema",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0225c28f3c9fbdbab1a88dd619",
+          "durationMs": 226666,
+          "plays": 202586539,
+          "url": "https://open.spotify.com/track/4Z5KKoBGxpJo8YbDcGQXd5"
+        }
+      ]
+    },
+    {
+      "id": "08GQAI4eElDnROBrJRGE0X",
+      "name": "Fleetwood Mac",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc8752dd511cda8c31e9daee8",
+      "usRank": 30,
+      "monthlyListeners": 50569550,
+      "popularity": 94,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/08GQAI4eElDnROBrJRGE0X",
+      "topTracks": [
+        {
+          "id": "0ofHAoxe9vBkTCp2UQIavz",
+          "name": "Dreams - 2004 Remaster",
+          "artists": "Fleetwood Mac",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e52a59a28efa4773dd2bfe1b",
+          "durationMs": 257800,
+          "plays": 3019511292,
+          "url": "https://open.spotify.com/track/0ofHAoxe9vBkTCp2UQIavz"
+        },
+        {
+          "id": "5e9TFTbltYBg2xThimr0rU",
+          "name": "The Chain - 2004 Remaster",
+          "artists": "Fleetwood Mac",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e52a59a28efa4773dd2bfe1b",
+          "durationMs": 270213,
+          "plays": 1944500124,
+          "url": "https://open.spotify.com/track/5e9TFTbltYBg2xThimr0rU"
+        },
+        {
+          "id": "5ihS6UUlyQAfmp48eSkxuQ",
+          "name": "Landslide",
+          "artists": "Fleetwood Mac",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024fb043195e8d07e72edc7226",
+          "durationMs": 199493,
+          "plays": 1253159857,
+          "url": "https://open.spotify.com/track/5ihS6UUlyQAfmp48eSkxuQ"
+        },
+        {
+          "id": "254bXAqt3zP6P50BdQvEsq",
+          "name": "Everywhere - 2017 Remaster",
+          "artists": "Fleetwood Mac",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02aaba065944cd82a6f15c86b6",
+          "durationMs": 226653,
+          "plays": 1597269446,
+          "url": "https://open.spotify.com/track/254bXAqt3zP6P50BdQvEsq"
+        },
+        {
+          "id": "07GvNcU1WdyZJq3XxP0kZa",
+          "name": "Go Your Own Way - 2004 Remaster",
+          "artists": "Fleetwood Mac",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0257df7ce0eac715cf70e519a7",
+          "durationMs": 223613,
+          "plays": 1494457292,
+          "url": "https://open.spotify.com/track/07GvNcU1WdyZJq3XxP0kZa"
+        }
+      ]
+    },
+    {
+      "id": "6P5NO5hzJbuOqSdyPB7SJM",
+      "name": "Ashe",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1ecbc7955919e10c45604e85",
+      "usRank": 31,
+      "monthlyListeners": 32912321,
+      "popularity": 90,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/6P5NO5hzJbuOqSdyPB7SJM",
+      "topTracks": [
+        {
+          "id": "7MOO89Qv9AV7VZkt5mcqA8",
+          "name": "Stop The Wedding!",
+          "artists": "Ashe",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02efe09b635b15763133198101",
+          "durationMs": 199460,
+          "plays": 187551259,
+          "url": "https://open.spotify.com/track/7MOO89Qv9AV7VZkt5mcqA8"
+        },
+        {
+          "id": "0zSxpn1s0nk6VMpBMNqNFa",
+          "name": "Moral of the Story",
+          "artists": "Ashe",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b11a359d135e3b8ef86d370c",
+          "durationMs": 201016,
+          "plays": 1100395421,
+          "url": "https://open.spotify.com/track/0zSxpn1s0nk6VMpBMNqNFa"
+        },
+        {
+          "id": "0ibJ83Ei65gTmiV0aHZg47",
+          "name": "Lasso The Moon",
+          "artists": "Ashe",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02efe09b635b15763133198101",
+          "durationMs": 222478,
+          "plays": 12979504,
+          "url": "https://open.spotify.com/track/0ibJ83Ei65gTmiV0aHZg47"
+        },
+        {
+          "id": "1VTMXGf9Ew0mLY78Cb7dVe",
+          "name": "Till Forever Falls Apart",
+          "artists": "Ashe, FINNEAS",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b11a359d135e3b8ef86d370c",
+          "durationMs": 222926,
+          "plays": 480043629,
+          "url": "https://open.spotify.com/track/1VTMXGf9Ew0mLY78Cb7dVe"
+        },
+        {
+          "id": "6nQqP66npzndHw2KXIPyUZ",
+          "name": "Funeral",
+          "artists": "Ashe",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02efe09b635b15763133198101",
+          "durationMs": 212547,
+          "plays": 9670000,
+          "url": "https://open.spotify.com/track/6nQqP66npzndHw2KXIPyUZ"
+        }
+      ]
+    },
+    {
+      "id": "2h93pZq0e7k5yf4dywlkpM",
+      "name": "Frank Ocean",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebee3123e593174208f9754fab",
+      "usRank": 32,
+      "monthlyListeners": 38782225,
+      "popularity": 92,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM",
+      "topTracks": [
+        {
+          "id": "3xKsf9qdS1CyvXSMEid6g8",
+          "name": "Pink + White",
+          "artists": "Frank Ocean",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c5649add07ed3720be9d5526",
+          "durationMs": 184516,
+          "plays": 2321611242,
+          "url": "https://open.spotify.com/track/3xKsf9qdS1CyvXSMEid6g8"
+        },
+        {
+          "id": "7DfFc7a6Rwfi3YQMRbDMau",
+          "name": "Thinkin Bout You",
+          "artists": "Frank Ocean",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+          "durationMs": 200746,
+          "plays": 1733884076,
+          "url": "https://open.spotify.com/track/7DfFc7a6Rwfi3YQMRbDMau"
+        },
+        {
+          "id": "2LMkwUfqC6S6s6qDVlEuzV",
+          "name": "White Ferrari",
+          "artists": "Frank Ocean",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c5649add07ed3720be9d5526",
+          "durationMs": 248807,
+          "plays": 1277923115,
+          "url": "https://open.spotify.com/track/2LMkwUfqC6S6s6qDVlEuzV"
+        },
+        {
+          "id": "7eqoqGkKwgOaWNNHx90uEZ",
+          "name": "Nights",
+          "artists": "Frank Ocean",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c5649add07ed3720be9d5526",
+          "durationMs": 307151,
+          "plays": 1187653541,
+          "url": "https://open.spotify.com/track/7eqoqGkKwgOaWNNHx90uEZ"
+        },
+        {
+          "id": "4osgfFTICMkcGbbigdsa53",
+          "name": "Novacane",
+          "artists": "Frank Ocean",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0259a428dc7ef8e0c12b0fe18a",
+          "durationMs": 302346,
+          "plays": 1106043769,
+          "url": "https://open.spotify.com/track/4osgfFTICMkcGbbigdsa53"
+        }
+      ]
+    },
+    {
+      "id": "1Xylc3o4UrD53lo9CvFvVg",
+      "name": "Zara Larsson",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebcbfb8295e334da7f2c8b4bff",
+      "usRank": 33,
+      "monthlyListeners": 52346238,
+      "popularity": 94,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg",
+      "topTracks": [
+        {
+          "id": "1rIKgCH4H52lrvDcz50hS8",
+          "name": "Lush Life",
+          "artists": "Zara Larsson",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02401bf6103d4b7f5230a21582",
+          "durationMs": 200646,
+          "plays": 2682943391,
+          "url": "https://open.spotify.com/track/1rIKgCH4H52lrvDcz50hS8"
+        },
+        {
+          "id": "1DwscornXpj8fmOmYVlqZt",
+          "name": "Stateside + Zara Larsson",
+          "artists": "PinkPantheress, Zara Larsson",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02684ecc5bc1b724d0106ad694",
+          "durationMs": 184761,
+          "plays": 807586187,
+          "url": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt"
+        },
+        {
+          "id": "1qRV1dKLOfH1s00b9J2LUQ",
+          "name": "Midnight Sun",
+          "artists": "Zara Larsson",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027657f9028ea8bb2c18dca99f",
+          "durationMs": 189898,
+          "plays": 537942298,
+          "url": "https://open.spotify.com/track/1qRV1dKLOfH1s00b9J2LUQ"
+        },
+        {
+          "id": "72gv4zhNvRVdQA0eOenCal",
+          "name": "Symphony (feat. Zara Larsson)",
+          "artists": "Clean Bandit, Zara Larsson",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025c66e925d8fe4c92ebfb49ed",
+          "durationMs": 212733,
+          "plays": 2047688314,
+          "url": "https://open.spotify.com/track/72gv4zhNvRVdQA0eOenCal"
+        },
+        {
+          "id": "6hmhG1b4LEyNuashVvuIAo",
+          "name": "Never Forget You",
+          "artists": "Zara Larsson, MNEK",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02401bf6103d4b7f5230a21582",
+          "durationMs": 212574,
+          "plays": 1225581226,
+          "url": "https://open.spotify.com/track/6hmhG1b4LEyNuashVvuIAo"
+        }
+      ]
+    },
+    {
+      "id": "4q3ewBCX7sLwd24euuV69X",
+      "name": "Bad Bunny",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb81f47f44084e0a09b5f0fa13",
+      "usRank": 34,
+      "monthlyListeners": 89547873,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X",
+      "topTracks": [
+        {
+          "id": "3sK8wGT43QFpWrvNQsrQya",
+          "name": "DtMF",
+          "artists": "Bad Bunny",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bbd45c8d36e0e045ef640411",
+          "durationMs": 237117,
+          "plays": 2244196849,
+          "url": "https://open.spotify.com/track/3sK8wGT43QFpWrvNQsrQya"
+        },
+        {
+          "id": "2lTm559tuIvatlT1u0JYG2",
+          "name": "BAILE INoLVIDABLE",
+          "artists": "Bad Bunny",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bbd45c8d36e0e045ef640411",
+          "durationMs": 367725,
+          "plays": 1834915324,
+          "url": "https://open.spotify.com/track/2lTm559tuIvatlT1u0JYG2"
+        },
+        {
+          "id": "6J5kc12BW5HuP3d7C3vvx8",
+          "name": "EoO",
+          "artists": "Bad Bunny",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bbd45c8d36e0e045ef640411",
+          "durationMs": 204768,
+          "plays": 1385061172,
+          "url": "https://open.spotify.com/track/6J5kc12BW5HuP3d7C3vvx8"
+        },
+        {
+          "id": "5TFD2bmFKGhoCRbX61nXY5",
+          "name": "NUEVAYoL",
+          "artists": "Bad Bunny",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bbd45c8d36e0e045ef640411",
+          "durationMs": 183685,
+          "plays": 1565550557,
+          "url": "https://open.spotify.com/track/5TFD2bmFKGhoCRbX61nXY5"
+        },
+        {
+          "id": "1IHWl5LamUGEuP4ozKQSXZ",
+          "name": "Tití Me Preguntó",
+          "artists": "Bad Bunny",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0249d694203245f241a1bcaa72",
+          "durationMs": 243716,
+          "plays": 2431329496,
+          "url": "https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ"
+        }
+      ]
+    },
+    {
+      "id": "26opZSJcXshCmCwxgZQmBc",
+      "name": "Whiskey Myers",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb55725bcabcb716077626bd97",
+      "usRank": 35,
+      "monthlyListeners": 10977300,
+      "popularity": 81,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/26opZSJcXshCmCwxgZQmBc",
+      "topTracks": [
+        {
+          "id": "1VOSSXuWRcBj2rpfxNdX9v",
+          "name": "Broken Window Serenade",
+          "artists": "Whiskey Myers",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022a56fbcf4c26d35d6e0bd9f1",
+          "durationMs": 346333,
+          "plays": 564866463,
+          "url": "https://open.spotify.com/track/1VOSSXuWRcBj2rpfxNdX9v"
+        },
+        {
+          "id": "75qTWvk6QCGRr1V31Q41qz",
+          "name": "Lonely East Texas Nights",
+          "artists": "Whiskey Myers",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f6f4538bba8027a3aafcdbe6",
+          "durationMs": 260799,
+          "plays": 140003092,
+          "url": "https://open.spotify.com/track/75qTWvk6QCGRr1V31Q41qz"
+        },
+        {
+          "id": "2KanmpA3AMVY5YNw7bii1o",
+          "name": "Stone",
+          "artists": "Whiskey Myers",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02268e515d955ab306f0923e46",
+          "durationMs": 335622,
+          "plays": 205618936,
+          "url": "https://open.spotify.com/track/2KanmpA3AMVY5YNw7bii1o"
+        },
+        {
+          "id": "1Dp9KeEARBJ2dlE6uSAh5Y",
+          "name": "Virginia",
+          "artists": "Whiskey Myers",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e022a56fbcf4c26d35d6e0bd9f1",
+          "durationMs": 260506,
+          "plays": 93127090,
+          "url": "https://open.spotify.com/track/1Dp9KeEARBJ2dlE6uSAh5Y"
+        },
+        {
+          "id": "6yggZbtgrxPNwWOs06cS8L",
+          "name": "Bury My Bones",
+          "artists": "Whiskey Myers",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f76b0fb2ea247c31d112a6da",
+          "durationMs": 259829,
+          "plays": 139658687,
+          "url": "https://open.spotify.com/track/6yggZbtgrxPNwWOs06cS8L"
+        }
+      ]
+    },
+    {
+      "id": "1uNFoZAHBGtllmzznpCI3s",
+      "name": "Justin Bieber",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaf20f7db5288bce9beede034",
+      "usRank": 36,
+      "monthlyListeners": 110855999,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s",
+      "topTracks": [
+        {
+          "id": "6QFCMUUq1T2Vf5sFUXcuQ7",
+          "name": "Beauty And A Beat",
+          "artists": "Justin Bieber, Nicki Minaj",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f1d02a6cec967f8b6b78f76e",
+          "durationMs": 227986,
+          "plays": 2439787468,
+          "url": "https://open.spotify.com/track/6QFCMUUq1T2Vf5sFUXcuQ7"
+        },
+        {
+          "id": "5BZsQlgw21vDOAjoqkNgKb",
+          "name": "DAISIES",
+          "artists": "Justin Bieber",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d65c4773bc5061fd27facc5b",
+          "durationMs": 176453,
+          "plays": 1063258854,
+          "url": "https://open.spotify.com/track/5BZsQlgw21vDOAjoqkNgKb"
+        },
+        {
+          "id": "3JsydWaf2Ev4ehaLUjj3SY",
+          "name": "Confident",
+          "artists": "Justin Bieber, Chance the Rapper",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0258ae8fddecbd2630005409c9",
+          "durationMs": 248133,
+          "plays": 1461145031,
+          "url": "https://open.spotify.com/track/3JsydWaf2Ev4ehaLUjj3SY"
+        },
+        {
+          "id": "6epn3r7S14KUqlReYr77hA",
+          "name": "Baby",
+          "artists": "Justin Bieber, Ludacris",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02629dc9e2e3bc20bbd7d92e4a",
+          "durationMs": 214240,
+          "plays": 1838678412,
+          "url": "https://open.spotify.com/track/6epn3r7S14KUqlReYr77hA"
+        },
+        {
+          "id": "50kpGaPAhYJ3sGmk6vplg0",
+          "name": "Love Yourself",
+          "artists": "Justin Bieber",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f46b9d202509a8f7384b90de",
+          "durationMs": 233720,
+          "plays": 3418018406,
+          "url": "https://open.spotify.com/track/50kpGaPAhYJ3sGmk6vplg0"
+        }
+      ]
+    },
+    {
+      "id": "02gSuSAWEdWa5UOvqzjX6v",
+      "name": "SIENNA SPIRO",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebfb0ab819bbd4502028cd1feb",
+      "usRank": 37,
+      "monthlyListeners": 36433883,
+      "popularity": 91,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/02gSuSAWEdWa5UOvqzjX6v",
+      "topTracks": [
+        {
+          "id": "7ujApz6iFP3PmKIDGcaGbe",
+          "name": "Great Expectation",
+          "artists": "SIENNA SPIRO",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b09eea420767969b6729962b",
+          "durationMs": 173975,
+          "plays": 244651098,
+          "url": "https://open.spotify.com/track/7ujApz6iFP3PmKIDGcaGbe"
+        },
+        {
+          "id": "7gkZNvBHfI30qG7hA0eopT",
+          "name": "Die On This Hill",
+          "artists": "SIENNA SPIRO",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b09eea420767969b6729962b",
+          "durationMs": 217008,
+          "plays": 702652919,
+          "url": "https://open.spotify.com/track/7gkZNvBHfI30qG7hA0eopT"
+        },
+        {
+          "id": "31IKMjvv6Oskp4hjGVeYsT",
+          "name": "Pure",
+          "artists": "SIENNA SPIRO",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b09eea420767969b6729962b",
+          "durationMs": 219924,
+          "plays": 132396905,
+          "url": "https://open.spotify.com/track/31IKMjvv6Oskp4hjGVeYsT"
+        },
+        {
+          "id": "2aQcGu5C6qFcicPsaywTEK",
+          "name": "Material Lover - from The Devil Wears Prada 2 Original Motion Picture",
+          "artists": "SIENNA SPIRO",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0231990a335ce5d02dc159e5c4",
+          "durationMs": 178016,
+          "plays": 166482343,
+          "url": "https://open.spotify.com/track/2aQcGu5C6qFcicPsaywTEK"
+        },
+        {
+          "id": "4wfIW1OLIqejwmBYG1LhCl",
+          "name": "The Visitor",
+          "artists": "SIENNA SPIRO",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b09eea420767969b6729962b",
+          "durationMs": 228908,
+          "plays": 207913495,
+          "url": "https://open.spotify.com/track/4wfIW1OLIqejwmBYG1LhCl"
+        }
+      ]
+    },
+    {
+      "id": "77SW9BnxLY8rJ0RciFqkHh",
+      "name": "The Neighbourhood",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebdf0b5ac84376a0a4b2166816",
+      "usRank": 38,
+      "monthlyListeners": 51167079,
+      "popularity": 94,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/77SW9BnxLY8rJ0RciFqkHh",
+      "topTracks": [
+        {
+          "id": "2QjOHCTQ1Jl3zawyYOpxh6",
+          "name": "Sweater Weather",
+          "artists": "The Neighbourhood",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028265a736a1eb838ad5a0b921",
+          "durationMs": 240400,
+          "plays": 5014255148,
+          "url": "https://open.spotify.com/track/2QjOHCTQ1Jl3zawyYOpxh6"
+        },
+        {
+          "id": "2xql0pid3EUwW38AsywxhV",
+          "name": "Reflections",
+          "artists": "The Neighbourhood",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029b6ac98a52f62d5cb473da40",
+          "durationMs": 244013,
+          "plays": 1280658032,
+          "url": "https://open.spotify.com/track/2xql0pid3EUwW38AsywxhV"
+        },
+        {
+          "id": "2K7xn816oNHJZ0aVqdQsha",
+          "name": "Softcore",
+          "artists": "The Neighbourhood",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029b6ac98a52f62d5cb473da40",
+          "durationMs": 206280,
+          "plays": 1776851867,
+          "url": "https://open.spotify.com/track/2K7xn816oNHJZ0aVqdQsha"
+        },
+        {
+          "id": "5E30LdtzQTGqRvNd7l6kG5",
+          "name": "Daddy Issues",
+          "artists": "The Neighbourhood",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025260c62db020e5861a51556d",
+          "durationMs": 260163,
+          "plays": 2249121416,
+          "url": "https://open.spotify.com/track/5E30LdtzQTGqRvNd7l6kG5"
+        },
+        {
+          "id": "7zwn1eykZtZ5LODrf7c0tS",
+          "name": "You Get Me So High",
+          "artists": "The Neighbourhood",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029b6ac98a52f62d5cb473da40",
+          "durationMs": 153000,
+          "plays": 1064281197,
+          "url": "https://open.spotify.com/track/7zwn1eykZtZ5LODrf7c0tS"
+        }
+      ]
+    },
+    {
+      "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+      "name": "Kendrick Lamar",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb39ba6dcd4355c03de0b50918",
+      "usRank": 39,
+      "monthlyListeners": 68206041,
+      "popularity": 97,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg",
+      "topTracks": [
+        {
+          "id": "3GCdLUSnKSMJhs4Tj6CV3s",
+          "name": "All The Stars (with SZA) - From \"Black Panther: The Album\"",
+          "artists": "Kendrick Lamar, SZA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c027ad28821777b00dcaa888",
+          "durationMs": 232186,
+          "plays": 3243459582,
+          "url": "https://open.spotify.com/track/3GCdLUSnKSMJhs4Tj6CV3s"
+        },
+        {
+          "id": "2CGNAOSuO1MEFCbBRgUzjd",
+          "name": "luther (with sza)",
+          "artists": "Kendrick Lamar, SZA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027e5e269471fe4a43a42e2f15",
+          "durationMs": 177598,
+          "plays": 1686342756,
+          "url": "https://open.spotify.com/track/2CGNAOSuO1MEFCbBRgUzjd"
+        },
+        {
+          "id": "2HbKqm4o0w5wEeEFXm2sD4",
+          "name": "Money Trees",
+          "artists": "Kendrick Lamar, Jay Rock",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d28d2ebdedb220e479743797",
+          "durationMs": 386906,
+          "plays": 2371924723,
+          "url": "https://open.spotify.com/track/2HbKqm4o0w5wEeEFXm2sD4"
+        },
+        {
+          "id": "6AI3ezQ4o3HUoP6Dhudph3",
+          "name": "Not Like Us",
+          "artists": "Kendrick Lamar",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e021ea0c62b2339cbf493a999ad",
+          "durationMs": 274192,
+          "plays": 2077094474,
+          "url": "https://open.spotify.com/track/6AI3ezQ4o3HUoP6Dhudph3"
+        },
+        {
+          "id": "6REbwUNlppTfcnV4d4ZoZi",
+          "name": "Swimming Pools (Drank)",
+          "artists": "Kendrick Lamar",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b5ef185d28724c5573c2ac9c",
+          "durationMs": 247800,
+          "plays": 1254038554,
+          "url": "https://open.spotify.com/track/6REbwUNlppTfcnV4d4ZoZi"
+        }
+      ]
+    },
+    {
+      "id": "5lpH0xAS4fVfLkACg9DAuM",
+      "name": "Wham!",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb2ebf587c72f9e5159da9ce55",
+      "usRank": 40,
+      "monthlyListeners": 19049600,
+      "popularity": 86,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/5lpH0xAS4fVfLkACg9DAuM",
+      "topTracks": [
+        {
+          "id": "2FRnf9qhLbvw8fu4IBXx78",
+          "name": "Last Christmas",
+          "artists": "Wham!",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f2d2adaa21ad616df6241e7d",
+          "durationMs": 262960,
+          "plays": 2267666407,
+          "url": "https://open.spotify.com/track/2FRnf9qhLbvw8fu4IBXx78"
+        },
+        {
+          "id": "0ikz6tENMONtK6qGkOrU3c",
+          "name": "Wake Me Up Before You Go-Go",
+          "artists": "Wham!",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a2fc41b0dd6ce4f0d16a4c46",
+          "durationMs": 231333,
+          "plays": 1324613224,
+          "url": "https://open.spotify.com/track/0ikz6tENMONtK6qGkOrU3c"
+        },
+        {
+          "id": "5hXEcqQhEjfZdbIZLO8mf2",
+          "name": "Everything She Wants",
+          "artists": "Wham!",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a2fc41b0dd6ce4f0d16a4c46",
+          "durationMs": 302693,
+          "plays": 216481661,
+          "url": "https://open.spotify.com/track/5hXEcqQhEjfZdbIZLO8mf2"
+        },
+        {
+          "id": "6tASfEUyB7lE2r6DLzURji",
+          "name": "Club Tropicana",
+          "artists": "Wham!",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0234229e11a2146f96d6956044",
+          "durationMs": 265600,
+          "plays": 162604228,
+          "url": "https://open.spotify.com/track/6tASfEUyB7lE2r6DLzURji"
+        },
+        {
+          "id": "73OZT1XgLleDwperqGjWH4",
+          "name": "Last Christmas - Pudding Mix",
+          "artists": "Wham!",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f2d2adaa21ad616df6241e7d",
+          "durationMs": 398466,
+          "plays": 2267666407,
+          "url": "https://open.spotify.com/track/73OZT1XgLleDwperqGjWH4"
+        }
+      ]
+    },
+    {
+      "id": "6jJ0s89eD6GaHleKKya26X",
+      "name": "Katy Perry",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebcd50e745cf782f905769f482",
+      "usRank": 41,
+      "monthlyListeners": 86522468,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/6jJ0s89eD6GaHleKKya26X",
+      "topTracks": [
+        {
+          "id": "2009X8GyWTqyxIdzAEYW6N",
+          "name": "The One That Got Away",
+          "artists": "Katy Perry",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e021d955011a3ed477dc77865ad",
+          "durationMs": 227333,
+          "plays": 2093234495,
+          "url": "https://open.spotify.com/track/2009X8GyWTqyxIdzAEYW6N"
+        },
+        {
+          "id": "3avYqdwHKEq8beXbeWCKqJ",
+          "name": "Last Friday Night (T.G.I.F.)",
+          "artists": "Katy Perry",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d20c38f295039520d688a888",
+          "durationMs": 230733,
+          "plays": 2117126263,
+          "url": "https://open.spotify.com/track/3avYqdwHKEq8beXbeWCKqJ"
+        },
+        {
+          "id": "0pOZYYEJawmTAPtkzYKSa2",
+          "name": "Legendary Lovers",
+          "artists": "Katy Perry",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e021e9a057052d59004caf47e22",
+          "durationMs": 224216,
+          "plays": 285427913,
+          "url": "https://open.spotify.com/track/0pOZYYEJawmTAPtkzYKSa2"
+        },
+        {
+          "id": "4jbmgIyjGoXjY01XxatOx6",
+          "name": "Dark Horse",
+          "artists": "Katy Perry, Juicy J",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e021e9a057052d59004caf47e22",
+          "durationMs": 215672,
+          "plays": 2131018822,
+          "url": "https://open.spotify.com/track/4jbmgIyjGoXjY01XxatOx6"
+        },
+        {
+          "id": "1y4eb6hmAvsqlDOl3fx9kk",
+          "name": "Hot N Cold",
+          "artists": "Katy Perry",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02cd3978ebe35d93a07249b97f",
+          "durationMs": 220226,
+          "plays": 1595256846,
+          "url": "https://open.spotify.com/track/1y4eb6hmAvsqlDOl3fx9kk"
+        }
+      ]
+    },
+    {
+      "id": "4iHNK0tOyZPYnBU7nGAgpQ",
+      "name": "Mariah Carey",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb21453384a10b1f8e18877f63",
+      "usRank": 42,
+      "monthlyListeners": 42238452,
+      "popularity": 93,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/4iHNK0tOyZPYnBU7nGAgpQ",
+      "topTracks": [
+        {
+          "id": "3IcIIZMMS7UArJJPtEHXG8",
+          "name": "Obsessed",
+          "artists": "Mariah Carey",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a9e20a20b9fc607d81f9c335",
+          "durationMs": 242200,
+          "plays": 1002361149,
+          "url": "https://open.spotify.com/track/3IcIIZMMS7UArJJPtEHXG8"
+        },
+        {
+          "id": "0bYg9bo50gSsH3LtXe2SQn",
+          "name": "All I Want for Christmas Is You",
+          "artists": "Mariah Carey",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c0862332847213b151ffab31",
+          "durationMs": 241562,
+          "plays": 2553455465,
+          "url": "https://open.spotify.com/track/0bYg9bo50gSsH3LtXe2SQn"
+        },
+        {
+          "id": "3LmvfNUQtglbTrydsdIqFU",
+          "name": "We Belong Together",
+          "artists": "Mariah Carey",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02768bc8d9f078db929dfcfbd1",
+          "durationMs": 201400,
+          "plays": 996580232,
+          "url": "https://open.spotify.com/track/3LmvfNUQtglbTrydsdIqFU"
+        },
+        {
+          "id": "6xkryXuiZU360Lngd4sx13",
+          "name": "Fantasy",
+          "artists": "Mariah Carey",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02749e9bfa78277f30ad2c9a9c",
+          "durationMs": 243493,
+          "plays": 660434270,
+          "url": "https://open.spotify.com/track/6xkryXuiZU360Lngd4sx13"
+        },
+        {
+          "id": "0YImOCkIJ2PWhCXaURCZnY",
+          "name": "I Know What You Want (feat. Flipmode Squad)",
+          "artists": "Busta Rhymes, Mariah Carey, Flipmode Squad",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ac8e6d7dae57f0c1c87e230c",
+          "durationMs": 324306,
+          "plays": 530555324,
+          "url": "https://open.spotify.com/track/0YImOCkIJ2PWhCXaURCZnY"
+        }
+      ]
+    },
+    {
+      "id": "2sil8z5kiy4r76CRTXxBCA",
+      "name": "The Goo Goo Dolls",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe7b66b8c4ba729848574df7a",
+      "usRank": 43,
+      "monthlyListeners": 39409874,
+      "popularity": 92,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/2sil8z5kiy4r76CRTXxBCA",
+      "topTracks": [
+        {
+          "id": "6Qyc6fS4DsZjB2mRW9DsQs",
+          "name": "Iris",
+          "artists": "The Goo Goo Dolls",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02eda9478c39a21e1cdc6609ca",
+          "durationMs": 289533,
+          "plays": 3848504094,
+          "url": "https://open.spotify.com/track/6Qyc6fS4DsZjB2mRW9DsQs"
+        },
+        {
+          "id": "0nnwn7LWHCAu09jfuH1xTA",
+          "name": "Slide",
+          "artists": "The Goo Goo Dolls",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02eda9478c39a21e1cdc6609ca",
+          "durationMs": 212066,
+          "plays": 490977224,
+          "url": "https://open.spotify.com/track/0nnwn7LWHCAu09jfuH1xTA"
+        },
+        {
+          "id": "1G8jae4jD8mwkXdodqHsBM",
+          "name": "Name",
+          "artists": "The Goo Goo Dolls",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027db048b350136b3116ad02d4",
+          "durationMs": 270000,
+          "plays": 253072855,
+          "url": "https://open.spotify.com/track/1G8jae4jD8mwkXdodqHsBM"
+        },
+        {
+          "id": "5zmaypMaWb21FUGBxbw8hT",
+          "name": "Black Balloon",
+          "artists": "The Goo Goo Dolls",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02eda9478c39a21e1cdc6609ca",
+          "durationMs": 249533,
+          "plays": 125724047,
+          "url": "https://open.spotify.com/track/5zmaypMaWb21FUGBxbw8hT"
+        },
+        {
+          "id": "4KqTGPPmXowMPEoShSVOta",
+          "name": "Here Is Gone",
+          "artists": "The Goo Goo Dolls",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029923ca569ea4d53394c0146e",
+          "durationMs": 238173,
+          "plays": 83571038,
+          "url": "https://open.spotify.com/track/4KqTGPPmXowMPEoShSVOta"
+        }
+      ]
+    },
+    {
+      "id": "6XyY86QOPPrYVGvF9ch6wz",
+      "name": "Linkin Park",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb527d95dabbe8b8b527e8136f",
+      "usRank": 44,
+      "monthlyListeners": 56224941,
+      "popularity": 95,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz",
+      "topTracks": [
+        {
+          "id": "60a0Rd6pjrkxjPbaKzXjfq",
+          "name": "In the End",
+          "artists": "Linkin Park",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e2f039481babe23658fc719a",
+          "durationMs": 216880,
+          "plays": 3454991709,
+          "url": "https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq"
+        },
+        {
+          "id": "2nLtzopw4rPReszdYBJU6h",
+          "name": "Numb",
+          "artists": "Linkin Park",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025f1f51d14e8bea89484ecd1b",
+          "durationMs": 187520,
+          "plays": 2985432410,
+          "url": "https://open.spotify.com/track/2nLtzopw4rPReszdYBJU6h"
+        },
+        {
+          "id": "4Yf5bqU3NK4kNOypcrLYwU",
+          "name": "Faint",
+          "artists": "Linkin Park",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e025f1f51d14e8bea89484ecd1b",
+          "durationMs": 162106,
+          "plays": 1520422125,
+          "url": "https://open.spotify.com/track/4Yf5bqU3NK4kNOypcrLYwU"
+        },
+        {
+          "id": "3agtg0x11wPvLIWkYR39nZ",
+          "name": "Somewhere I Belong",
+          "artists": "Linkin Park",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025f1f51d14e8bea89484ecd1b",
+          "durationMs": 213933,
+          "plays": 1262086467,
+          "url": "https://open.spotify.com/track/3agtg0x11wPvLIWkYR39nZ"
+        },
+        {
+          "id": "18lR4BzEs7e3qzc0KVkTpU",
+          "name": "What I've Done",
+          "artists": "Linkin Park",
+          "image": null,
+          "durationMs": 205226,
+          "plays": 1571584018,
+          "url": "https://open.spotify.com/track/18lR4BzEs7e3qzc0KVkTpU"
+        }
+      ]
+    },
+    {
+      "id": "4YLtscXsxbVgi031ovDDdh",
+      "name": "Chris Stapleton",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba0c87c8f329b436eac8b9784",
+      "usRank": 52,
+      "monthlyListeners": 24560704,
+      "popularity": 88,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/4YLtscXsxbVgi031ovDDdh",
+      "topTracks": [
+        {
+          "id": "3fqwjXwUGN6vbzIwvyFMhx",
+          "name": "Tennessee Whiskey",
+          "artists": "Chris Stapleton",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02540fc1d083eac5bcff8dad21",
+          "durationMs": 293293,
+          "plays": 1615610139,
+          "url": "https://open.spotify.com/track/3fqwjXwUGN6vbzIwvyFMhx"
+        },
+        {
+          "id": "2UikqkwBv7aIvlixeVXHWt",
+          "name": "You Should Probably Leave",
+          "artists": "Chris Stapleton",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029408342067e2ff50d69a3c98",
+          "durationMs": 213493,
+          "plays": 1009333418,
+          "url": "https://open.spotify.com/track/2UikqkwBv7aIvlixeVXHWt"
+        },
+        {
+          "id": "3Gn1zuHNLtGuGEOXwq0k7e",
+          "name": "Think I'm In Love With You",
+          "artists": "Chris Stapleton",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02de2e30cf7205b45a0ba3877f",
+          "durationMs": 222800,
+          "plays": 495012120,
+          "url": "https://open.spotify.com/track/3Gn1zuHNLtGuGEOXwq0k7e"
+        },
+        {
+          "id": "3K07bGe8iljQ3mOKArHLDo",
+          "name": "Starting Over",
+          "artists": "Chris Stapleton",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029408342067e2ff50d69a3c98",
+          "durationMs": 240413,
+          "plays": 648629917,
+          "url": "https://open.spotify.com/track/3K07bGe8iljQ3mOKArHLDo"
+        },
+        {
+          "id": "1DgtQlVNotingln271ZKCx",
+          "name": "White Horse",
+          "artists": "Chris Stapleton",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02de2e30cf7205b45a0ba3877f",
+          "durationMs": 267893,
+          "plays": 477250006,
+          "url": "https://open.spotify.com/track/1DgtQlVNotingln271ZKCx"
+        }
+      ]
+    },
+    {
+      "id": "4gzpq5DPGxSnKTe4SA8HAU",
+      "name": "Coldplay",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1ba8fc5f5c73e7e9313cc6eb",
+      "usRank": 53,
+      "monthlyListeners": 90362314,
+      "popularity": 99,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU",
+      "topTracks": [
+        {
+          "id": "3AJwUDP919kvQ9QcozQPxg",
+          "name": "Yellow",
+          "artists": "Coldplay",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029164bafe9aaa168d93f4816a",
+          "durationMs": 266773,
+          "plays": 4078198361,
+          "url": "https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg"
+        },
+        {
+          "id": "1mea3bSkSGXuIRvnydlB5b",
+          "name": "Viva La Vida",
+          "artists": "Coldplay",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
+          "durationMs": 242373,
+          "plays": 3601237009,
+          "url": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b"
+        },
+        {
+          "id": "7D0RhFcb3CrfPuTJ0obrod",
+          "name": "Sparks",
+          "artists": "Coldplay",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029164bafe9aaa168d93f4816a",
+          "durationMs": 227093,
+          "plays": 2303472675,
+          "url": "https://open.spotify.com/track/7D0RhFcb3CrfPuTJ0obrod"
+        },
+        {
+          "id": "75JFxkI2RXiU7L9VXzMkle",
+          "name": "The Scientist",
+          "artists": "Coldplay",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02de09e02aa7febf30b7c02d82",
+          "durationMs": 309600,
+          "plays": 3060985381,
+          "url": "https://open.spotify.com/track/75JFxkI2RXiU7L9VXzMkle"
+        },
+        {
+          "id": "6RUKPb4LETWmmr3iAEQktW",
+          "name": "Something Just Like This",
+          "artists": "The Chainsmokers, Coldplay",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020c13d3d5a503c84fcc60ae94",
+          "durationMs": 247160,
+          "plays": 3831071338,
+          "url": "https://open.spotify.com/track/6RUKPb4LETWmmr3iAEQktW"
+        }
+      ]
+    },
+    {
+      "id": "5nGIFgo0shDenQYSE0Sn7c",
+      "name": "Evanescence",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf42c2c9bead41b262780ea89",
+      "usRank": 54,
+      "monthlyListeners": 30142488,
+      "popularity": 90,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/5nGIFgo0shDenQYSE0Sn7c",
+      "topTracks": [
+        {
+          "id": "0COqiPhxzoWICwFCS4eZcp",
+          "name": "Bring Me To Life",
+          "artists": "Evanescence",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0225f49ab23f0ec6332efef432",
+          "durationMs": 235893,
+          "plays": 2257425801,
+          "url": "https://open.spotify.com/track/0COqiPhxzoWICwFCS4eZcp"
+        },
+        {
+          "id": "3UygY7qW2cvG9Llkay6i1i",
+          "name": "Going Under",
+          "artists": "Evanescence",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0225f49ab23f0ec6332efef432",
+          "durationMs": 214946,
+          "plays": 643172706,
+          "url": "https://open.spotify.com/track/3UygY7qW2cvG9Llkay6i1i"
+        },
+        {
+          "id": "4UzVcXufOhGUwF56HT7b8M",
+          "name": "My Immortal",
+          "artists": "Evanescence",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0225f49ab23f0ec6332efef432",
+          "durationMs": 262533,
+          "plays": 691571686,
+          "url": "https://open.spotify.com/track/4UzVcXufOhGUwF56HT7b8M"
+        },
+        {
+          "id": "663Karu2rvKLdnY0eo1n3M",
+          "name": "Call Me When You're Sober",
+          "artists": "Evanescence",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027b8aabae10ab5bbe7c7f11c5",
+          "durationMs": 214706,
+          "plays": 294990646,
+          "url": "https://open.spotify.com/track/663Karu2rvKLdnY0eo1n3M"
+        },
+        {
+          "id": "0tWEB6BxbI48XN79QE1JbT",
+          "name": "Everybody's Fool",
+          "artists": "Evanescence",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0225f49ab23f0ec6332efef432",
+          "durationMs": 195880,
+          "plays": 235790269,
+          "url": "https://open.spotify.com/track/0tWEB6BxbI48XN79QE1JbT"
+        }
+      ]
+    },
+    {
+      "id": "7jy3rLJdDQY21OgRLCZ9sD",
+      "name": "Foo Fighters",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1db35bc9c01d2b1c151e44ce",
+      "usRank": 55,
+      "monthlyListeners": 22519163,
+      "popularity": 87,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/7jy3rLJdDQY21OgRLCZ9sD",
+      "topTracks": [
+        {
+          "id": "5UWwZ5lm5PKu6eKsHAGxOk",
+          "name": "Everlong",
+          "artists": "Foo Fighters",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024bc9bcdbdc9ac34e37d8b6bb",
+          "durationMs": 250546,
+          "plays": 1890987974,
+          "url": "https://open.spotify.com/track/5UWwZ5lm5PKu6eKsHAGxOk"
+        },
+        {
+          "id": "7x8dCjCr0x6x2lXKujYD34",
+          "name": "The Pretender",
+          "artists": "Foo Fighters",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029d957247c6c610cb7c4da1c5",
+          "durationMs": 269306,
+          "plays": 1080350970,
+          "url": "https://open.spotify.com/track/7x8dCjCr0x6x2lXKujYD34"
+        },
+        {
+          "id": "4dVbhS6OiYvFikshyaQaCN",
+          "name": "My Hero",
+          "artists": "Foo Fighters",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024bc9bcdbdc9ac34e37d8b6bb",
+          "durationMs": 260026,
+          "plays": 652392822,
+          "url": "https://open.spotify.com/track/4dVbhS6OiYvFikshyaQaCN"
+        },
+        {
+          "id": "5OQsiBsky2k2kDKy2bX2eT",
+          "name": "Learn to Fly",
+          "artists": "Foo Fighters",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026c52084ed1f1748f213783b3",
+          "durationMs": 235293,
+          "plays": 802060613,
+          "url": "https://open.spotify.com/track/5OQsiBsky2k2kDKy2bX2eT"
+        },
+        {
+          "id": "5FZxsHWIvUsmSK1IAvm2pp",
+          "name": "Best of You",
+          "artists": "Foo Fighters",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0250d3fff0dc3d9b55f164d8d6",
+          "durationMs": 255261,
+          "plays": 835099267,
+          "url": "https://open.spotify.com/track/5FZxsHWIvUsmSK1IAvm2pp"
+        }
+      ]
+    },
+    {
+      "id": "6zlR5ttMfMNmwf2lecU9Cc",
+      "name": "Sam Fender",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9075edde83b21c5137fad66",
+      "usRank": 56,
+      "monthlyListeners": 19800613,
+      "popularity": 86,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
+      "topTracks": [
+        {
+          "id": "0MUXBhPUDF8or0kfQ0EHwV",
+          "name": "Rein Me In (with Olivia Dean)",
+          "artists": "Sam Fender, Olivia Dean",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0270722c52a53ef4a56f0c2eb0",
+          "durationMs": 339893,
+          "plays": 553239120,
+          "url": "https://open.spotify.com/track/0MUXBhPUDF8or0kfQ0EHwV"
+        },
+        {
+          "id": "5rF6YUIlgiat22OT1lWspJ",
+          "name": "Seventeen Going Under",
+          "artists": "Sam Fender",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025918af42c697829fd84de59f",
+          "durationMs": 297933,
+          "plays": 389796495,
+          "url": "https://open.spotify.com/track/5rF6YUIlgiat22OT1lWspJ"
+        },
+        {
+          "id": "6gBjUipB0ZxHd1BvwdJTDQ",
+          "name": "People Watching",
+          "artists": "Sam Fender",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02236df2fbddaf61fe0926284f",
+          "durationMs": 304480,
+          "plays": 139079895,
+          "url": "https://open.spotify.com/track/6gBjUipB0ZxHd1BvwdJTDQ"
+        },
+        {
+          "id": "6YrNd7sFarQAUflTPcTH0h",
+          "name": "Spit Of You",
+          "artists": "Sam Fender",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025918af42c697829fd84de59f",
+          "durationMs": 273026,
+          "plays": 124404971,
+          "url": "https://open.spotify.com/track/6YrNd7sFarQAUflTPcTH0h"
+        },
+        {
+          "id": "6ty3uMPCIEGVgGbrvHfeoU",
+          "name": "Arm's Length",
+          "artists": "Sam Fender",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02236df2fbddaf61fe0926284f",
+          "durationMs": 239600,
+          "plays": 72699380,
+          "url": "https://open.spotify.com/track/6ty3uMPCIEGVgGbrvHfeoU"
+        }
+      ]
+    },
+    {
+      "id": "1KCSPY1glIKqW2TotWuXOR",
+      "name": "P!nk",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb7bbad89a61061304ec842588",
+      "usRank": 57,
+      "monthlyListeners": 48003935,
+      "popularity": 94,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/1KCSPY1glIKqW2TotWuXOR",
+      "topTracks": [
+        {
+          "id": "1mKXFLRA179hdOWQBwUk9e",
+          "name": "Just Give Me a Reason (feat. Nate Ruess)",
+          "artists": "P!nk, Nate Ruess",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
+          "durationMs": 242721,
+          "plays": 2183816524,
+          "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e"
+        },
+        {
+          "id": "1jF7IL57ayN4Ity3jQqGu0",
+          "name": "Try",
+          "artists": "P!nk",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
+          "durationMs": 247911,
+          "plays": 1194801715,
+          "url": "https://open.spotify.com/track/1jF7IL57ayN4Ity3jQqGu0"
+        },
+        {
+          "id": "0Qh38w01QRXK6KHIv0e3hb",
+          "name": "What About Us",
+          "artists": "P!nk",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0297ccfc62cf466b6a5ae6b67f",
+          "durationMs": 269595,
+          "plays": 1044250530,
+          "url": "https://open.spotify.com/track/0Qh38w01QRXK6KHIv0e3hb"
+        },
+        {
+          "id": "0JiY190vktuhSGN6aqJdrt",
+          "name": "So What",
+          "artists": "P!nk",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e025a45d5041e4ffcb9f756f740",
+          "durationMs": 215160,
+          "plays": 888252245,
+          "url": "https://open.spotify.com/track/0JiY190vktuhSGN6aqJdrt"
+        },
+        {
+          "id": "2hns6Dv29Yrg68AVTJiAyA",
+          "name": "Who Knew - Edit",
+          "artists": "P!nk",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020156b42e6443277454bb30fa",
+          "durationMs": 208493,
+          "plays": 531832421,
+          "url": "https://open.spotify.com/track/2hns6Dv29Yrg68AVTJiAyA"
+        }
+      ]
+    },
+    {
+      "id": "1qUjOF5fzrpoNycD36b2jZ",
+      "name": "Nate Ruess",
+      "image": "https://i.scdn.co/image/53c95ff873c5d229c7c32d5c1ec5a25a0a898d0f",
+      "usRank": 58,
+      "monthlyListeners": 26688498,
+      "popularity": 89,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/1qUjOF5fzrpoNycD36b2jZ",
+      "topTracks": [
+        {
+          "id": "1mKXFLRA179hdOWQBwUk9e",
+          "name": "Just Give Me a Reason (feat. Nate Ruess)",
+          "artists": "P!nk, Nate Ruess",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
+          "durationMs": 242721,
+          "plays": 2181215042,
+          "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e"
+        },
+        {
+          "id": "37rgPoz4hfjIvPjKxlu2HE",
+          "name": "Just Give Me a Reason (feat. Nate Ruess) - Live",
+          "artists": "P!nk, Nate Ruess",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f4eeeb7be3c80ce1c4b51b98",
+          "durationMs": 277984,
+          "plays": 7949364,
+          "url": "https://open.spotify.com/track/37rgPoz4hfjIvPjKxlu2HE"
+        },
+        {
+          "id": "0oPDrdHQwkjaT0aytZavUO",
+          "name": "Nothing Without Love",
+          "artists": "Nate Ruess",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02549ad91149cdf29a01bf6182",
+          "durationMs": 236773,
+          "plays": 56653485,
+          "url": "https://open.spotify.com/track/0oPDrdHQwkjaT0aytZavUO"
+        },
+        {
+          "id": "0p9E7l00TBA1aqmhElZoLx",
+          "name": "Great Big Storm",
+          "artists": "Nate Ruess",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02549ad91149cdf29a01bf6182",
+          "durationMs": 240546,
+          "plays": 10488913,
+          "url": "https://open.spotify.com/track/0p9E7l00TBA1aqmhElZoLx"
+        },
+        {
+          "id": "4u2dVP4I47U1btgQ3Os77P",
+          "name": "AhHa",
+          "artists": "Nate Ruess",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02549ad91149cdf29a01bf6182",
+          "durationMs": 263960,
+          "plays": 7879756,
+          "url": "https://open.spotify.com/track/4u2dVP4I47U1btgQ3Os77P"
+        }
+      ]
+    },
+    {
+      "id": "4eZer1QvRM8Pna0rLToV1K",
+      "name": "Alyssa Grace",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe95e39575c4f2c668eb11bc4",
+      "usRank": 59,
+      "monthlyListeners": 11098211,
+      "popularity": 81,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/4eZer1QvRM8Pna0rLToV1K",
+      "topTracks": [
+        {
+          "id": "2oWFJJW9d1bIra3zHjR6GO",
+          "name": "bloodstream",
+          "artists": "Alyssa Grace",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029c031feeff1647deb7577309",
+          "durationMs": 177428,
+          "plays": 208054486,
+          "url": "https://open.spotify.com/track/2oWFJJW9d1bIra3zHjR6GO"
+        },
+        {
+          "id": "1gSre9vlU1ESgJEMcljc8r",
+          "name": "picking petals",
+          "artists": "Alyssa Grace",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f699e3e131ecb63de7a1ec84",
+          "durationMs": 228942,
+          "plays": 53858201,
+          "url": "https://open.spotify.com/track/1gSre9vlU1ESgJEMcljc8r"
+        },
+        {
+          "id": "5XqQF6zfPpC3c6pqIksWkO",
+          "name": "dog with a bone",
+          "artists": "Alyssa Grace",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d66a492a455e382347befc96",
+          "durationMs": 200060,
+          "plays": 26736512,
+          "url": "https://open.spotify.com/track/5XqQF6zfPpC3c6pqIksWkO"
+        },
+        {
+          "id": "32BxOmyXmlwnrwleg6dumg",
+          "name": "bones",
+          "artists": "Alyssa Grace",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02aa39a272014cea4ed00e027b",
+          "durationMs": 148304,
+          "plays": 12377515,
+          "url": "https://open.spotify.com/track/32BxOmyXmlwnrwleg6dumg"
+        },
+        {
+          "id": "2O3wA0G2HJOhceLlHntEIA",
+          "name": "spilling guts",
+          "artists": "Alyssa Grace",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c4f39657e1b0b2b409f41efc",
+          "durationMs": 183466,
+          "plays": 6874423,
+          "url": "https://open.spotify.com/track/2O3wA0G2HJOhceLlHntEIA"
+        }
+      ]
+    },
+    {
+      "id": "0TImkz4nPqjegtVSMZnMRq",
+      "name": "TLC",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb26f367a12bb6de3ca17d6c1d",
+      "usRank": 60,
+      "monthlyListeners": 23442374,
+      "popularity": 87,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/0TImkz4nPqjegtVSMZnMRq",
+      "topTracks": [
+        {
+          "id": "1KGi9sZVMeszgZOWivFpxs",
+          "name": "No Scrubs",
+          "artists": "TLC",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0261ffafd5e31a37336531cf95",
+          "durationMs": 214400,
+          "plays": 1794663150,
+          "url": "https://open.spotify.com/track/1KGi9sZVMeszgZOWivFpxs"
+        },
+        {
+          "id": "6qspW4YKycviDFjHBOaqUY",
+          "name": "Waterfalls",
+          "artists": "TLC",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e023ae63e3e2d9da8366e33fdab",
+          "durationMs": 279506,
+          "plays": 615980348,
+          "url": "https://open.spotify.com/track/6qspW4YKycviDFjHBOaqUY"
+        },
+        {
+          "id": "1aWV3uY3SIEZVbmv45oFWS",
+          "name": "Creep",
+          "artists": "TLC",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023ae63e3e2d9da8366e33fdab",
+          "durationMs": 268533,
+          "plays": 251628788,
+          "url": "https://open.spotify.com/track/1aWV3uY3SIEZVbmv45oFWS"
+        },
+        {
+          "id": "0BUoLE4o9eVahDHvTqak67",
+          "name": "Unpretty",
+          "artists": "TLC",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0261ffafd5e31a37336531cf95",
+          "durationMs": 278066,
+          "plays": 125978660,
+          "url": "https://open.spotify.com/track/0BUoLE4o9eVahDHvTqak67"
+        },
+        {
+          "id": "6dW75XbJ1WAMljOXWjTK46",
+          "name": "Red Light Special",
+          "artists": "TLC",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e023ae63e3e2d9da8366e33fdab",
+          "durationMs": 303960,
+          "plays": 54012769,
+          "url": "https://open.spotify.com/track/6dW75XbJ1WAMljOXWjTK46"
+        }
+      ]
+    },
+    {
+      "id": "72sOBVpZpUwHq7i0vb26lT",
+      "name": "Dexter and The Moonrocks",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb723c41968b1e6b253580bf1c",
+      "usRank": 61,
+      "monthlyListeners": 9676967,
+      "popularity": 80,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/72sOBVpZpUwHq7i0vb26lT",
+      "topTracks": [
+        {
+          "id": "2LSltDwOzq2yoBliFUnY41",
+          "name": "Freakin’ Out",
+          "artists": "Dexter and The Moonrocks",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0293b6342d3037b1972e457bc4",
+          "durationMs": 217897,
+          "plays": 234431671,
+          "url": "https://open.spotify.com/track/2LSltDwOzq2yoBliFUnY41"
+        },
+        {
+          "id": "0JTvM3WnB7C2X8LxOcnCS5",
+          "name": "Why Don’t You Say So (feat. Avery Anna)",
+          "artists": "Dexter and The Moonrocks, Avery Anna",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0293b6342d3037b1972e457bc4",
+          "durationMs": 206760,
+          "plays": 8770703,
+          "url": "https://open.spotify.com/track/0JTvM3WnB7C2X8LxOcnCS5"
+        },
+        {
+          "id": "1pfB7HalybiykT4vfGSHS1",
+          "name": "12 Steps (feat. Treaty Oak Revival)",
+          "artists": "Dexter and The Moonrocks, Treaty Oak Revival",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0293b6342d3037b1972e457bc4",
+          "durationMs": 191423,
+          "plays": 25948520,
+          "url": "https://open.spotify.com/track/1pfB7HalybiykT4vfGSHS1"
+        },
+        {
+          "id": "0DiG9bSx6Ipjjk967zOzMS",
+          "name": "If You Could Talk",
+          "artists": "Dexter and The Moonrocks",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0293b6342d3037b1972e457bc4",
+          "durationMs": 235744,
+          "plays": 12029920,
+          "url": "https://open.spotify.com/track/0DiG9bSx6Ipjjk967zOzMS"
+        },
+        {
+          "id": "3Sjl5oODGZ4uXLFJEuBDWD",
+          "name": "Ritalin",
+          "artists": "Dexter and The Moonrocks",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0222776577dbb6d3d4d8a0ba64",
+          "durationMs": 214059,
+          "plays": 25890388,
+          "url": "https://open.spotify.com/track/3Sjl5oODGZ4uXLFJEuBDWD"
+        }
+      ]
+    },
+    {
+      "id": "2qk9voo8llSGYcZ6xrBzKx",
+      "name": "Kings of Leon",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb4e0be890b66350e999ffb4a1",
+      "usRank": 62,
+      "monthlyListeners": 28699490,
+      "popularity": 89,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/2qk9voo8llSGYcZ6xrBzKx",
+      "topTracks": [
+        {
+          "id": "0ntQJM78wzOLVeCUAW7Y45",
+          "name": "Sex on Fire",
+          "artists": "Kings of Leon",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022519d01c0cca06f134eeadd8",
+          "durationMs": 203346,
+          "plays": 2340765551,
+          "url": "https://open.spotify.com/track/0ntQJM78wzOLVeCUAW7Y45"
+        },
+        {
+          "id": "5VGlqQANWDKJFl0MBG3sg2",
+          "name": "Use Somebody",
+          "artists": "Kings of Leon",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022519d01c0cca06f134eeadd8",
+          "durationMs": 230760,
+          "plays": 1384964883,
+          "url": "https://open.spotify.com/track/5VGlqQANWDKJFl0MBG3sg2"
+        },
+        {
+          "id": "2nO1DYEg1X5GHi8SSuNJQj",
+          "name": "Wait for Me",
+          "artists": "Kings of Leon",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027516b0140ce03ef97600fb03",
+          "durationMs": 210158,
+          "plays": 271690568,
+          "url": "https://open.spotify.com/track/2nO1DYEg1X5GHi8SSuNJQj"
+        },
+        {
+          "id": "0umDVf77ygI5RiVp9OvNDj",
+          "name": "Pyro",
+          "artists": "Kings of Leon",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02496ed45f8f3dddaf410fd86e",
+          "durationMs": 250533,
+          "plays": 436648714,
+          "url": "https://open.spotify.com/track/0umDVf77ygI5RiVp9OvNDj"
+        },
+        {
+          "id": "0vsuDbZZ7llAd299f0xxc3",
+          "name": "Comeback Story",
+          "artists": "Kings of Leon",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027516b0140ce03ef97600fb03",
+          "durationMs": 239056,
+          "plays": 96329875,
+          "url": "https://open.spotify.com/track/0vsuDbZZ7llAd299f0xxc3"
+        }
+      ]
+    },
+    {
+      "id": "3uwAm6vQy7kWPS2bciKWx9",
+      "name": "girl in red",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1b15c2ad299fdcf864a09742",
+      "usRank": 63,
+      "monthlyListeners": 22935465,
+      "popularity": 87,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/3uwAm6vQy7kWPS2bciKWx9",
+      "topTracks": [
+        {
+          "id": "6IPwKM3fUUzlElbvKw2sKl",
+          "name": "we fell in love in october",
+          "artists": "girl in red",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02deade9f354749841f09feca2",
+          "durationMs": 184153,
+          "plays": 1834658670,
+          "url": "https://open.spotify.com/track/6IPwKM3fUUzlElbvKw2sKl"
+        },
+        {
+          "id": "57j65yC2HggQfmYNc6rdOK",
+          "name": "bad idea!",
+          "artists": "girl in red",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0256446861fdfba8294f605f63",
+          "durationMs": 219638,
+          "plays": 458813080,
+          "url": "https://open.spotify.com/track/57j65yC2HggQfmYNc6rdOK"
+        },
+        {
+          "id": "5PjdC2gMATetx5xdnwGUu7",
+          "name": "i wanna be your girlfriend",
+          "artists": "girl in red",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d3351174028ed4bb8ffe27d1",
+          "durationMs": 204990,
+          "plays": 654666450,
+          "url": "https://open.spotify.com/track/5PjdC2gMATetx5xdnwGUu7"
+        },
+        {
+          "id": "0RJB6ldc79QC6jW5OR2Pv1",
+          "name": "blue",
+          "artists": "girl in red",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0226552246ce09f365f36a31ae",
+          "durationMs": 250049,
+          "plays": 5264105,
+          "url": "https://open.spotify.com/track/0RJB6ldc79QC6jW5OR2Pv1"
+        },
+        {
+          "id": "04OSnqlwlBJMvidYccraVz",
+          "name": "girls",
+          "artists": "girl in red",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02427e426fc20918e76bcf6d00",
+          "durationMs": 198400,
+          "plays": 387834311,
+          "url": "https://open.spotify.com/track/04OSnqlwlBJMvidYccraVz"
+        }
+      ]
+    },
+    {
+      "id": "2jw70GZXlAI8QzWeY2bgRc",
+      "name": "Nelly Furtado",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd2ce0bf5614b54bd44e059d5",
+      "usRank": 64,
+      "monthlyListeners": 40028838,
+      "popularity": 92,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/2jw70GZXlAI8QzWeY2bgRc",
+      "topTracks": [
+        {
+          "id": "2gam98EZKrF9XuOkU13ApN",
+          "name": "Promiscuous",
+          "artists": "Nelly Furtado, Timbaland",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a6f439c8957170652f9410e2",
+          "durationMs": 242293,
+          "plays": 2182840643,
+          "url": "https://open.spotify.com/track/2gam98EZKrF9XuOkU13ApN"
+        },
+        {
+          "id": "4wH4dJgrsxONID6KS2tDQM",
+          "name": "Maneater",
+          "artists": "Nelly Furtado",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a6f439c8957170652f9410e2",
+          "durationMs": 258893,
+          "plays": 1371108807,
+          "url": "https://open.spotify.com/track/4wH4dJgrsxONID6KS2tDQM"
+        },
+        {
+          "id": "2aI21FnmY7TJVKeMaoQZ0t",
+          "name": "Say It Right",
+          "artists": "Nelly Furtado",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a6f439c8957170652f9410e2",
+          "durationMs": 223080,
+          "plays": 1180680704,
+          "url": "https://open.spotify.com/track/2aI21FnmY7TJVKeMaoQZ0t"
+        },
+        {
+          "id": "2aGw77pZqli064JiPuXYRi",
+          "name": "I'm Like A Bird",
+          "artists": "Nelly Furtado",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02709087714422d592d6591f41",
+          "durationMs": 243160,
+          "plays": 544252920,
+          "url": "https://open.spotify.com/track/2aGw77pZqli064JiPuXYRi"
+        },
+        {
+          "id": "6kEpjptnAwt11Atr4cEMe1",
+          "name": "All Good Things (Come To An End)",
+          "artists": "Nelly Furtado",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a6f439c8957170652f9410e2",
+          "durationMs": 311186,
+          "plays": 210738348,
+          "url": "https://open.spotify.com/track/6kEpjptnAwt11Atr4cEMe1"
+        }
+      ]
+    },
+    {
+      "id": "5Y5TRrQiqgUO4S36tzjIRZ",
+      "name": "Timbaland",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebb713079a55dcf937d241dd2b",
+      "usRank": 65,
+      "monthlyListeners": 30824783,
+      "popularity": 90,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/5Y5TRrQiqgUO4S36tzjIRZ",
+      "topTracks": [
+        {
+          "id": "2bLqfJjuC5syrsgDsZfGmn",
+          "name": "The Way I Are",
+          "artists": "Timbaland, Keri Hilson, D.O.E.",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024ed674ab91bdc566534f9285",
+          "durationMs": 179120,
+          "plays": 1641553330,
+          "url": "https://open.spotify.com/track/2bLqfJjuC5syrsgDsZfGmn"
+        },
+        {
+          "id": "6q3zC9dDD4lUNk8nfUztXy",
+          "name": "Apologize",
+          "artists": "Timbaland, OneRepublic",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024ed674ab91bdc566534f9285",
+          "durationMs": 184400,
+          "plays": 1005158202,
+          "url": "https://open.spotify.com/track/6q3zC9dDD4lUNk8nfUztXy"
+        },
+        {
+          "id": "0wbDgMuAoy7O7pL3a69uZx",
+          "name": "Give It To Me",
+          "artists": "Timbaland, Justin Timberlake, Nelly Furtado",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02755a9f1e89ad8e8cf91d4956",
+          "durationMs": 234026,
+          "plays": 570541073,
+          "url": "https://open.spotify.com/track/0wbDgMuAoy7O7pL3a69uZx"
+        },
+        {
+          "id": "2DHc2e5bBn4UzY0ENVFrUl",
+          "name": "Carry Out (Featuring Justin Timberlake)",
+          "artists": "Timbaland, Justin Timberlake",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0284dfebb7e9c44520e69482de",
+          "durationMs": 232466,
+          "plays": 284219680,
+          "url": "https://open.spotify.com/track/2DHc2e5bBn4UzY0ENVFrUl"
+        },
+        {
+          "id": "360UM2DaiHZPRu0EsrOvMp",
+          "name": "If We Ever Meet Again (Featuring Katy Perry)",
+          "artists": "Timbaland, Katy Perry",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0284dfebb7e9c44520e69482de",
+          "durationMs": 292706,
+          "plays": 277285985,
+          "url": "https://open.spotify.com/track/360UM2DaiHZPRu0EsrOvMp"
+        }
+      ]
+    },
+    {
+      "id": "0hCNtLu0JehylgoiP8L4Gh",
+      "name": "Nicki Minaj",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb07a50f0a9a8f11e5a1102cbd",
+      "usRank": 66,
+      "monthlyListeners": 45013283,
+      "popularity": 93,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/0hCNtLu0JehylgoiP8L4Gh",
+      "topTracks": [
+        {
+          "id": "1oHNvJVbFkexQc0BpQp7Y4",
+          "name": "Starships",
+          "artists": "Nicki Minaj",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0285235715597dcd07bb9e0f84",
+          "durationMs": 210626,
+          "plays": 1706694700,
+          "url": "https://open.spotify.com/track/1oHNvJVbFkexQc0BpQp7Y4"
+        },
+        {
+          "id": "0puf9yIluy9W0vpMEUoAnN",
+          "name": "Bang Bang",
+          "artists": "Jessie J, Ariana Grande, Nicki Minaj",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02930f686fe89425c7b6bf9a7d",
+          "durationMs": 199386,
+          "plays": 1779989905,
+          "url": "https://open.spotify.com/track/0puf9yIluy9W0vpMEUoAnN"
+        },
+        {
+          "id": "3hlksXnvbKogFdPbpO9vel",
+          "name": "Super Bass",
+          "artists": "Nicki Minaj",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02aa7d2641af0fa4c1f76fafbf",
+          "durationMs": 200013,
+          "plays": 1219919006,
+          "url": "https://open.spotify.com/track/3hlksXnvbKogFdPbpO9vel"
+        },
+        {
+          "id": "0dKg2vGC1hFqcK5LGTaKzX",
+          "name": "Tusa",
+          "artists": "KAROL G, Nicki Minaj",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ae28c8f2748587cc2a33d6c2",
+          "durationMs": 201920,
+          "plays": 1767708393,
+          "url": "https://open.spotify.com/track/0dKg2vGC1hFqcK5LGTaKzX"
+        },
+        {
+          "id": "6kex4EBAj0WHXDKZMEJaaF",
+          "name": "Swalla (feat. Nicki Minaj & Ty Dolla $ign)",
+          "artists": "Jason Derulo, Nicki Minaj, Ty Dolla $ign",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b98e54a5bf5bc17964c93c7e",
+          "durationMs": 216408,
+          "plays": 1314886437,
+          "url": "https://open.spotify.com/track/6kex4EBAj0WHXDKZMEJaaF"
+        }
+      ]
+    },
+    {
+      "id": "1iCnM8foFssWlPRLfAbIwo",
+      "name": "Gigi Perez",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd58f13475be93b37bb63893f",
+      "usRank": 67,
+      "monthlyListeners": 29207744,
+      "popularity": 89,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/1iCnM8foFssWlPRLfAbIwo",
+      "topTracks": [
+        {
+          "id": "21IYMdzTrzSe191Cy5eMap",
+          "name": "Sailor Song",
+          "artists": "Gigi Perez",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0249c26270052e1671add569c1",
+          "durationMs": 211978,
+          "plays": 2316181151,
+          "url": "https://open.spotify.com/track/21IYMdzTrzSe191Cy5eMap"
+        },
+        {
+          "id": "7GjxQQQD9jYCF2Eeh2HHcT",
+          "name": "Fable",
+          "artists": "Gigi Perez",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0249c26270052e1671add569c1",
+          "durationMs": 261005,
+          "plays": 272105362,
+          "url": "https://open.spotify.com/track/7GjxQQQD9jYCF2Eeh2HHcT"
+        },
+        {
+          "id": "5LfgzPHvka22FdRAxOme6m",
+          "name": "At The Beach, In Every Life",
+          "artists": "Gigi Perez",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0249c26270052e1671add569c1",
+          "durationMs": 237809,
+          "plays": 58955861,
+          "url": "https://open.spotify.com/track/5LfgzPHvka22FdRAxOme6m"
+        },
+        {
+          "id": "7bLFtDcAmwVD3pw7zTUfmy",
+          "name": "Please Be Rude",
+          "artists": "Gigi Perez",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0249c26270052e1671add569c1",
+          "durationMs": 180000,
+          "plays": 107258762,
+          "url": "https://open.spotify.com/track/7bLFtDcAmwVD3pw7zTUfmy"
+        },
+        {
+          "id": "438QRARw2l8mc0TyFk8BLy",
+          "name": "Eternity",
+          "artists": "Alex Warren, Gigi Perez",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e98622f378649601c690e9ea",
+          "durationMs": 203474,
+          "plays": 38603984,
+          "url": "https://open.spotify.com/track/438QRARw2l8mc0TyFk8BLy"
+        }
+      ]
+    },
+    {
+      "id": "2xiIXseIJcq3nG7C8fHeBj",
+      "name": "Three Days Grace",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb2e619cf7c1577485d14c2043",
+      "usRank": 68,
+      "monthlyListeners": 20813267,
+      "popularity": 86,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/2xiIXseIJcq3nG7C8fHeBj",
+      "topTracks": [
+        {
+          "id": "0M955bMOoilikPXwKLYpoi",
+          "name": "I Hate Everything About You",
+          "artists": "Three Days Grace",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025d4bd2c345c95e847b586403",
+          "durationMs": 231480,
+          "plays": 1385981991,
+          "url": "https://open.spotify.com/track/0M955bMOoilikPXwKLYpoi"
+        },
+        {
+          "id": "0CWhh0GnKwyq1m8ZgsHTdl",
+          "name": "Animal I Have Become",
+          "artists": "Three Days Grace",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0248d58ee28b0b548fbb43f0d8",
+          "durationMs": 231428,
+          "plays": 1197867015,
+          "url": "https://open.spotify.com/track/0CWhh0GnKwyq1m8ZgsHTdl"
+        },
+        {
+          "id": "0p1E3mQ8j5L1AMGuvGoYRR",
+          "name": "Never Too Late",
+          "artists": "Three Days Grace",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0248d58ee28b0b548fbb43f0d8",
+          "durationMs": 209267,
+          "plays": 531084198,
+          "url": "https://open.spotify.com/track/0p1E3mQ8j5L1AMGuvGoYRR"
+        },
+        {
+          "id": "0rwR2BAY4eStTkV8Az0pDU",
+          "name": "Riot",
+          "artists": "Three Days Grace",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0248d58ee28b0b548fbb43f0d8",
+          "durationMs": 208409,
+          "plays": 488499460,
+          "url": "https://open.spotify.com/track/0rwR2BAY4eStTkV8Az0pDU"
+        },
+        {
+          "id": "4TCWDx9hkdhE2ERVLLg1EY",
+          "name": "Time of Dying",
+          "artists": "Three Days Grace",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0248d58ee28b0b548fbb43f0d8",
+          "durationMs": 188480,
+          "plays": 366057098,
+          "url": "https://open.spotify.com/track/4TCWDx9hkdhE2ERVLLg1EY"
+        }
+      ]
+    },
+    {
+      "id": "7t0rwkOPGlDPEhaOcVtOt9",
+      "name": "The Cranberries",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9d7ed10720669900a0649c98",
+      "usRank": 69,
+      "monthlyListeners": 41173868,
+      "popularity": 92,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/7t0rwkOPGlDPEhaOcVtOt9",
+      "topTracks": [
+        {
+          "id": "3gjHnylel3PTRpjS44ocqr",
+          "name": "Zombie - 2025 Remastered",
+          "artists": "The Cranberries",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0220a28883cdd0fc7d5f85a9a9",
+          "durationMs": 305626,
+          "plays": 1967467983,
+          "url": "https://open.spotify.com/track/3gjHnylel3PTRpjS44ocqr"
+        },
+        {
+          "id": "1WYrTfvKjQYaYfVziGG1ET",
+          "name": "Linger - Remastered 2026",
+          "artists": "The Cranberries",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02753dbf92830094154a21b193",
+          "durationMs": 274720,
+          "plays": 1533384374,
+          "url": "https://open.spotify.com/track/1WYrTfvKjQYaYfVziGG1ET"
+        },
+        {
+          "id": "458JkK5eJhh4C4s6nTuz7g",
+          "name": "Dreams - Remastered 2026",
+          "artists": "The Cranberries",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02753dbf92830094154a21b193",
+          "durationMs": 273706,
+          "plays": 922562677,
+          "url": "https://open.spotify.com/track/458JkK5eJhh4C4s6nTuz7g"
+        },
+        {
+          "id": "3k8qSv5e8ALW6tA9cpY9mm",
+          "name": "Ode To My Family - 2025 Remastered",
+          "artists": "The Cranberries",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0220a28883cdd0fc7d5f85a9a9",
+          "durationMs": 270600,
+          "plays": 401541602,
+          "url": "https://open.spotify.com/track/3k8qSv5e8ALW6tA9cpY9mm"
+        },
+        {
+          "id": "2nTcgF0BGEJBI3argOQWps",
+          "name": "Sunday - Remastered 2026",
+          "artists": "The Cranberries",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02753dbf92830094154a21b193",
+          "durationMs": 210760,
+          "plays": 172117703,
+          "url": "https://open.spotify.com/track/2nTcgF0BGEJBI3argOQWps"
+        }
+      ]
+    },
+    {
+      "id": "0gmx7cndNJbFM0DAO7fT0s",
+      "name": "F3miii",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebccf31e818388a5c599ea900d",
+      "usRank": 70,
+      "monthlyListeners": 13782703,
+      "popularity": 83,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/0gmx7cndNJbFM0DAO7fT0s",
+      "topTracks": [
+        {
+          "id": "4Jsus7N4d8hFB2G9gcRdBv",
+          "name": "NOBLE",
+          "artists": "F3miii",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e023e2c1f8bb3f146186e2a1dc5",
+          "durationMs": 185806,
+          "plays": 292290562,
+          "url": "https://open.spotify.com/track/4Jsus7N4d8hFB2G9gcRdBv"
+        },
+        {
+          "id": "00meonIF1VYLe1eTcx3w9e",
+          "name": "NOBLE (with The Kid LAROI)",
+          "artists": "F3miii, The Kid LAROI",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bc7580dac985ac06192dbbde",
+          "durationMs": 185806,
+          "plays": 36671828,
+          "url": "https://open.spotify.com/track/00meonIF1VYLe1eTcx3w9e"
+        },
+        {
+          "id": "5cvJB2U0noHCPqwkOIZY49",
+          "name": "FROM YOUR EYES",
+          "artists": "F3miii",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027eb79af968cd7ab4bea370cb",
+          "durationMs": 150461,
+          "plays": 11428691,
+          "url": "https://open.spotify.com/track/5cvJB2U0noHCPqwkOIZY49"
+        },
+        {
+          "id": "4TvXF0n2kmBDA4rFACcxFq",
+          "name": "TAKE A TRIP (With Bricknasty & Khakikid)",
+          "artists": "F3miii, Bricknasty, KhakiKid",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024db4b068c2486e213c679c69",
+          "durationMs": 240000,
+          "plays": 3267063,
+          "url": "https://open.spotify.com/track/4TvXF0n2kmBDA4rFACcxFq"
+        },
+        {
+          "id": "3jjIOrKthJeLRtjwTKROfj",
+          "name": "SPLINTER",
+          "artists": "F3miii",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02593204dcdee3e8aa2e8b3eb5",
+          "durationMs": 173538,
+          "plays": 4538003,
+          "url": "https://open.spotify.com/track/3jjIOrKthJeLRtjwTKROfj"
+        }
+      ]
+    },
+    {
+      "id": "7kNqXtgeIwFtelmRjWv205",
+      "name": "John Summit",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb20662b32f3dbabad755dfb53",
+      "usRank": null,
+      "monthlyListeners": 12058853,
+      "popularity": 82,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205",
+      "topTracks": [
+        {
+          "id": "3pUz2qJe5nqZemi3hhIxMk",
+          "name": "Where You Are",
+          "artists": "John Summit, HAYLA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ac2be70b09319ac92b074fde",
+          "durationMs": 236000,
+          "plays": 356150037,
+          "url": "https://open.spotify.com/track/3pUz2qJe5nqZemi3hhIxMk"
+        },
+        {
+          "id": "4krcWtZK3AsVE1Jl4oqH8w",
+          "name": "ALL THE TIME",
+          "artists": "John Summit, The Chainsmokers, Ilsey",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02edd455c68b4f20c12a76c8c6",
+          "durationMs": 180340,
+          "plays": 41420941,
+          "url": "https://open.spotify.com/track/4krcWtZK3AsVE1Jl4oqH8w"
+        },
+        {
+          "id": "5TbTOkgK8UAjtjIuIVPAjE",
+          "name": "DON'T BELIEVE IT",
+          "artists": "John Summit, Absolutely",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02edd455c68b4f20c12a76c8c6",
+          "durationMs": 187617,
+          "plays": 28450320,
+          "url": "https://open.spotify.com/track/5TbTOkgK8UAjtjIuIVPAjE"
+        },
+        {
+          "id": "32VIrOsJmwvqRm4rWFBCsi",
+          "name": "Shiver",
+          "artists": "John Summit, HAYLA",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ac2be70b09319ac92b074fde",
+          "durationMs": 234330,
+          "plays": 172230194,
+          "url": "https://open.spotify.com/track/32VIrOsJmwvqRm4rWFBCsi"
+        },
+        {
+          "id": "2OP7UAuQF1OJbjeYXa5fhm",
+          "name": "Silence - John Summit Remix",
+          "artists": "Delerium, Sarah McLachlan, John Summit",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026f1ad698de95b08df9b5a590",
+          "durationMs": 274736,
+          "plays": 66277747,
+          "url": "https://open.spotify.com/track/2OP7UAuQF1OJbjeYXa5fhm"
+        }
+      ]
+    },
+    {
+      "id": "0Y5tJX1MQlPlqiwlOH1tJY",
+      "name": "Travis Scott",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb19c2790744c792d05570bb71",
+      "usRank": null,
+      "monthlyListeners": 60017530,
+      "popularity": 96,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY",
+      "topTracks": [
+        {
+          "id": "6gBFPUFcJLzWGx4lenP6h2",
+          "name": "goosebumps",
+          "artists": "Travis Scott",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028752a7355996e64709247c53",
+          "durationMs": 243836,
+          "plays": 3265280436,
+          "url": "https://open.spotify.com/track/6gBFPUFcJLzWGx4lenP6h2"
+        },
+        {
+          "id": "2xLMifQCjDGFmkHkpNLD9h",
+          "name": "SICKO MODE",
+          "artists": "Travis Scott",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02daec894c14c0ca42d76eeb32",
+          "durationMs": 312820,
+          "plays": 2699887161,
+          "url": "https://open.spotify.com/track/2xLMifQCjDGFmkHkpNLD9h"
+        },
+        {
+          "id": "42VsgItocQwOQC3XWZ8JNA",
+          "name": "FE!N (feat. Playboi Carti)",
+          "artists": "Travis Scott, Playboi Carti",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0204481c826dd292e5e4983b3f",
+          "durationMs": 191700,
+          "plays": 1705345133,
+          "url": "https://open.spotify.com/track/42VsgItocQwOQC3XWZ8JNA"
+        },
+        {
+          "id": "6koKhrBBcExADvWuOgceNZ",
+          "name": "Open Arms (feat. Travis Scott)",
+          "artists": "SZA, Travis Scott",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c5276ed6cb0287df8d9be07f",
+          "durationMs": 239613,
+          "plays": 1081176407,
+          "url": "https://open.spotify.com/track/6koKhrBBcExADvWuOgceNZ"
+        },
+        {
+          "id": "3eekarcy7kvN4yt5ZFzltW",
+          "name": "HIGHEST IN THE ROOM",
+          "artists": "Travis Scott",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02cc7bfe087a97a09f54c92b28",
+          "durationMs": 175720,
+          "plays": 2380068608,
+          "url": "https://open.spotify.com/track/3eekarcy7kvN4yt5ZFzltW"
+        }
+      ]
+    },
+    {
+      "id": "1RyvyyTE3xzB2ZywiAwp0i",
+      "name": "Future",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb2c472c891062acb4f3068583",
+      "usRank": null,
+      "monthlyListeners": 51465969,
+      "popularity": 94,
+      "genres": [],
+      "url": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i",
+      "topTracks": [
+        {
+          "id": "2Hh3ETdQKrmSI3QS0hme7g",
+          "name": "Too Many Nights (feat. Don Toliver & with Future)",
+          "artists": "Metro Boomin, Future, Don Toliver",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c4fee55d7b51479627c31f89",
+          "durationMs": 199920,
+          "plays": 1329608170,
+          "url": "https://open.spotify.com/track/2Hh3ETdQKrmSI3QS0hme7g"
+        },
+        {
+          "id": "59nOXPmaKlBfGMDeOVGrIK",
+          "name": "WAIT FOR U (feat. Drake & Tems)",
+          "artists": "Future, Drake, Tems",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e021692599c8c0f98e470c68106",
+          "durationMs": 189893,
+          "plays": 1440063521,
+          "url": "https://open.spotify.com/track/59nOXPmaKlBfGMDeOVGrIK"
+        },
+        {
+          "id": "7EiZI6JVHllARrX9PUvAdX",
+          "name": "Low Life (feat. The Weeknd)",
+          "artists": "Future, The Weeknd",
+          "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022f62a05cc754995b544ec1f6",
+          "durationMs": 313546,
+          "plays": 1424041731,
+          "url": "https://open.spotify.com/track/7EiZI6JVHllARrX9PUvAdX"
+        },
+        {
+          "id": "0VgkVdmE4gld66l8iyGjgx",
+          "name": "Mask Off",
+          "artists": "Future",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02e0b64c8be3c4e804abcb2696",
+          "durationMs": 204600,
+          "plays": 2157121795,
+          "url": "https://open.spotify.com/track/0VgkVdmE4gld66l8iyGjgx"
+        },
+        {
+          "id": "4lH6nENd1y81jp7Yt9lTBX",
+          "name": "Solo",
+          "artists": "Future",
+          "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027567ec7d3c07783e4f2111e0",
+          "durationMs": 265996,
+          "plays": 907490872,
+          "url": "https://open.spotify.com/track/4lH6nENd1y81jp7Yt9lTBX"
+        }
+      ]
+    }
+  ]
+}

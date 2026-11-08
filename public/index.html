@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spotify Concerts: Direct Ticketing Prototype</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <nav class="sidebar">
+      <div class="brand"><span class="logo">●</span> Spotify <small>Concerts</small></div>
+      <a href="#/search" data-nav="search">⌕ Search</a>
+      <a href="#/tickets" data-nav="tickets">🎟 Your Tickets</a>
+      <div class="side-note">
+        <strong>Prototype</strong>
+        <p>Artists sell tickets directly through Spotify at face value.</p>
+        <p id="mode-pill" class="pill"></p>
+      </div>
+    </nav>
+    <main id="view"></main>
+  </div>
+
+  <div id="sheet" class="sheet" hidden>
+    <div class="sheet-backdrop" data-close></div>
+    <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+      <button class="icon-btn close" data-close aria-label="Close">✕</button>
+      <div id="sheet-body"></div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

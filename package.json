@@ -1,0 +1,14 @@
+{
+  "name": "spotify-concerts-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prototype of a Concerts tab for Spotify artist pages with direct, face-value ticketing.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "fetch-artists": "node scripts/fetch-artists.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
